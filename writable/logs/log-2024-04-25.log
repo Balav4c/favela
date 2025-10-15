@@ -1,0 +1,20 @@
+ERROR - 2024-04-25 06:42:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/UserMobile/LoginModel.php(13): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/UserMobile/Login.php(40): App\Models\UserMobile\LoginModel->verifyUser()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\UserMobile\Login->loginapi()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-25 06:42:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/UserMobile/LoginModel.php(13): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/UserMobile/Login.php(40): App\Models\UserMobile\LoginModel->verifyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->loginapi()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

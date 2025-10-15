@@ -1,0 +1,70 @@
+CRITICAL - 2025-03-14 07:50:43 --> Undefined variable $cat_id
+in APPPATH\Controllers\Category.php on line 29.
+ 1 APPPATH\Controllers\Category.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cat_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 07:54:20 --> Undefined variable $cat_id
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cat_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 07:54:42 --> Undefined variable $cat_id
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cat_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 07:54:46 --> Undefined variable $cat_id
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cat_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 07:55:24 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 07:55:26 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 08:42:37 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 08:44:38 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 09:48:34 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-14 09:58:57 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

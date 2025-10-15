@@ -1,0 +1,189 @@
+CRITICAL - 2025-10-06 06:53:22 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 06:53:22 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 06:53:23 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 06:53:23 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 06:54:19 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 06:54:23 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 06:54:34 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 06:54:57 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:14:58 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:15:00 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:15:01 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:15:01 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:15:33 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:32:20 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:32:24 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:48:50 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:49:06 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:50:26 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:50:39 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 09:50:40 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 12:27:49 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 12:27:53 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 12:57:03 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 12:57:05 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 12:57:32 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 12:57:37 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-06 12:57:38 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

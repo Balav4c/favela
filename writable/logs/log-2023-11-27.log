@@ -1,0 +1,35 @@
+CRITICAL - 2023-11-27 08:01:04 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:01:09 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 08:17:39 --> Undefined variable $bd
+in APPPATH\Views\flats.php on line 59.
+ 1 APPPATH\Views\flats.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bd', 'D:\\wamp\\www\\favela\\app\\Views\\flats.php', 59)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\wamp\\www\\favela\\app\\Views\\flats.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('flats', [], true)
+ 5 APPPATH\Controllers\Flats.php(31): view('flats')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 09:34:36 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-27 09:34:37 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

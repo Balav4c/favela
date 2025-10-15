@@ -1,0 +1,60 @@
+ERROR - 2025-03-26 05:48:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from a...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from a...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from a...')
+#3 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(13): CodeIgniter\Database\BaseConnection->query('select * from a...')
+#4 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(40): App\Models\UserMobile\LoginModel->verifyUser(NULL)
+#5 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->loginapi()
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-26 05:48:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\UserMobile\LoginModel.php(13): CodeIgniter\Database\BaseConnection->query('select * from app_users where phone = ')
+ 2 APPPATH\Controllers\UserMobile\Login.php(40): App\Models\UserMobile\LoginModel->verifyUser(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->loginapi()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-26 05:48:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from a...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from a...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from a...')
+#3 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(13): CodeIgniter\Database\BaseConnection->query('select * from a...')
+#4 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(40): App\Models\UserMobile\LoginModel->verifyUser(NULL)
+#5 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->loginapi()
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-26 05:48:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\UserMobile\LoginModel.php(13): CodeIgniter\Database\BaseConnection->query('select * from app_users where phone = ')
+ 2 APPPATH\Controllers\UserMobile\Login.php(40): App\Models\UserMobile\LoginModel->verifyUser(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->loginapi()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-26 07:07:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from a...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from a...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from a...')
+#3 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(13): CodeIgniter\Database\BaseConnection->query('select * from a...')
+#4 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(40): App\Models\UserMobile\LoginModel->verifyUser(NULL)
+#5 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->loginapi()
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-26 07:07:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\UserMobile\LoginModel.php(13): CodeIgniter\Database\BaseConnection->query('select * from app_users where phone = ')
+ 2 APPPATH\Controllers\UserMobile\Login.php(40): App\Models\UserMobile\LoginModel->verifyUser(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->loginapi()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

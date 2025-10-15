@@ -1,0 +1,113 @@
+body{
+	background-color:#fff;
+	margin:0px;
+}
+.logo-box {
+	position: relative;
+	height: 95vh;
+}
+.logo {
+	height:500px;
+	width:500px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align:center;
+}
+.logo img {
+	width:100%;
+}
+.login {
+	position: relative;
+	height: 95vh;
+}
+.login-box {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+@media screen and (max-width:900px) {
+	.logo-box {
+		position: relative;
+		height: auto !important;
+	}
+	.logo {
+		height:auto !important;
+		width:100%;
+		margin: 0;
+		position: relative !important;
+		top: 0px;
+		-ms-transform: translateY(0%);
+		transform: translateY(0%);
+		text-align:center;
+	}
+	.logo img {
+		width:70%;
+	}
+	.login {
+		position: relative;
+		height: auto !important;
+	}
+	.login-box {
+		margin: 0;
+		position: relative !important;
+		top: 0px !important;
+		-ms-transform: translateY(0%);
+		transform: translateY(0%);
+	}
+}
+
+/**Bala CSS ***/
+
+
+.key {
+	width: 320px;
+	margin-bottom: 10px;
+}
+.login-head {
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 15px;
+}
+.authen {
+	
+	align-items: center;
+	gap: 10px;
+	border: 1px solid #ddd;
+	padding: 8px;
+	border-radius: 5px;
+	
+}
+.authen input {
+	flex: 1;
+	border: none;
+	padding: 5px;
+	outline: none;
+	background: transparent;
+}
+.submit-btn {
+	width: 100%;
+	margin-top: 15px;
+	background: #007bff;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.submit-btn:hover {
+	background: #0056b3;
+}
+.link{
+	font-size: 17px;
+}
+.remember-me {
+    font-size: 14px;
+	margin-top: 15px;
+    color: #666;
+}

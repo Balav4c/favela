@@ -1,0 +1,363 @@
+CRITICAL - 2024-01-30 07:28:32 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 53.
+ 1 APPPATH\Controllers\Login.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 10:28:29 --> Undefined variable $us_id
+in APPPATH\Controllers\Residents.php on line 85.
+ 1 APPPATH\Controllers\Residents.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $us_id', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 10:28:33 --> Undefined variable $us_id
+in APPPATH\Controllers\Residents.php on line 85.
+ 1 APPPATH\Controllers\Residents.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $us_id', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 10:28:50 --> Undefined variable $us_id
+in APPPATH\Controllers\Residents.php on line 85.
+ 1 APPPATH\Controllers\Residents.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $us_id', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 12:50:31 --> Undefined property: stdClass::$name
+in APPPATH\Controllers\Residents.php on line 212.
+ 1 APPPATH\Controllers\Residents.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 212)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 12:51:55 --> Undefined property: stdClass::$name
+in APPPATH\Controllers\Residents.php on line 212.
+ 1 APPPATH\Controllers\Residents.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 212)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 12:52:08 --> Undefined property: stdClass::$name
+in APPPATH\Controllers\Residents.php on line 212.
+ 1 APPPATH\Controllers\Residents.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 212)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 12:55:23 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 12:55:23 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'s\' OR au.phone like \'s\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'s\' OR au.phone like \'s\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 12:55:25 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 12:55:25 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'sr\' OR au.phone like \'sr\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'sr\' OR au.phone like \'sr\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 12:55:29 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 12:55:29 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%srk%\' OR au.aadhar_no like \'%srk%\' OR au.email_id like \'srk\' OR au.phone like \'srk\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%srk%\' OR au.aadhar_no like \'%srk%\' OR au.email_id like \'srk\' OR au.phone like \'srk\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 12:55:42 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 12:55:42 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'sr\' OR au.phone like \'sr\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'sr\' OR au.phone like \'sr\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 12:56:42 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 12:56:42 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'%s%\' OR au.phone like \'%s%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'%s%\' OR au.phone like \'%s%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 12:57:53 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 12:57:53 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'%sr%\' OR au.phone like \'%sr%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'%sr%\' OR au.phone like \'%sr%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 12:59:38 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 12:59:38 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'%sr%\' OR au.phone like \'%sr%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'%sr%\' OR au.phone like \'%sr%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 12:59:53 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 12:59:53 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%srk%\' OR au.aadhar_no like \'%srk%\' OR au.email_id like \'%srk%\' OR au.phone like \'%srk%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(224): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%srk%\' OR au.aadhar_no like \'%srk%\' OR au.email_id like \'%srk%\' OR au.phone like \'%srk%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 13:00:34 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(226): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 13:00:34 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'%sr%\' OR au.phone like \'%sr%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(226): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'%sr%\' OR au.phone like \'%sr%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 13:01:40 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(225): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 13:01:40 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'%s%\' OR au.phone like \'%s%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(225): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'%s%\' OR au.phone like \'%s%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 13:01:51 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(225): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 13:01:51 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'%s%\' OR au.phone like \'%s%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(225): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'%s%\' OR au.phone like \'%s%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 13:04:23 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(225): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 13:04:23 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'%sr%\' OR au.phone like \'%sr%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(225): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%sr%\' OR au.aadhar_no like \'%sr%\' OR au.email_id like \'%sr%\' OR au.phone like \'%sr%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 13:06:16 --> mysqli_sql_exception: Unknown column 'au.name' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(227): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id='...')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 13:06:16 --> Unknown column 'au.name' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(86): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as filterressnos FROM user_residences where 1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'%s%\' OR au.phone like \'%s%\') and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(227): App\Models\ResidentsModel->AllResidFilterCount('1=1 and fv_id=\'1\' and (au.name like \'%s%\' OR au.aadhar_no like \'%s%\' OR au.email_id like \'%s%\' OR au.phone like \'%s%\')')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 13:07:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as filterressnos 
+								FROM user_residences as ur
+								left join app_' at line 1 in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(ur...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ur...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ur...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(88): CodeIgniter\Database\BaseConnection->query('SELECT count(ur...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(227): App\Models\ResidentsModel->AllResidFilterCount('1=1')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 13:07:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as filterressnos 
+								FROM user_residences as ur
+								left join app_' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(88): CodeIgniter\Database\BaseConnection->query('SELECT count(ur.*) as filterressnos 
+								FROM user_residences as ur
+								left join app_users as au on au.uid = ur.us_id
+								where 1=1 and fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(227): App\Models\ResidentsModel->AllResidFilterCount('1=1')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-30 13:08:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as filterressnos 
+								FROM user_residences as ur
+								left join app_' at line 1 in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(ur...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ur...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ur...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(88): CodeIgniter\Database\BaseConnection->query('SELECT count(ur...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(227): App\Models\ResidentsModel->AllResidFilterCount('1=1')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-30 13:08:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) as filterressnos 
+								FROM user_residences as ur
+								left join app_' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(88): CodeIgniter\Database\BaseConnection->query('SELECT count(ur.*) as filterressnos 
+								FROM user_residences as ur
+								left join app_users as au on au.uid = ur.us_id
+								where 1=1 and ur.fv_status<>3')
+ 2 APPPATH\Controllers\Residents.php(227): App\Models\ResidentsModel->AllResidFilterCount('1=1')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

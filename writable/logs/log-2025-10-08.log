@@ -1,0 +1,143 @@
+ERROR - 2025-10-08 05:23:56 --> mysqli_sql_exception: Unknown column 'pan_card' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(285): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-08 05:23:56 --> Unknown column 'pan_card' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`name`, `gender`, `dob`, `p_address`, `c_address`, `email_id`, `phone`, `status`, `pan_card`) VALUES (:name:, :gender:, :dob:, :p_address:, :c_address:, :email_id:, :phone:, :status:, :pan_card:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(285): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-08 05:32:33 --> mysqli_sql_exception: Unknown column 'pan_card' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(286): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-08 05:32:33 --> Unknown column 'pan_card' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`name`, `gender`, `dob`, `p_address`, `c_address`, `email_id`, `phone`, `status`, `pan_card`) VALUES (:name:, :gender:, :dob:, :p_address:, :c_address:, :email_id:, :phone:, :status:, :pan_card:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(286): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-08 05:33:03 --> mysqli_sql_exception: Unknown column 'pan_card' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(286): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-08 05:33:03 --> Unknown column 'pan_card' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`name`, `gender`, `dob`, `p_address`, `c_address`, `email_id`, `phone`, `status`, `pan_card`) VALUES (:name:, :gender:, :dob:, :p_address:, :c_address:, :email_id:, :phone:, :status:, :pan_card:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(286): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 06:09:14 --> Undefined variable $idProofType
+in APPPATH\Controllers\Residents.php on line 284.
+ 1 APPPATH\Controllers\Residents.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idProofType', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 284)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 07:03:57 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 253.
+ 1 APPPATH\Controllers\Residents.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 253)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 07:04:02 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 253.
+ 1 APPPATH\Controllers\Residents.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 253)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 07:04:26 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 253.
+ 1 APPPATH\Controllers\Residents.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 253)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 07:04:27 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 253.
+ 1 APPPATH\Controllers\Residents.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 253)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 09:52:46 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 09:53:13 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 14:50:51 --> implode(): Argument #1 ($array) must be of type array, string given
+in APPPATH\Controllers\Roles.php on line 48.
+ 1 APPPATH\Controllers\Roles.php(48): implode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Roles->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 14:50:53 --> implode(): Argument #1 ($array) must be of type array, string given
+in APPPATH\Controllers\Roles.php on line 48.
+ 1 APPPATH\Controllers\Roles.php(48): implode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Roles->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 14:50:54 --> implode(): Argument #1 ($array) must be of type array, string given
+in APPPATH\Controllers\Roles.php on line 48.
+ 1 APPPATH\Controllers\Roles.php(48): implode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Roles->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-08 14:51:05 --> implode(): Argument #1 ($array) must be of type array, string given
+in APPPATH\Controllers\Roles.php on line 48.
+ 1 APPPATH\Controllers\Roles.php(48): implode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Roles->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

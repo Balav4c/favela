@@ -1,0 +1,7 @@
+CRITICAL - 2024-11-06 07:09:50 --> Undefined array key ""
+in APPPATH/Controllers/Login.php on line 77.
+ 1 APPPATH/Controllers/Login.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

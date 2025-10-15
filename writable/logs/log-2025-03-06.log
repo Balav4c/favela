@@ -1,0 +1,27 @@
+CRITICAL - 2025-03-06 04:32:03 --> Call to undefined function get_cookie()
+in APPPATH\Views\pagenotfound.php on line 32.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pagenotfound', [], true)
+ 4 APPPATH\Controllers\Login.php(33): view('pagenotfound')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->login('')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-06 10:21:33 --> Class "App\Models\CategoryModel" not found
+in APPPATH\Controllers\Category.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Category->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-06 10:28:47 --> Undefined variable $acctype_name
+in APPPATH\Views\category.php on line 47.
+ 1 APPPATH\Views\category.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $acctype_name', 'C:\\xampp\\htdocs\\favela\\app\\Views\\category.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\favela\\app\\Views\\category.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('category', [], true)
+ 5 APPPATH\Controllers\Category.php(23): view('category')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,172 @@
+CRITICAL - 2025-10-07 03:29:19 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:29:22 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:29:43 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:29:45 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:29:47 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:30:13 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:30:15 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:30:16 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:31:28 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:31:32 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:31:35 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 03:31:38 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 167.
+ 1 APPPATH\Controllers\Residents.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 08:38:08 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 208.
+ 1 APPPATH\Controllers\Residents.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 08:38:25 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 208.
+ 1 APPPATH\Controllers\Residents.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 10:14:18 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 10:14:19 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 10:14:21 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-07 10:14:21 --> Undefined variable $userinfo
+in APPPATH\Controllers\Residents.php on line 90.
+ 1 APPPATH\Controllers\Residents.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userinfo', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->acceptUser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-07 13:26:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and fv_status<>3 order by rd_id desc limit 0,10' at line 4 in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ur.*,au....', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ur.*,au....')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ur.*,au....')
+#3 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(75): CodeIgniter\Database\BaseConnection->query('SELECT ur.*,au....')
+#4 C:\xampp\htdocs\favela\app\Controllers\Residents.php(302): App\Models\ResidentsModel->listAllResidents('1=1 and fv_id =...', '0', 10)
+#5 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-07 13:26:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and fv_status<>3 order by rd_id desc limit 0,10' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(75): CodeIgniter\Database\BaseConnection->query('SELECT ur.*,au.name, au.phone, au.email_id, au.aadhar_no  
+							FROM user_residences as ur
+							left join app_users as au on au.uid = ur.us_id
+							where 1=1 and fv_id =  and fv_status<>3 order by rd_id desc limit 0,10')
+ 2 APPPATH\Controllers\Residents.php(302): App\Models\ResidentsModel->listAllResidents('1=1 and fv_id = ', '0', 10)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-07 13:28:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and fv_status<>3 order by rd_id desc limit 0,10' at line 4 in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ur.*,au....', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ur.*,au....')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ur.*,au....')
+#3 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(75): CodeIgniter\Database\BaseConnection->query('SELECT ur.*,au....')
+#4 C:\xampp\htdocs\favela\app\Controllers\Residents.php(302): App\Models\ResidentsModel->listAllResidents('1=1 and fv_id =...', '0', 10)
+#5 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-10-07 13:28:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and fv_status<>3 order by rd_id desc limit 0,10' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(75): CodeIgniter\Database\BaseConnection->query('SELECT ur.*,au.name, au.phone, au.email_id, au.aadhar_no  
+							FROM user_residences as ur
+							left join app_users as au on au.uid = ur.us_id
+							where 1=1 and fv_id =  and fv_status<>3 order by rd_id desc limit 0,10')
+ 2 APPPATH\Controllers\Residents.php(302): App\Models\ResidentsModel->listAllResidents('1=1 and fv_id = ', '0', 10)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->listresidents()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

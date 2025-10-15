@@ -1,0 +1,1069 @@
+ERROR - 2025-04-02 04:02:58 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(45): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 04:02:59 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(45): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 07:04:09 --> Undefined array key "Authorization"
+in APPPATH\Controllers\UserMobile\Notifications.php on line 59.
+ 1 APPPATH\Controllers\UserMobile\Notifications.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Authorization"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Notifications.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Notifications->processNotify()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Notifications))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 07:28:42 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(46): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 07:28:42 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(46): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 07:28:45 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(46): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 07:28:45 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(46): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 07:30:39 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(46): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 07:30:39 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(46): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 07:30:41 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(46): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 07:30:41 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(46): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(119): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 07:32:19 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\UserMobile\Login.php(113): CodeIgniter\Model->__call('getFvId', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 07:38:53 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(55): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(118): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 07:38:53 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(55): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(118): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 07:38:56 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(55): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(118): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 07:38:56 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(55): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(118): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 07:39:54 --> Undefined property: App\Controllers\UserMobile\Login::$db
+in APPPATH\Controllers\UserMobile\Login.php on line 121.
+ 1 APPPATH\Controllers\UserMobile\Login.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserMobile\\Login::$db', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 07:46:49 --> Undefined property: App\Controllers\UserMobile\Login::$db
+in APPPATH\Controllers\UserMobile\Login.php on line 121.
+ 1 APPPATH\Controllers\UserMobile\Login.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserMobile\\Login::$db', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 07:56:39 --> Undefined variable $response
+in APPPATH\Controllers\UserMobile\Login.php on line 143.
+ 1 APPPATH\Controllers\UserMobile\Login.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 07:56:52 --> Undefined variable $response
+in APPPATH\Controllers\UserMobile\Login.php on line 143.
+ 1 APPPATH\Controllers\UserMobile\Login.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 07:59:22 --> Undefined variable $response
+in APPPATH\Controllers\UserMobile\Login.php on line 143.
+ 1 APPPATH\Controllers\UserMobile\Login.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 08:01:22 --> Undefined variable $response
+in APPPATH\Controllers\UserMobile\Login.php on line 143.
+ 1 APPPATH\Controllers\UserMobile\Login.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 143)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 08:02:03 --> Undefined property: App\Controllers\UserMobile\Login::$db
+in APPPATH\Controllers\UserMobile\Login.php on line 119.
+ 1 APPPATH\Controllers\UserMobile\Login.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserMobile\\Login::$db', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 08:04:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::last_query()
+in APPPATH\Models\UserMobile\LoginModel.php on line 35.
+ 1 APPPATH\Controllers\UserMobile\Login.php(117): App\Models\UserMobile\LoginModel->getFvId('56')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 08:12:17 --> Undefined property: App\Controllers\UserMobile\Login::$db
+in APPPATH\Controllers\UserMobile\Login.php on line 119.
+ 1 APPPATH\Controllers\UserMobile\Login.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserMobile\\Login::$db', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:13:44 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:13:44 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:13:47 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:13:47 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:14:40 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:14:40 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:16:11 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:16:11 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:16:14 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:16:14 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:16:36 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:16:36 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:18:44 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:18:44 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:20:23 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:20:23 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:20:53 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:20:53 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(56): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:21:41 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(50): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:21:41 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(50): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:26:47 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(50): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '55')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:26:47 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(50): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '55')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 08:30:28 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(50): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 08:30:28 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(50): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:24:31 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:24:31 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 09:25:11 --> Undefined array key "Authorization"
+in APPPATH\Controllers\UserMobile\Notifications.php on line 59.
+ 1 APPPATH\Controllers\UserMobile\Notifications.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Authorization"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Notifications.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Notifications->processNotify()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Notifications))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:27:36 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:27:36 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:32:04 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:32:04 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:32:07 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:32:07 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:32:45 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:32:45 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:32:47 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:32:47 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 09:33:37 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\UserMobile\Login.php on line 149.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserMobile\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserMobile\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\UserMobile\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:33:57 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:33:57 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:33:59 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:33:59 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:36:31 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:36:31 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:47:34 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:47:34 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:47:48 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:47:48 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:48:23 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:48:23 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:48:26 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '67')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:48:26 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '67')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:50:39 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:50:39 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:51:43 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:51:43 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:51:45 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:51:45 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:52:41 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:52:41 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:59:16 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:59:16 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 09:59:18 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 09:59:18 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(116): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 10:02:11 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 10:02:11 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 10:08:43 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 10:08:43 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-02 10:10:26 --> Undefined variable $fv_row
+in APPPATH\Models\UserMobile\LoginModel.php on line 42.
+ 1 APPPATH\Models\UserMobile\LoginModel.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fv_row', 'C:\\xampp\\htdocs\\favela\\app\\Models\\UserMobile\\LoginModel.php', 42)
+ 2 APPPATH\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 10:26:48 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 10:26:48 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-02 10:58:15 --> mysqli_sql_exception: Unknown column 'fv_id' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `app_use...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `app_use...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `app_use...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_use...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\favela\app\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc(Array, '1')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-02 10:58:15 --> Unknown column 'fv_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `app_users` SET `token` = :token:, `fv_id` = :fv_id:
+WHERE `uid` = :uid:', [...], false)
+ 2 APPPATH\Models\UserMobile\LoginModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\UserMobile\Login.php(115): App\Models\UserMobile\LoginModel->updateUserAcc([...], '1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

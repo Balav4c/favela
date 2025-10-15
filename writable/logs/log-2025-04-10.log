@@ -1,0 +1,7 @@
+CRITICAL - 2025-04-10 06:16:51 --> Undefined variable $OrgsArr
+in APPPATH\Controllers\UserMobile\Residence.php on line 58.
+ 1 APPPATH\Controllers\UserMobile\Residence.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $OrgsArr', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Residence.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Residence->getResidences()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Residence))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

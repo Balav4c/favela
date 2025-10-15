@@ -1,0 +1,194 @@
+ERROR - 2024-01-31 00:09:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('delete from use...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('delete from use...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('delete from use...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(74): CodeIgniter\Database\BaseConnection->query('delete from use...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(189): App\Models\ResidentsModel->removeAadhaar(NULL)
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->changeuser('29')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-31 00:09:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(74): CodeIgniter\Database\BaseConnection->query('delete from user_residences where us_id = ')
+ 2 APPPATH\Controllers\Residents.php(189): App\Models\ResidentsModel->removeAadhaar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->changeuser('29')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 00:10:15 --> mysqli_sql_exception: Unknown column 'us_id' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('delete from app...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('delete from app...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('delete from app...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(75): CodeIgniter\Database\BaseConnection->query('delete from app...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(188): App\Models\ResidentsModel->removeAadhaar('29')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->changeuser('29')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-31 00:10:15 --> Unknown column 'us_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(75): CodeIgniter\Database\BaseConnection->query('delete from app_users where us_id = 29')
+ 2 APPPATH\Controllers\Residents.php(188): App\Models\ResidentsModel->removeAadhaar('29')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->changeuser('29')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-31 00:11:47 --> mysqli_sql_exception: Unknown column 'us_id' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('delete from app...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('delete from app...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('delete from app...')
+#3 D:\wamp\www\favela\app\Models\ResidentsModel.php(75): CodeIgniter\Database\BaseConnection->query('delete from app...')
+#4 D:\wamp\www\favela\app\Controllers\Residents.php(188): App\Models\ResidentsModel->removeAadhaar('29')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Residents->changeuser('29')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-31 00:11:47 --> Unknown column 'us_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\ResidentsModel.php(75): CodeIgniter\Database\BaseConnection->query('delete from app_users where us_id = 29')
+ 2 APPPATH\Controllers\Residents.php(188): App\Models\ResidentsModel->removeAadhaar('29')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->changeuser('29')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:14:36 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:14:38 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:14:40 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:14:40 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:14:40 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:14:40 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:14:40 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:15:02 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 00:16:25 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 02:28:01 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Residents.php on line 188.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->changeuser()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 02:38:03 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 09:32:31 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 09:34:39 --> Undefined variable $result
+in APPPATH\Controllers\Residents.php on line 164.
+ 1 APPPATH\Controllers\Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 164)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 19:23:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\ResidentsModel.php on line 74.
+ 1 APPPATH\Controllers\Residents.php(184): App\Models\ResidentsModel->checkTowerUser('55', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 19:24:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\ResidentsModel.php on line 74.
+ 1 APPPATH\Controllers\Residents.php(184): App\Models\ResidentsModel->checkTowerUser('55', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 19:27:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\ResidentsModel.php on line 74.
+ 1 APPPATH\Controllers\Residents.php(184): App\Models\ResidentsModel->checkTowerUser('55', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 19:27:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\ResidentsModel.php on line 74.
+ 1 APPPATH\Controllers\Residents.php(184): App\Models\ResidentsModel->checkTowerUser('55', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 19:28:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\ResidentsModel.php on line 74.
+ 1 APPPATH\Controllers\Residents.php(184): App\Models\ResidentsModel->checkTowerUser('55', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 19:29:39 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Residents.php(189): CodeIgniter\Model->__call('acceptNewUser', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

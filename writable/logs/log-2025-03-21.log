@@ -1,0 +1,375 @@
+CRITICAL - 2025-03-21 03:46:39 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory('22')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 04:00:06 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory('22')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 04:01:18 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory('27')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 04:02:52 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory('27')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 04:55:11 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory('27')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 04:55:12 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory('27')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 04:56:41 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory('22')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 05:05:23 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory('22')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 05:36:39 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 05:56:42 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 05:56:43 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 05:56:43 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Models\CategoryModel.php(32): CodeIgniter\BaseModel->delete(null)
+ 4 APPPATH\Controllers\Category.php(119): App\Models\CategoryModel->deleteCategory(null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-21 07:14:25 --> mysqli_sql_exception: Unknown column 'loadCategories' in 'where clause' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from a...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from a...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from a...')
+#3 C:\xampp\htdocs\favela\app\Models\CategoryModel.php(33): CodeIgniter\Database\BaseConnection->query('select * from a...')
+#4 C:\xampp\htdocs\favela\app\Controllers\Category.php(20): App\Models\CategoryModel->getCategoryById('loadCategories')
+#5 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Category->index('loadCategories')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-21 07:14:25 --> Unknown column 'loadCategories' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\CategoryModel.php(33): CodeIgniter\Database\BaseConnection->query('select * from asset_category where cat_id = loadCategories')
+ 2 APPPATH\Controllers\Category.php(20): App\Models\CategoryModel->getCategoryById('loadCategories')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index('loadCategories')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-21 07:14:32 --> mysqli_sql_exception: Unknown column 'loadCategories' in 'where clause' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from a...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from a...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from a...')
+#3 C:\xampp\htdocs\favela\app\Models\CategoryModel.php(33): CodeIgniter\Database\BaseConnection->query('select * from a...')
+#4 C:\xampp\htdocs\favela\app\Controllers\Category.php(20): App\Models\CategoryModel->getCategoryById('loadCategories')
+#5 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Category->index('loadCategories')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-21 07:14:32 --> Unknown column 'loadCategories' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\CategoryModel.php(33): CodeIgniter\Database\BaseConnection->query('select * from asset_category where cat_id = loadCategories')
+ 2 APPPATH\Controllers\Category.php(20): App\Models\CategoryModel->getCategoryById('loadCategories')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index('loadCategories')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-21 07:23:00 --> mysqli_sql_exception: Unknown column 'loadCategories' in 'where clause' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from a...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from a...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from a...')
+#3 C:\xampp\htdocs\favela\app\Models\CategoryModel.php(33): CodeIgniter\Database\BaseConnection->query('select * from a...')
+#4 C:\xampp\htdocs\favela\app\Controllers\Category.php(20): App\Models\CategoryModel->getCategoryById('loadCategories')
+#5 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Category->index('loadCategories')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-03-21 07:23:00 --> Unknown column 'loadCategories' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\CategoryModel.php(33): CodeIgniter\Database\BaseConnection->query('select * from asset_category where cat_id = loadCategories')
+ 2 APPPATH\Controllers\Category.php(20): App\Models\CategoryModel->getCategoryById('loadCategories')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index('loadCategories')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 07:27:06 --> Attempt to read property "cat_id" on array
+in APPPATH\Controllers\Category.php on line 68.
+ 1 APPPATH\Controllers\Category.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cat_id" on array', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->loadCategories()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 07:42:33 --> Attempt to read property "cat_id" on array
+in APPPATH\Controllers\Category.php on line 68.
+ 1 APPPATH\Controllers\Category.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cat_id" on array', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->loadCategories()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 11:59:41 --> Undefined constant "App\Controllers\debugger"
+in APPPATH\Controllers\Flats.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index('14')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:12:07 --> Attempt to read property "cat_id" on array
+in APPPATH\Controllers\Category.php on line 61.
+ 1 APPPATH\Controllers\Category.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cat_id" on array', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->loadCategories()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:14:19 --> Attempt to read property "cat_id" on array
+in APPPATH\Controllers\Category.php on line 55.
+ 1 APPPATH\Controllers\Category.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cat_id" on array', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->loadCategories()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:36:07 --> Undefined property: stdClass::$bd_id
+in APPPATH\Controllers\Category.php on line 28.
+ 1 APPPATH\Controllers\Category.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$bd_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index('28')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:36:20 --> Undefined variable $building
+in APPPATH\Views\flats.php on line 44.
+ 1 APPPATH\Views\flats.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $building', 'C:\\xampp\\htdocs\\favela\\app\\Views\\flats.php', 44)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\favela\\app\\Views\\flats.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('flats', [], true)
+ 5 APPPATH\Controllers\Flats.php(33): view('flats')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:44:25 --> join(): Argument #1 ($array) must be of type array, string given
+in APPPATH\Controllers\Category.php on line 26.
+ 1 APPPATH\Controllers\Category.php(26): join(',')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index('28')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:46:15 --> Call to undefined method App\Models\CategoryModel::getCategoryById
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Category.php(100): CodeIgniter\Model->__call('getCategoryById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:46:25 --> Undefined variable $category_name
+in APPPATH\Views\category.php on line 49.
+ 1 APPPATH\Views\category.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category_name', 'C:\\xampp\\htdocs\\favela\\app\\Views\\category.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\favela\\app\\Views\\category.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('category', [], true)
+ 5 APPPATH\Controllers\Category.php(45): view('category')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:46:30 --> Undefined variable $category_name
+in APPPATH\Views\category.php on line 49.
+ 1 APPPATH\Views\category.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category_name', 'C:\\xampp\\htdocs\\favela\\app\\Views\\category.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\favela\\app\\Views\\category.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('category', [], true)
+ 5 APPPATH\Controllers\Category.php(45): view('category')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:48:17 --> Call to undefined method App\Models\CategoryModel::getCategoryById
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Category.php(106): CodeIgniter\Model->__call('getCategoryById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:48:18 --> Call to undefined method App\Models\CategoryModel::getCategoryById
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Category.php(106): CodeIgniter\Model->__call('getCategoryById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:51:05 --> Call to undefined method App\Models\CategoryModel::getCategoryById
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Category.php(102): CodeIgniter\Model->__call('getCategoryById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:51:07 --> Call to undefined method App\Models\CategoryModel::getCategoryById
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Category.php(102): CodeIgniter\Model->__call('getCategoryById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 12:51:14 --> Call to undefined method App\Models\CategoryModel::getCategoryById
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Category.php(102): CodeIgniter\Model->__call('getCategoryById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:10:37 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:10:38 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:12:22 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:12:23 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:12:23 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:13:03 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:13:04 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:13:04 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-21 13:13:04 --> Undefined array key "subcategory_name"
+in APPPATH\Models\CategoryModel.php on line 40.
+ 1 APPPATH\Models\CategoryModel.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "subcategory_name"', 'C:\\xampp\\htdocs\\favela\\app\\Models\\CategoryModel.php', 40)
+ 2 APPPATH\Controllers\Category.php(171): App\Models\CategoryModel->deleteSubcategory(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->deleteSubcategory()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

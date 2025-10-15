@@ -1,0 +1,70 @@
+CRITICAL - 2023-11-17 04:15:42 --> Undefined array key "draw"
+in APPPATH\Controllers\Flats.php on line 37.
+ 1 APPPATH\Controllers\Flats.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "draw"', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 04:16:58 --> Undefined array key "draw"
+in APPPATH\Controllers\Flats.php on line 37.
+ 1 APPPATH\Controllers\Flats.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "draw"', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats('')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 04:19:15 --> Undefined array key "draw"
+in APPPATH\Controllers\Flats.php on line 37.
+ 1 APPPATH\Controllers\Flats.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "draw"', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats('')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 04:21:08 --> Undefined variable $totalRecords
+in APPPATH\Controllers\Flats.php on line 57.
+ 1 APPPATH\Controllers\Flats.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalRecords', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 05:09:53 --> Undefined array key ""
+in APPPATH\Controllers\Flats.php on line 41.
+ 1 APPPATH\Controllers\Flats.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 05:10:26 --> Undefined array key ""
+in APPPATH\Controllers\Flats.php on line 41.
+ 1 APPPATH\Controllers\Flats.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 05:12:30 --> Array to string conversion
+in APPPATH\Controllers\Flats.php on line 40.
+ 1 APPPATH\Controllers\Flats.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 05:18:54 --> Undefined variable $con
+in APPPATH\Controllers\Flats.php on line 44.
+ 1 APPPATH\Controllers\Flats.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $con', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 05:22:00 --> Undefined variable $con
+in APPPATH\Controllers\Flats.php on line 44.
+ 1 APPPATH\Controllers\Flats.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $con', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 05:23:20 --> Undefined variable $totalRecords
+in APPPATH\Controllers\Flats.php on line 58.
+ 1 APPPATH\Controllers\Flats.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalRecords', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

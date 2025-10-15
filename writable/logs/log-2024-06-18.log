@@ -1,0 +1,10 @@
+CRITICAL - 2024-06-18 03:57:05 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(83): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Models/ComplaintsInfoModel.php(9): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/ComplaintsInfo.php(11): App\Models\ComplaintsInfoModel->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\ComplaintsInfo->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

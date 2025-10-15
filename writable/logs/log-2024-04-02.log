@@ -1,0 +1,172 @@
+ERROR - 2024-04-02 07:56:32 --> mysqli_sql_exception: Unknown column 'mpin' in 'field list' in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-02 07:56:32 --> Unknown column 'mpin' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-02 07:58:42 --> mysqli_sql_exception: Unknown column 'mpin' in 'field list' in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-02 07:58:42 --> Unknown column 'mpin' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-02 08:03:12 --> mysqli_sql_exception: Unknown column 'mpin' in 'field list' in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-02 08:03:12 --> Unknown column 'mpin' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-02 08:04:42 --> mysqli_sql_exception: Unknown column 'mpin' in 'field list' in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-02 08:04:42 --> Unknown column 'mpin' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-02 08:05:35 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH/Controllers/UserMobile/Login.php on line 187.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-02 08:06:17 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH/Controllers/UserMobile/Login.php on line 187.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-02 08:06:41 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH/Controllers/UserMobile/Login.php on line 187.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-02 08:07:48 --> mysqli_sql_exception: Unknown column 'mpin' in 'field list' in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-02 08:07:48 --> Unknown column 'mpin' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/UserMobile/LoginModel.php(34): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH/Controllers/UserMobile/Login.php(188): App\Models\UserMobile\LoginModel->updatempin()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->createMpin()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-02 09:20:26 --> Undefined variable $value
+in APPPATH/Controllers/UserMobile/Notifications.php on line 26.
+ 1 APPPATH/Controllers/UserMobile/Notifications.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Notifications->getnotifications()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-02 09:22:34 --> Attempt to read property "Authorization" on array
+in APPPATH/Controllers/UserMobile/Notifications.php on line 26.
+ 1 APPPATH/Controllers/UserMobile/Notifications.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Notifications->getnotifications()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-02 11:20:44 --> Undefined array key "Authorization"
+in APPPATH/Controllers/UserMobile/Login.php on line 103.
+ 1 APPPATH/Controllers/UserMobile/Login.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->getprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-02 11:25:01 --> Undefined array key "Authorization"
+in APPPATH/Controllers/UserMobile/Login.php on line 103.
+ 1 APPPATH/Controllers/UserMobile/Login.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->getprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-02 11:27:05 --> Undefined array key "Authorization"
+in APPPATH/Controllers/UserMobile/Login.php on line 103.
+ 1 APPPATH/Controllers/UserMobile/Login.php(103): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\UserMobile\Login->getprofile()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,149 @@
+CRITICAL - 2024-03-14 07:18:42 --> Undefined property: stdClass::$m_pin
+in APPPATH/Controllers/Login_api.php on line 38.
+ 1 APPPATH/Controllers/Login_api.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 07:20:46 --> Undefined property: stdClass::$m_pin
+in APPPATH/Controllers/Login_api.php on line 39.
+ 1 APPPATH/Controllers/Login_api.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 07:21:02 --> Undefined property: stdClass::$m_pin
+in APPPATH/Controllers/Login_api.php on line 39.
+ 1 APPPATH/Controllers/Login_api.php(39): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 07:51:19 --> Class "App\Libraries\JWT" not found
+in APPPATH/Controllers/Login_api.php on line 73.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->verifympinapi()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 07:51:22 --> Class "App\Libraries\JWT" not found
+in APPPATH/Controllers/Login_api.php on line 73.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->verifympinapi()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 07:52:56 --> Class "App\Libraries\JWT" not found
+in APPPATH/Controllers/Login_api.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->verifympinapi()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 08:17:05 --> Class "App\Libraries\JWT" not found
+in APPPATH/Controllers/Login_api.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->verifympinapi()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 08:17:24 --> Class "App\Libraries\JWT" not found
+in APPPATH/Controllers/Login_api.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->verifympinapi()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 08:18:46 --> Class "App\Libraries\JWT" not found
+in APPPATH/Controllers/Login_api.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->verifympinapi()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 08:19:30 --> Class "App\Libraries\JWT" not found
+in APPPATH/Controllers/Login_api.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->verifympinapi()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-14 08:19:33 --> Class "App\Libraries\JWT" not found
+in APPPATH/Controllers/Login_api.php on line 74.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->verifympinapi()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 08:46:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/LoginModel.php(14): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/Login_api.php(36): App\Models\LoginModel->verifyUser()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-14 08:46:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/LoginModel.php(14): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Login_api.php(36): App\Models\LoginModel->verifyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 09:01:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/LoginModel.php(14): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/Login_api.php(36): App\Models\LoginModel->verifyUser()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-14 09:01:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/LoginModel.php(14): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Login_api.php(36): App\Models\LoginModel->verifyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 09:01:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/LoginModel.php(14): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/Login_api.php(36): App\Models\LoginModel->verifyUser()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-14 09:01:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/LoginModel.php(14): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Login_api.php(36): App\Models\LoginModel->verifyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-14 09:02:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/LoginModel.php(14): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/Login_api.php(36): App\Models\LoginModel->verifyUser()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-14 09:02:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/LoginModel.php(14): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Login_api.php(36): App\Models\LoginModel->verifyUser()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login_api->loginapi()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

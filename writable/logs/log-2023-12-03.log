@@ -1,0 +1,6 @@
+CRITICAL - 2023-12-03 01:44:20 --> Class "App\Models\RolesModel" not found
+in APPPATH\Controllers\Roles.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Roles->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

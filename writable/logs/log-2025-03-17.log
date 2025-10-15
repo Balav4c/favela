@@ -1,0 +1,101 @@
+CRITICAL - 2025-03-17 04:07:15 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-17 04:14:54 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-17 04:14:55 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-17 04:36:33 --> Class "App\Models\SubcategoryModel" not found
+in APPPATH\Controllers\Category.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Category->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-17 04:36:44 --> Class "App\Models\SubcategoryModel" not found
+in APPPATH\Controllers\Category.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Category->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-17 04:37:42 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-17 04:38:14 --> Undefined variable $catid
+in APPPATH\Controllers\Category.php on line 27.
+ 1 APPPATH\Controllers\Category.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catid', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Category.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-17 05:16:22 --> mysqli_sql_exception: Unknown column 'subcategories' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `as...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\CategoryModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Category.php(61): App\Models\CategoryModel->createcategory(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-17 05:16:22 --> Unknown column 'subcategories' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `asset_category` (`category_name`, `subcategories`, `diminish_rate`, `created_on`, `created_by`) VALUES (:category_name:, :subcategories:, :diminish_rate:, :created_on:, :created_by:)', [...], false)
+ 2 APPPATH\Models\CategoryModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Category.php(61): App\Models\CategoryModel->createcategory([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-17 05:17:18 --> mysqli_sql_exception: Unknown column 'subcategories' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `as...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\CategoryModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Category.php(61): App\Models\CategoryModel->createcategory(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-17 05:17:19 --> Unknown column 'subcategories' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `asset_category` (`category_name`, `subcategories`, `diminish_rate`, `created_on`, `created_by`) VALUES (:category_name:, :subcategories:, :diminish_rate:, :created_on:, :created_by:)', [...], false)
+ 2 APPPATH\Models\CategoryModel.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Category.php(61): App\Models\CategoryModel->createcategory([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-17 05:24:16 --> CodeIgniter\Database\BaseResult::getFirstRow(): Argument #1 ($type) must be of type string, null given, called in C:\xampp\htdocs\favela\system\Model.php on line 264
+in SYSTEMPATH\Database\BaseResult.php on line 389.
+ 1 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseResult->getFirstRow(null)
+ 2 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 3 APPPATH\Models\CategoryModel.php(18): CodeIgniter\BaseModel->first()
+ 4 APPPATH\Controllers\Category.php(80): App\Models\CategoryModel->getCategoryByName('gfdh')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Category->saveCategory()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

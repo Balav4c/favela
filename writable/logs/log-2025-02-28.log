@@ -1,0 +1,360 @@
+CRITICAL - 2025-02-28 06:22:55 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 APPPATH\Models\ReplyinfoModel.php(16): CodeIgniter\Database\BaseConnection->table(null)
+ 2 APPPATH\Controllers\ComplaintsInfo.php(214): App\Models\ReplyinfoModel->saveComplaintReply([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->saveReply()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:31:58 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('22')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('22')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:31:58 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('22')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('22')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:32:02 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:32:02 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:32:05 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('20')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('20')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:32:05 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('20')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('20')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:34:27 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('20')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('20')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:34:27 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('20')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('20')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:35:57 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:35:57 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:36:05 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:36:05 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:36:23 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('22')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('22')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:36:23 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('22')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('22')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:46:39 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:46:39 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:47:01 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:47:01 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:50:56 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:50:56 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 08:53:03 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 08:53:03 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(229): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 09:01:30 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 09:01:30 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 09:02:10 --> mysqli_sql_exception: Table 'vcstagin_favela_app.user' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('23')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-28 09:02:10 --> Table 'vcstagin_favela_app.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `u`.`username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `user` `u` ON `cr`.`user_id` = `u`.`id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(228): App\Models\ReplyinfoModel->getComplaintDetails('23')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 09:13:54 --> Undefined array key "username"
+in APPPATH\Controllers\ComplaintsInfo.php on line 242.
+ 1 APPPATH\Controllers\ComplaintsInfo.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\ComplaintsInfo.php', 242)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 09:14:19 --> Undefined array key "username"
+in APPPATH\Controllers\ComplaintsInfo.php on line 242.
+ 1 APPPATH\Controllers\ComplaintsInfo.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\ComplaintsInfo.php', 242)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('23')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

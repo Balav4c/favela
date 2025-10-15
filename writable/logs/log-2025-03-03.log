@@ -1,0 +1,46 @@
+CRITICAL - 2025-03-03 03:46:52 --> Cannot use [] for reading
+in APPPATH\Controllers\ComplaintsInfo.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('22')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 05:17:08 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 59.
+ 1 APPPATH\Controllers\Login.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Login.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 05:17:09 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 59.
+ 1 APPPATH\Controllers\Login.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Login.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-03 09:59:32 --> mysqli_sql_exception: Table 'vcstagin_favela_app.console_users' doesn't exist in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('25')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('25')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-03 09:59:32 --> Table 'vcstagin_favela_app.console_users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `cu`.`cu_name` as `username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+LEFT JOIN `console_users` `cu` ON `cr`.`us_id` = `cu`.`cu_id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('25')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('25')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

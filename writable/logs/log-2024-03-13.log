@@ -1,0 +1,20 @@
+ERROR - 2024-03-13 20:46:18 --> mysqli_sql_exception: Table 'vcstagin_favela_app.payment_request' doesn't exist in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/PaymentRequestModel.php(41): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/PaymentRequest.php(141): App\Models\PaymentRequestModel->listAllPayRequest()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\PaymentRequest->listpayrequest()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-13 20:46:18 --> Table 'vcstagin_favela_app.payment_request' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/PaymentRequestModel.php(41): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/PaymentRequest.php(141): App\Models\PaymentRequestModel->listAllPayRequest()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\PaymentRequest->listpayrequest()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

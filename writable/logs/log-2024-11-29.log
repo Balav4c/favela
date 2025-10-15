@@ -1,0 +1,18 @@
+CRITICAL - 2024-11-29 11:42:50 --> file_get_contents(https://chart.googleapis.com/chart?chs=150x150&amp;cht=qr&amp;chl=https://v4cstaging.co.in/favela/visitorgatepass/access/11732880570798791&amp;choe=UTF-8): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH/Controllers/VisitorGatepass.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/VisitorGatepass.php(58): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\VisitorGatepass->createnew()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-29 11:43:25 --> file_get_contents(https://chart.googleapis.com/chart?chs=150x150&amp;cht=qr&amp;chl=https://v4cstaging.co.in/favela/visitorgatepass/access/117328806053152871&amp;choe=UTF-8): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH/Controllers/VisitorGatepass.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/VisitorGatepass.php(58): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\VisitorGatepass->createnew()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

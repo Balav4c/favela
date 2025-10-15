@@ -1,0 +1,346 @@
+CRITICAL - 2023-10-25 02:53:13 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Login.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 02:56:16 --> Undefined property: stdClass::$userid
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$userid', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 02:57:55 --> Undefined property: stdClass::$userid
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$userid', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:00:19 --> Undefined variable $config
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Login->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:09:22 --> Undefined variable $config
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Login->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:10:06 --> Undefined variable $config
+in APPPATH\Controllers\Login.php on line 35.
+ 1 APPPATH\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:17:29 --> Undefined variable $config
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $config', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Login->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:18:17 --> Undefined property: stdClass::$userid
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$userid', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:23:01 --> Undefined property: stdClass::$userid
+in APPPATH\Controllers\Login.php on line 55.
+ 1 APPPATH\Controllers\Login.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$userid', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:26:03 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:27:27 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:29:36 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 50.
+ 1 APPPATH\Controllers\Login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:29:46 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 50.
+ 1 APPPATH\Controllers\Login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:32:00 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 50.
+ 1 APPPATH\Controllers\Login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:36:18 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 50.
+ 1 APPPATH\Controllers\Login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:36:45 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 50.
+ 1 APPPATH\Controllers\Login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:40:46 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:41:45 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 03:44:50 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 04:05:44 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 04:06:33 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 26.
+ 1 APPPATH\Controllers\Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->login('fav-srm-1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 04:07:43 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 04:08:11 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 04:09:18 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 52.
+ 1 APPPATH\Controllers\Login.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 04:10:08 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 50.
+ 1 APPPATH\Controllers\Login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 04:10:53 --> Undefined variable $organisation
+in APPPATH\Views\login.php on line 23.
+ 1 APPPATH\Views\login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $organisation', 'D:\\wamp\\www\\favela\\app\\Views\\login.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\wamp\\www\\favela\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Login.php(66): view('login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:06:51 --> Undefined variable $resultArr
+in APPPATH\Controllers\Login.php on line 74.
+ 1 APPPATH\Controllers\Login.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $resultArr', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:10:02 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 27.
+ 1 APPPATH\Controllers\Login.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->login('fav-srm-1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:12:53 --> Attempt to read property "auth" on null
+in APPPATH\Controllers\Login.php on line 27.
+ 1 APPPATH\Controllers\Login.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on null', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->login('fav-srm-1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:18:09 --> Attempt to read property "auth" on string
+in APPPATH\Controllers\Login.php on line 50.
+ 1 APPPATH\Controllers\Login.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "auth" on string', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:28:47 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:29:06 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:29:37 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:30:09 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:30:59 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:31:43 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:33:03 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:33:39 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:35:29 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:41:26 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:42:28 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:44:15 --> Undefined variable $organisation
+in APPPATH\Views\login.php on line 23.
+ 1 APPPATH\Views\login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $organisation', 'D:\\wamp\\www\\favela\\app\\Views\\login.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\wamp\\www\\favela\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Login.php(67): view('login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:44:31 --> Undefined variable $organisation
+in APPPATH\Views\login.php on line 23.
+ 1 APPPATH\Views\login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $organisation', 'D:\\wamp\\www\\favela\\app\\Views\\login.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\wamp\\www\\favela\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Login.php(67): view('login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:44:36 --> Undefined variable $organisation
+in APPPATH\Views\login.php on line 23.
+ 1 APPPATH\Views\login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $organisation', 'D:\\wamp\\www\\favela\\app\\Views\\login.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\wamp\\www\\favela\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Login.php(67): view('login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:51:22 --> Undefined variable $classArr
+in APPPATH\Controllers\Login.php on line 71.
+ 1 APPPATH\Controllers\Login.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $classArr', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:51:23 --> Undefined variable $classArr
+in APPPATH\Controllers\Login.php on line 71.
+ 1 APPPATH\Controllers\Login.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $classArr', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:51:24 --> Undefined variable $classArr
+in APPPATH\Controllers\Login.php on line 71.
+ 1 APPPATH\Controllers\Login.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $classArr', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:51:24 --> Undefined variable $classArr
+in APPPATH\Controllers\Login.php on line 71.
+ 1 APPPATH\Controllers\Login.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $classArr', 'D:\\wamp\\www\\favela\\app\\Controllers\\Login.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-25 16:58:00 --> Class "App\Controllers\DashboardModel" not found
+in APPPATH\Controllers\Dashboard.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

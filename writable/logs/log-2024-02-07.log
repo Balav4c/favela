@@ -1,0 +1,126 @@
+CRITICAL - 2024-02-07 03:11:53 --> Undefined variable $us_id
+in APPPATH\Controllers\Residents.php on line 236.
+ 1 APPPATH\Controllers\Residents.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $us_id', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 236)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->addnewdoor()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 03:12:16 --> Undefined variable $us_id
+in APPPATH\Controllers\Residents.php on line 236.
+ 1 APPPATH\Controllers\Residents.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $us_id', 'D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php', 236)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->addnewdoor()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 03:13:57 --> Undefined variable $udata
+in APPPATH\Models\ResidentsModel.php on line 131.
+ 1 APPPATH\Models\ResidentsModel.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $udata', 'D:\\wamp\\www\\favela\\app\\Models\\ResidentsModel.php', 131)
+ 2 APPPATH\Controllers\Residents.php(237): App\Models\ResidentsModel->saveDoorNo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->addnewdoor()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 03:45:10 --> syntax error, unexpected token ".", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Residents.php on line 276.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Residents')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Residents')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Residents', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 03:45:31 --> syntax error, unexpected token ".", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Residents.php on line 276.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Residents')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Residents')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Residents', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 03:48:06 --> syntax error, unexpected token "\"
+in APPPATH\Controllers\Residents.php on line 276.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp\\www\\favela\\app\\Controllers\\Residents.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Residents')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Residents')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Residents', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 04:14:23 --> Too few arguments to function App\Models\ResidentsModel::deleteDoor(), 1 passed in D:\wamp\www\favela\app\Controllers\Residents.php on line 262 and exactly 2 expected
+in APPPATH\Models\ResidentsModel.php on line 140.
+ 1 APPPATH\Controllers\Residents.php(262): App\Models\ResidentsModel->deleteDoor('5')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->deleteDoor('5')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 09:59:58 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 27.
+ 1 APPPATH/Controllers/Login.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 10:02:38 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 27.
+ 1 APPPATH/Controllers/Login.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 10:03:01 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 27.
+ 1 APPPATH/Controllers/Login.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->login()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 10:04:40 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 53.
+ 1 APPPATH/Controllers/Login.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 10:04:42 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 53.
+ 1 APPPATH/Controllers/Login.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 10:04:48 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 53.
+ 1 APPPATH/Controllers/Login.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 10:04:49 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 53.
+ 1 APPPATH/Controllers/Login.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 10:04:49 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 53.
+ 1 APPPATH/Controllers/Login.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 10:05:01 --> Attempt to read property "auth" on null
+in APPPATH/Controllers/Login.php on line 53.
+ 1 APPPATH/Controllers/Login.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-07 11:40:20 --> Undefined variable $result
+in APPPATH/Controllers/Residents.php on line 164.
+ 1 APPPATH/Controllers/Residents.php(164): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Residents->verifyotp()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,198 @@
+ERROR - 2024-01-06 17:33:47 --> mysqli_sql_exception: Unknown column 'undefined' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from b...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from b...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from b...')
+#3 D:\wamp\www\favela\app\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from b...')
+#4 D:\wamp\www\favela\app\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-06 17:33:47 --> Unknown column 'undefined' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from buildings where bd_id = undefined')
+ 2 APPPATH\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-06 17:33:56 --> mysqli_sql_exception: Unknown column 'undefined' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from b...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from b...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from b...')
+#3 D:\wamp\www\favela\app\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from b...')
+#4 D:\wamp\www\favela\app\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-06 17:33:56 --> Unknown column 'undefined' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from buildings where bd_id = undefined')
+ 2 APPPATH\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-06 17:34:02 --> mysqli_sql_exception: Unknown column 'undefined' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from b...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from b...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from b...')
+#3 D:\wamp\www\favela\app\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from b...')
+#4 D:\wamp\www\favela\app\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-06 17:34:02 --> Unknown column 'undefined' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from buildings where bd_id = undefined')
+ 2 APPPATH\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-06 17:34:10 --> mysqli_sql_exception: Unknown column 'undefined' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from b...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from b...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from b...')
+#3 D:\wamp\www\favela\app\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from b...')
+#4 D:\wamp\www\favela\app\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-06 17:34:10 --> Unknown column 'undefined' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from buildings where bd_id = undefined')
+ 2 APPPATH\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-06 17:35:45 --> mysqli_sql_exception: Unknown column 'undefined' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from b...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from b...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from b...')
+#3 D:\wamp\www\favela\app\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from b...')
+#4 D:\wamp\www\favela\app\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-06 17:35:45 --> Unknown column 'undefined' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from buildings where bd_id = undefined')
+ 2 APPPATH\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-06 17:35:58 --> mysqli_sql_exception: Unknown column 'undefined' in 'where clause' in D:\wamp\www\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\wamp\www\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from b...', 0)
+#1 D:\wamp\www\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('select * from b...')
+#2 D:\wamp\www\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('select * from b...')
+#3 D:\wamp\www\favela\app\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from b...')
+#4 D:\wamp\www\favela\app\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+#5 D:\wamp\www\favela\system\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+#6 D:\wamp\www\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+#7 D:\wamp\www\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-06 17:35:58 --> Unknown column 'undefined' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\FlatsModel.php(12): CodeIgniter\Database\BaseConnection->query('select * from buildings where bd_id = undefined')
+ 2 APPPATH\Controllers\Flats.php(16): App\Models\FlatsModel->getThisFlats('undefined')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index('undefined')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 17:49:00 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 17:49:01 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 17:49:02 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 17:49:03 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 17:49:03 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 17:49:04 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 17:49:05 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 17:49:07 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 18:12:34 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 18:12:35 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 18:12:37 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 18:12:38 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-06 18:14:26 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

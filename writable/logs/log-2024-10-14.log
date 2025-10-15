@@ -1,0 +1,189 @@
+ERROR - 2024-10-14 02:42:41 --> mysqli_sql_exception: Table 'vcstagin_favela_app.flats_security' doesn't exist in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/SecurityModel.php(29): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/Securities.php(188): App\Models\SecurityModel->listAllSecurity()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-14 02:42:41 --> Table 'vcstagin_favela_app.flats_security' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/SecurityModel.php(29): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Securities.php(188): App\Models\SecurityModel->listAllSecurity()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-14 02:42:48 --> mysqli_sql_exception: Table 'vcstagin_favela_app.flats_security' doesn't exist in /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Models/SecurityModel.php(29): CodeIgniter\Database\BaseConnection->query()
+#4 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/app/Controllers/Securities.php(188): App\Models\SecurityModel->listAllSecurity()
+#5 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+#6 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/vcstagin/domains/v4cstaging.co.in/public_html/favela/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-14 02:42:48 --> Table 'vcstagin_favela_app.flats_security' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/SecurityModel.php(29): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Securities.php(188): App\Models\SecurityModel->listAllSecurity()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:47:37 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 201.
+ 1 APPPATH/Controllers/Securities.php(201): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:47:54 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 201.
+ 1 APPPATH/Controllers/Securities.php(201): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:49:38 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 201.
+ 1 APPPATH/Controllers/Securities.php(201): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:51:10 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 201.
+ 1 APPPATH/Controllers/Securities.php(201): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:52:10 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 201.
+ 1 APPPATH/Controllers/Securities.php(201): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:54:22 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 201.
+ 1 APPPATH/Controllers/Securities.php(201): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:55:20 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 202.
+ 1 APPPATH/Controllers/Securities.php(202): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:58:23 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 203.
+ 1 APPPATH/Controllers/Securities.php(203): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:59:00 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 203.
+ 1 APPPATH/Controllers/Securities.php(203): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 02:59:30 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 203.
+ 1 APPPATH/Controllers/Securities.php(203): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 03:01:55 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 203.
+ 1 APPPATH/Controllers/Securities.php(203): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 03:02:36 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 203.
+ 1 APPPATH/Controllers/Securities.php(203): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 03:04:05 --> Undefined array key ""
+in APPPATH/Controllers/Securities.php on line 204.
+ 1 APPPATH/Controllers/Securities.php(204): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Securities->listsecurities()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 06:53:45 --> file_get_contents(https://chart.googleapis.com/chart?chs=150x150&amp;cht=qr&amp;chl=https://v4cstaging.co.in/favela/visitorgatepass/access/117288888256875271&amp;choe=UTF-8): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH/Controllers/VisitorGatepass.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/VisitorGatepass.php(58): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\VisitorGatepass->createnew()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 10:51:04 --> Undefined array key ""
+in APPPATH/Controllers/Login.php on line 77.
+ 1 APPPATH/Controllers/Login.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 10:51:14 --> Undefined array key ""
+in APPPATH/Controllers/Login.php on line 77.
+ 1 APPPATH/Controllers/Login.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 10:51:19 --> Undefined array key ""
+in APPPATH/Controllers/Login.php on line 77.
+ 1 APPPATH/Controllers/Login.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 10:51:26 --> Undefined array key ""
+in APPPATH/Controllers/Login.php on line 77.
+ 1 APPPATH/Controllers/Login.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 10:51:57 --> Undefined array key ""
+in APPPATH/Controllers/Login.php on line 77.
+ 1 APPPATH/Controllers/Login.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Login->signin()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 10:56:54 --> implode(): Argument #1 ($array) must be of type array, string given
+in APPPATH/Controllers/Roles.php on line 48.
+ 1 APPPATH/Controllers/Roles.php(48): implode()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Roles->createnew()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-14 10:56:56 --> implode(): Argument #1 ($array) must be of type array, string given
+in APPPATH/Controllers/Roles.php on line 48.
+ 1 APPPATH/Controllers/Roles.php(48): implode()
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Roles->createnew()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

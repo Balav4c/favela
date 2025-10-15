@@ -1,0 +1,56 @@
+CRITICAL - 2025-04-01 06:31:06 --> Undefined array key "Authorization"
+in APPPATH\Controllers\UserMobile\Residence.php on line 22.
+ 1 APPPATH\Controllers\UserMobile\Residence.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Authorization"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Residence.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Residence->getResidences()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Residence))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-01 06:31:16 --> Undefined array key "Authorization"
+in APPPATH\Controllers\UserMobile\Notifications.php on line 59.
+ 1 APPPATH\Controllers\UserMobile\Notifications.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Authorization"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Notifications.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Notifications->processNotify()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Notifications))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-01 06:32:16 --> Undefined array key "Authorization"
+in APPPATH\Controllers\UserMobile\Residence.php on line 22.
+ 1 APPPATH\Controllers\UserMobile\Residence.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Authorization"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Residence.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Residence->getResidences()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Residence))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-01 06:32:20 --> Undefined array key "Authorization"
+in APPPATH\Controllers\UserMobile\Residence.php on line 22.
+ 1 APPPATH\Controllers\UserMobile\Residence.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Authorization"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Residence.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Residence->getResidences()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Residence))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-01 07:42:14 --> Undefined variable $fv_id
+in APPPATH\Controllers\UserMobile\Login.php on line 129.
+ 1 APPPATH\Controllers\UserMobile\Login.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fv_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-01 07:42:18 --> Undefined variable $fv_id
+in APPPATH\Controllers\UserMobile\Login.php on line 129.
+ 1 APPPATH\Controllers\UserMobile\Login.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fv_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-01 07:42:24 --> Undefined variable $fv_id
+in APPPATH\Controllers\UserMobile\Login.php on line 129.
+ 1 APPPATH\Controllers\UserMobile\Login.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fv_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-01 07:43:10 --> Undefined variable $fv_id
+in APPPATH\Controllers\UserMobile\Login.php on line 129.
+ 1 APPPATH\Controllers\UserMobile\Login.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fv_id', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\UserMobile\\Login.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserMobile\Login->verifympinapi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserMobile\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

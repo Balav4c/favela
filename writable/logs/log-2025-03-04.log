@@ -1,0 +1,121 @@
+ERROR - 2025-03-04 11:58:40 --> mysqli_sql_exception: Unknown column 'cu.cu_name' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('28')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('28')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-04 11:58:40 --> Unknown column 'cu.cu_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `cu`.`cu_name` as `username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('28')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('28')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-04 12:00:09 --> mysqli_sql_exception: Unknown column 'cu.cu_name' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('26')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('26')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-04 12:00:09 --> Unknown column 'cu.cu_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `cu`.`cu_name` as `username`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('26')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('26')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-04 12:02:20 --> Undefined array key "username"
+in APPPATH\Controllers\ComplaintsInfo.php on line 243.
+ 1 APPPATH\Controllers\ComplaintsInfo.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\ComplaintsInfo.php', 243)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('26')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-04 12:02:25 --> Undefined array key "username"
+in APPPATH\Controllers\ComplaintsInfo.php on line 243.
+ 1 APPPATH\Controllers\ComplaintsInfo.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\ComplaintsInfo.php', 243)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('26')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-04 12:07:53 --> Undefined array key "username"
+in APPPATH\Controllers\ComplaintsInfo.php on line 243.
+ 1 APPPATH\Controllers\ComplaintsInfo.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\ComplaintsInfo.php', 243)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('28')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-04 12:50:43 --> mysqli_sql_exception: Unknown column 'cr.user_name' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('26')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('26')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-04 12:50:43 --> Unknown column 'cr.user_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `cr`.`user_name`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('26')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('26')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-04 12:50:46 --> mysqli_sql_exception: Unknown column 'cr.user_name' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `ci`.`co...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`co...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`co...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`co...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ReplyinfoModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\favela\app\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('26')
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('26')
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-04 12:50:46 --> Unknown column 'cr.user_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`content`, `cr`.`reply`, `cr`.`created_on` as `reply_date`, `cr`.`user_name`
+FROM `complaintsinfo` `ci`
+LEFT JOIN `complaints_reply` `cr` ON `ci`.`cm_id` = `cr`.`cm_id`
+WHERE `ci`.`cm_id` = :ci.cm_id:', [...], false)
+ 2 APPPATH\Models\ReplyinfoModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ComplaintsInfo.php(231): App\Models\ReplyinfoModel->getComplaintDetails('26')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ComplaintsInfo->viewDetails('26')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ComplaintsInfo))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

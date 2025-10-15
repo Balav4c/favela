@@ -1,0 +1,7 @@
+CRITICAL - 2023-11-20 08:39:40 --> Undefined array key "draw"
+in APPPATH\Controllers\Flats.php on line 39.
+ 1 APPPATH\Controllers\Flats.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "draw"', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

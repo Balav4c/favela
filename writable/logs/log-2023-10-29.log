@@ -1,0 +1,13 @@
+CRITICAL - 2023-10-29 05:20:54 --> Call to undefined method App\Controllers\Dashboard::view()
+in APPPATH\Controllers\Dashboard.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 05:22:05 --> Undefined property: App\Controllers\Dashboard::$load
+in APPPATH\Controllers\Dashboard.php on line 18.
+ 1 APPPATH\Controllers\Dashboard.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard::$load', 'D:\\wamp\\www\\favela\\app\\Controllers\\Dashboard.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

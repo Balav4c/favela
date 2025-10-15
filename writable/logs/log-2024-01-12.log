@@ -1,0 +1,26 @@
+CRITICAL - 2024-01-12 07:41:20 --> Class "App\Models\RolesModel" not found
+in APPPATH\Controllers\Roles.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Roles->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-12 07:44:11 --> Undefined variable $building
+in APPPATH\Views\roles.php on line 46.
+ 1 APPPATH\Views\roles.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $building', 'D:\\wamp\\www\\favela\\app\\Views\\roles.php', 46)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\wamp\\www\\favela\\app\\Views\\roles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('roles', [], true)
+ 5 APPPATH\Controllers\Roles.php(20): view('roles')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Roles->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-12 07:45:05 --> syntax error, unexpected token ";"
+in APPPATH\Views\roles.php on line 46.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('roles', [], true)
+ 3 APPPATH\Controllers\Roles.php(20): view('roles')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Roles->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

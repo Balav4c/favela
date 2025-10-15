@@ -1,0 +1,161 @@
+CRITICAL - 2023-11-26 11:42:58 --> Undefined variable $menu
+in APPPATH\Views\flats-new.php on line 73.
+ 1 APPPATH\Views\flats-new.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'D:\\wamp\\www\\favela\\app\\Views\\flats-new.php', 73)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\wamp\\www\\favela\\app\\Views\\flats-new.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('flats-new', [], true)
+ 5 APPPATH\Controllers\Flats.php(20): view('flats-new')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 11:43:15 --> Undefined variable $template
+in APPPATH\Controllers\Flats.php on line 20.
+ 1 APPPATH\Controllers\Flats.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $template', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 12:18:22 --> Undefined array key "order"
+in APPPATH\Controllers\Flats.php on line 42.
+ 1 APPPATH\Controllers\Flats.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "order"', 'D:\\wamp\\www\\favela\\app\\Controllers\\Flats.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 14:16:13 --> Class "App\Controllers\FlatsModel" not found
+in APPPATH\Controllers\Flats.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Flats->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 14:16:43 --> syntax error, unexpected token "}"
+in APPPATH\Models\FlatsModel.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\wamp\\www\\favela\\app\\Models\\FlatsModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\FlatsModel')
+ 3 APPPATH\Controllers\Flats.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\FlatsModel')
+ 4 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Flats->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 14:16:59 --> Undefined variable $orgname
+in APPPATH\Views\common\header.php on line 194.
+ 1 APPPATH\Views\common\header.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $orgname', 'D:\\wamp\\www\\favela\\app\\Views\\common\\header.php', 194)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\wamp\\www\\favela\\app\\Views\\common\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('common/header', [], true)
+ 5 APPPATH\Controllers\Flats.php(19): view('common/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 16:09:17 --> Undefined variable $db
+in APPPATH\Models\FlatsModel.php on line 20.
+ 1 APPPATH\Models\FlatsModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\wamp\\www\\favela\\app\\Models\\FlatsModel.php', 20)
+ 2 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 16:12:26 --> Undefined variable $db
+in APPPATH\Models\FlatsModel.php on line 20.
+ 1 APPPATH\Models\FlatsModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\wamp\\www\\favela\\app\\Models\\FlatsModel.php', 20)
+ 2 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 16:36:08 --> Undefined variable $db
+in APPPATH\Models\FlatsModel.php on line 20.
+ 1 APPPATH\Models\FlatsModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\wamp\\www\\favela\\app\\Models\\FlatsModel.php', 20)
+ 2 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 16:36:56 --> Undefined variable $db
+in APPPATH\Models\FlatsModel.php on line 20.
+ 1 APPPATH\Models\FlatsModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\wamp\\www\\favela\\app\\Models\\FlatsModel.php', 20)
+ 2 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 16:37:50 --> Undefined variable $db
+in APPPATH\Models\FlatsModel.php on line 20.
+ 1 APPPATH\Models\FlatsModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\wamp\\www\\favela\\app\\Models\\FlatsModel.php', 20)
+ 2 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 16:52:49 --> Undefined variable $fileds
+in APPPATH\Models\FlatsModel.php on line 24.
+ 1 APPPATH\Models\FlatsModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileds', 'D:\\wamp\\www\\favela\\app\\Models\\FlatsModel.php', 24)
+ 2 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 16:53:08 --> Undefined variable $fileds
+in APPPATH\Models\FlatsModel.php on line 26.
+ 1 APPPATH\Models\FlatsModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fileds', 'D:\\wamp\\www\\favela\\app\\Models\\FlatsModel.php', 26)
+ 2 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 17:00:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\FlatsModel.php on line 23.
+ 1 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 17:00:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\FlatsModel.php on line 23.
+ 1 APPPATH\Controllers\Flats.php(50): App\Models\FlatsModel->createFlats([...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 17:49:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Models\FlatsModel.php on line 24.
+ 1 APPPATH\Controllers\Flats.php(74): App\Models\FlatsModel->listAllFlats('1=1', '0', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 17:52:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH\Models\FlatsModel.php on line 27.
+ 1 APPPATH\Controllers\Flats.php(74): App\Models\FlatsModel->listAllFlats('1=1', '0', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 17:52:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH\Models\FlatsModel.php on line 27.
+ 1 APPPATH\Controllers\Flats.php(74): App\Models\FlatsModel->listAllFlats('1=1', '0', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 17:54:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Models\FlatsModel.php on line 24.
+ 1 APPPATH\Controllers\Flats.php(74): App\Models\FlatsModel->listAllFlats('1=1', '0', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->listflats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:48:15 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-26 18:48:33 --> Call to undefined function App\Controllers\json_enode()
+in APPPATH\Controllers\Flats.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Flats->changeStatus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Flats))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
