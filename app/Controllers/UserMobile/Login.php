@@ -64,7 +64,7 @@ class Login extends BaseController {
 		}
 		return $this->response->setStatusCode(200)->setJSON($response);
 	}
-//backup code
+
 	public function verifympinapi(){
 
 		$json_data = $this->request->getBody();
@@ -96,47 +96,6 @@ class Login extends BaseController {
 		}
 		$this->response->setStatusCode(200)->setJSON($response)->send();
 	}
-	//verifympin with fv_id
-	// public function verifympinapi() {
-	// 	$json_data = $this->request->getBody();
-	// 	$data = json_decode($json_data, true);
-	
-	//     $phone = isset($data['phone']) ? $data['phone'] : $this->request->getPost("phone");
-	// 	$mpin = isset($data['mpin']) ? $data['mpin'] : $this->request->getPost("mpin");
-	
-		
-	// 	$user = $this->LoginModel->verifyUsermpin($phone, $mpin);
-	
-	// 	if ($user) {
-			
-	// 		$jwt = new JWT();
-	// 		$token = $jwt->encode(['user_id' => $user->uid . time()]); // Fixed encoding time()
-	//         $updateData = ['token' => $token];
-	// 		$this->LoginModel->updateUserAcc($updateData, $user->uid);
-	// 		$updatedUser = $this->LoginModel->getFvId($user->uid);
-	// 		$fv_id = $updatedUser ? $updatedUser->fv_id : null; 
-	
-	// 		// Response
-	// 		$response = [
-	// 			'status' => 200,
-	// 			'success' => true,
-	// 			'data' => $user,
-	// 			'token' => $token,
-	// 			'fv_id' => $fv_id 
-	// 		];
-	// 	} else {
-	// 		$response = [
-	// 			'status' => 500,
-	// 			'success' => false,
-	// 			'message' => 'Invalid phone or MPIN',
-	// 		];
-	// 	}
-	
-	// 	return $this->response->setStatusCode(200)->setJSON($response);
-	// }
-	
-	
-	
 	
 	public function getprofile() {
 		

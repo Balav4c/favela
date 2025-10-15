@@ -57,7 +57,6 @@ class Payments extends BaseController {
 	}
 	public function getPaymentDetails() {
 		
-		
 		$headers = $this->request->headers();
 		$token = trim(explode("Bearer" , $headers['Authorization'])[1]);
 		$json_data = $this->request->getBody();

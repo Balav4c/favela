@@ -214,168 +214,88 @@ class Residents extends BaseController {
 	// 	}
 	// 	echo json_encode(1);
 	// }
+
+public function updateuser()
+{
+        print_r($data);die;
+    $residence_method = $this->request->getPost('residence_method');
+    $user_id = $this->request->getPost('user_id'); // may be empty
 	
-	public function updateuser() {
-		$residence_method = $this->input->getPost('residence_method');
-		$fv_id = $this->session->get('fav_id');
-		$current_time = date('Y-m-d H:i:s');
+    $fv_id = $this->session->get('fav_id');
+    $current_time = date('Y-m-d H:i:s');
 
-		if ($residence_method == 'with_aadhaar') {
-			// Aadhaar verified flow
-			$data = [
-				'aadhar_no'  => $this->input->getPost('aadhaar_hd'),
-				'email_id'   => $this->input->getPost('email'),
-				'phone'      => $this->input->getPost('contactno'),
-				'c_address'  => $this->input->getPost('caddress'),
-			];
-
-			$user_id = $this->input->getPost('user_id');
-
-			if (!empty($user_id)) {
-				// Update existing user
-				$this->residentsModel->modifyUser($user_id, $data);
-			} else {
-				// Should not happen ideally — but handle safely
-				$user_id = $this->residentsModel->createUser($data);
-			}
-
-			// --- Tower/Flat relation ---
-			$checkFlatUser = $this->residentsModel->checkTowerUser($user_id, $fv_id);
-			if ($checkFlatUser->fvuserno == 0) {
-				$udata = [
-					'us_id' => $user_id,
-					'fv_id' => $fv_id,
-					'fv_registered_on' => $current_time
-				];
-				$this->residentsModel->acceptNewUser($udata);
-			} else {
-				$udata['fv_status'] = 1;
-				$this->residentsModel->updateNewUser($user_id, $fv_id, $udata);
-			}
-
-			// --- Ledger Creation ---
-			$userinfo = $this->residentsModel->getUser($user_id);
-			$ledData = [
-				'fv_id'           => $fv_id,
-				'user_id'         => $user_id,
-				'created_on'      => $current_time,
-				'account_type'    => 4,
-				'ledger_name'     => $userinfo->name,
-				'opening_balance' => 0
-			];
-
-			$checkLedger = $this->accountsModel->checkLedger($ledData['fv_id'], $ledData['user_id']);
-			if ($checkLedger->ledrow == 0) {
-				$this->accountsModel->CreateLedger($ledData);
-			}
-
-			echo json_encode(1);
-		} 
-	
-
-else {
-    // Without Aadhaar flow
-    $user_id = $this->input->getPost('user_id');
-
-    // --- Handle Profile Photo ---
-    $profilePhotoData = null;
-
-    // Case 1: Uploaded file
-    if (!empty($_FILES['profile_photo_file']['name'])) {
-        $uploadPath = FCPATH . 'uploads/profile_photos/';
-        if (!is_dir($uploadPath)) {
-            mkdir($uploadPath, 0777, true);
-        }
-
-        $fileName = time() . '_' . $_FILES['profile_photo_file']['name'];
-        $fullPath = $uploadPath . $fileName;
-
-        if (move_uploaded_file($_FILES['profile_photo_file']['tmp_name'], $fullPath)) {
-            // Save file path or binary based on DB column type
-            $profilePhotoData = file_get_contents($fullPath); // because your DB column is LONGBLOB
-        }
-    }
-    // Case 2: Captured camera image (base64)
- 
-else if (!empty($_POST['captured_image'])) {
-    $base64 = $_POST['captured_image'];
-
-    $imageData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $base64));
-
-    $uploadPath = FCPATH . 'uploads/profile_photos/';
-    if (!is_dir($uploadPath)) {
-        mkdir($uploadPath, 0777, true);
-    }
-
-    $fileName = 'captured_' . time() . '.png';
-    file_put_contents($uploadPath . $fileName, $imageData);
-
-    $profilePhotoData = $imageData;
-
-}
-
-
-    // --- Prepare user data ---
+    // Common fields
     $data = [
-        'name'            => ucwords($this->input->getPost('manual_name')),
-        'gender'          => $this->input->getPost('manual_gender'),
-        'dob'             => $this->input->getPost('manual_dob'),
-        'p_address'       => $this->input->getPost('manual_address'),
-        'c_address'       => $this->input->getPost('caddress'),
-        'email_id'        => $this->input->getPost('email'),
-        'phone'           => $this->input->getPost('contactno'),
-        'status'          => 1,
-        'aadhar_no'       => '', 
-        'id_proof'        => $this->input->getPost('idproof') ?? '',
-        'id_proof_number' => $this->input->getPost('id_proof_number') ?? ''
+        'email_id' => $this->request->getPost('email'),
+        'phone' => $this->request->getPost('contactno'),
+        'c_address' => $this->request->getPost('caddress'),
     ];
 
-    if ($profilePhotoData) {
-        $data['profile_photo'] = $profilePhotoData;
-    }
-
-    if (!empty($user_id)) {
-        $this->residentsModel->modifyUser($user_id, $data);
+    if ($residence_method === 'with_aadhaar') {
+        $aadhaar_no = $this->request->getPost('aadhaar_hd'); // Make sure this matches JS
+        if (empty($aadhaar_no) || !preg_match('/^\d{12}$/', $aadhaar_no)) {
+            return $this->response->setJSON(['error' => 'Invalid Aadhaar']);
+        }
+        $data['aadhar_no'] = $aadhaar_no;
     } else {
-        $user_id = $this->residentsModel->createUser($data);
+        $data['name'] = $this->request->getPost('manual_name');
+        $data['gender'] = $this->request->getPost('manual_gender');
+        $data['dob'] = $this->request->getPost('manual_dob');
+        $data['p_address'] = $this->request->getPost('manual_address');
+        $data['id_proof'] = $this->request->getPost('idproof');
+        $data['id_proof_number'] = $this->request->getPost('id_proof_number');
+        // Handle photo upload or capture
+        $uploadPath = FCPATH . 'uploads/profile_photos/';
+        if (!is_dir($uploadPath)) mkdir($uploadPath, 0777, true);
+
+        $file = $this->request->getFile('manual_photo');
+        if ($file && $file->isValid() && !$file->hasMoved()) {
+            $newName = 'manual_' . time() . '.' . $file->getExtension();
+            $file->move($uploadPath, $newName);
+            $data['photo'] = $newName;
+        } else {
+            $captured_image = $this->request->getPost('captured_image');
+            if (!empty($captured_image)) {
+                $imgData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $captured_image));
+                $newName = 'manual_' . time() . '.png';
+                file_put_contents($uploadPath . $newName, $imgData);
+                $data['photo'] = $newName;
+            }
+        }
     }
 
-    // --- Rest of your existing code unchanged ---
+    // Insert or Update
+    if (empty($user_id)) {
+        // $user_id = $this->residentsModel->createUser($data); // returns new ID
+        if (!$user_id) {
+            return $this->response->setJSON(['error' => 'Failed to create user']);
+        }
+    } else {
+        print_r($user_id);die;
+        // $updated = $this->residentsModel->modifyUser($user_id, $data);
+        if (!$updated) {
+            return $this->response->setJSON(['error' => 'Failed to update user']);
+        }
+    }
+
+    // Tower assignment
     $checkFlatUser = $this->residentsModel->checkTowerUser($user_id, $fv_id);
-    if ($checkFlatUser->fvuserno == 0) {
-        $udata = [
-            'us_id' => $user_id,
-            'fv_id' => $fv_id,
-            'fv_registered_on' => $current_time,
-            'fv_status' => 1
-        ];
+    if (!$checkFlatUser || $checkFlatUser->fvuserno == 0) {
+        $udata = ['us_id' => $user_id, 'fv_id' => $fv_id, 'fv_registered_on' => $current_time];
         $this->residentsModel->acceptNewUser($udata);
     } else {
-        $udata['fv_status'] = 1;
+        $udata = ['fv_status' => 1];
         $this->residentsModel->updateNewUser($user_id, $fv_id, $udata);
     }
 
-    $ledData = [
-        'fv_id'           => $fv_id,
-        'user_id'         => $user_id,
-        'created_on'      => $current_time,
-        'account_type'    => 4,
-        'ledger_name'     => $data['name'],
-        'opening_balance' => 0
-    ];
-
-    $checkLedger = $this->accountsModel->checkLedger($ledData['fv_id'], $ledData['user_id']);
-    if ($checkLedger->ledrow == 0) {
-        $this->accountsModel->CreateLedger($ledData);
-    }
-
-    echo json_encode(1);
+    return $this->response->setJSON(['success' => 1]);
 }
 
 
-	}
 
 
+
+	
 	public function changeuser() {
 		$userId = $this->input->getPost('userId');
 		$fv_id = $this->session->get('fav_id');

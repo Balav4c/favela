@@ -24,11 +24,6 @@ class LoginModel extends Model {
 					->set($data)
 					->update();
 	}
-
-	public function getFvId($user_id) {
-		return $this->db->query("select * from user_residences where us_id='".$user_id."' and fv_status = 1")->getRow();
-	}
-	
 	public function checkCurrentPin($currentMpin, $user_id) {
 		return $this->db->query("select uid from app_users where m_pin = ''".$currentMpin."' and uid=".$user_id)->getRow();
 	}

@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
+
 
     <!-- adminpro icon CSS
 		============================================ -->
@@ -39,6 +41,10 @@
     <!-- data-table CSS
 		============================================ -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+    <!-- Bootstrap JS (if using Bootstrap datepicker) -->
+   
+
+
     <!-- normalize CSS
 		============================================ -->
     <link rel="stylesheet" href="<?php echo base_url('public/css/normalize.css'); ?>">
@@ -72,7 +78,7 @@
                     <div class="f-alert">testing alert message</div>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-9 col-md-1 col-sm-1 col-xs-12 logo-menu">
+                            <div class="col-lg-10 col-md-1 col-sm-1 col-xs-12 logo-menu">
                                 <div class="header-top-menu tabl-d-n">
                                     <ul class="nav navbar-nav mai-top-nav">
                                         <li class="white-bg"><a href="javascript:void(0);"
@@ -115,6 +121,13 @@
                                                 class="nav-link mu-rt-bd <?php echo ($menu==5 ? 'mu-active' : ''); ?>"><i
                                                     class="fa fa-exclamation-circle" aria-hidden="true"></i></a>
                                         </li>
+                                        <!--Announcment-->
+                                        <li class="nav-item" title="Announcement"
+                                            data-url="<?php echo base_url('announcements'); ?>">
+                                            <a href="javascript:void(0);"
+                                                class="nav-link mu-rt-bd <?php echo ($menu==15 ? 'mu-active' : ''); ?>"><i
+                                                    class="fa-solid fa-microphone"></i></a>
+                                        </li>
                                         <li class="nav-item" title="Gate Pass"
                                             data-url="<?php echo base_url('visitorgatepass'); ?>">
                                             <a href="javascript:void(0);"
@@ -126,17 +139,15 @@
                                                 aria-expanded="false"
                                                 class="nav-link dropdown-toggle mu-rt-bd <?php echo ($menu==14 ? 'mu-active' : ''); ?>">
                                                 <i class="fa fa-th-large" aria-hidden="true"></i>
-                                                 <span
-                                                    class="angle-down-topmenu"><i
+                                                <span class="angle-down-topmenu"><i
                                                         class="fa fa-angle-down"></i></span></a>
                                             <div role="menu" class="dropdown-menu  flipInX">
                                                 <a href="<?php echo base_url('category'); ?>"
                                                     class="dropdown-item">Asset Category</a>
-                                                <a href="#"
-                                                    class="dropdown-item">Assets</a>    
+                                                <a href="#" class="dropdown-item">Assets</a>
                                             </div>
                                         </li>
-                                          
+
                                         <li class="nav-item" title="Residents Messages"
                                             data-url="<?php echo base_url('residentsmsg'); ?>">
                                             <a href="javascript:void(0);"
@@ -204,7 +215,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+                            <div class="col-lg-2 col-md-5 col-sm-6 col-xs-12">
                                 <div class="header-right-info">
                                     <ul class="nav navbar-nav mai-top-nav header-right-menu">
 

@@ -1,30 +1,14 @@
-CRITICAL - 2025-10-12 13:57:49 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
-in APPPATH\Controllers\Residents.php on line 220.
- 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
- 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
- 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2025-10-12 14:00:10 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
-in APPPATH\Controllers\Residents.php on line 220.
- 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
- 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
- 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2025-10-12 14:10:41 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
-in APPPATH\Controllers\Residents.php on line 220.
- 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
- 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
- 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2025-10-12 14:11:21 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
-in APPPATH\Controllers\Residents.php on line 220.
- 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
- 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
- 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
-CRITICAL - 2025-10-12 14:17:11 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
-in APPPATH\Controllers\Residents.php on line 220.
- 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
- 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
- 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-12 16:03:21 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 208.
+ 1 APPPATH\Controllers\Residents.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-12 16:03:22 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 208.
+ 1 APPPATH\Controllers\Residents.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,488 @@
+CRITICAL - 2025-10-13 05:00:42 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 208.
+ 1 APPPATH\Controllers\Residents.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 05:50:08 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 208.
+ 1 APPPATH\Controllers\Residents.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 06:08:09 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 298.
+ 1 APPPATH\Controllers\Residents.php(298): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 298)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 06:17:32 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 301.
+ 1 APPPATH\Controllers\Residents.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 301)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 06:27:15 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 300.
+ 1 APPPATH\Controllers\Residents.php(300): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 300)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 06:29:17 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 300.
+ 1 APPPATH\Controllers\Residents.php(300): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 300)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 06:37:43 --> Attempt to read property "name" on null
+in APPPATH\Controllers\Residents.php on line 288.
+ 1 APPPATH\Controllers\Residents.php(288): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on null', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 288)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 07:09:08 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Residents.php(264): CodeIgniter\Model->__call('insertUser', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 07:17:18 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Residents.php(264): CodeIgniter\Model->__call('insertUser', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 07:22:05 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(264): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 07:22:05 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(264): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 07:27:25 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(264): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 07:27:25 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(264): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 07:32:26 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(268): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 07:32:26 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(268): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 08:01:47 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(269): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 08:01:47 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(269): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 08:04:08 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(269): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 08:04:08 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(269): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 08:04:27 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(269): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 08:04:27 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(269): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 10:21:23 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(268): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 10:21:23 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(268): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 10:30:14 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(268): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 10:30:14 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(268): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 11:23:21 --> mysqli_sql_exception: Unknown column 'photo' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Residents.php(268): App\Models\ResidentsModel->createUser(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 11:23:21 --> Unknown column 'photo' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `app_users` (`email_id`, `phone`, `c_address`, `name`, `gender`, `dob`, `p_address`, `id_proof`, `id_proof_number`, `photo`) VALUES (:email_id:, :phone:, :c_address:, :name:, :gender:, :dob:, :p_address:, :id_proof:, :id_proof_number:, :photo:)', [...], false)
+ 2 APPPATH\Models\ResidentsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Residents.php(268): App\Models\ResidentsModel->createUser([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 12:02:38 --> Undefined variable $data
+in APPPATH\Controllers\Residents.php on line 220.
+ 1 APPPATH\Controllers\Residents.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 220)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 12:09:57 --> Undefined variable $data
+in APPPATH\Controllers\Residents.php on line 220.
+ 1 APPPATH\Controllers\Residents.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Residents.php', 220)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Residents->updateuser()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Residents))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 14:05:36 --> Class "App\Models\AnnouncementsModel" not found
+in APPPATH\Controllers\Announcements.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Announcements->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 14:19:59 --> Undefined variable $building
+in APPPATH\Views\announcement.php on line 44.
+ 1 APPPATH\Views\announcement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $building', 'C:\\xampp\\htdocs\\favela\\app\\Views\\announcement.php', 44)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\favela\\app\\Views\\announcement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('announcement', [], true)
+ 5 APPPATH\Controllers\Announcements.php(29): view('announcement')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 15:18:53 --> Class "App\Models\AnnouncementsModel" not found
+in APPPATH\Controllers\Announcements.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Announcements->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 15:19:37 --> Class "App\Models\AnnouncementsModel" not found
+in APPPATH\Controllers\Announcements.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Announcements->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 15:19:40 --> Class "App\Models\AnnouncementsModel" not found
+in APPPATH\Controllers\Announcements.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Announcements->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:24:36 --> Undefined property: stdClass::$filterflatnos
+in APPPATH\Controllers\Announcements.php on line 123.
+ 1 APPPATH\Controllers\Announcements.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$filterflatnos', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->listannouncement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:25:23 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 53.
+ 1 APPPATH\Controllers\Announcements.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:25:34 --> Undefined property: stdClass::$filterflatnos
+in APPPATH\Controllers\Announcements.php on line 123.
+ 1 APPPATH\Controllers\Announcements.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$filterflatnos', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->listannouncement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:27:56 --> Undefined property: stdClass::$filterflatnos
+in APPPATH\Controllers\Announcements.php on line 123.
+ 1 APPPATH\Controllers\Announcements.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$filterflatnos', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->listannouncement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:28:12 --> Undefined property: stdClass::$filterflatnos
+in APPPATH\Controllers\Announcements.php on line 123.
+ 1 APPPATH\Controllers\Announcements.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$filterflatnos', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->listannouncement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:30:25 --> Undefined property: stdClass::$filterflatnos
+in APPPATH\Controllers\Announcements.php on line 123.
+ 1 APPPATH\Controllers\Announcements.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$filterflatnos', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->listannouncement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:31:15 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 53.
+ 1 APPPATH\Controllers\Announcements.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:32:52 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 53.
+ 1 APPPATH\Controllers\Announcements.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:33:34 --> Undefined property: stdClass::$filterflatnos
+in APPPATH\Controllers\Announcements.php on line 123.
+ 1 APPPATH\Controllers\Announcements.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$filterflatnos', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->listannouncement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:35:45 --> Undefined property: stdClass::$filterflatnos
+in APPPATH\Controllers\Announcements.php on line 123.
+ 1 APPPATH\Controllers\Announcements.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$filterflatnos', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->listannouncement()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:36:03 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 53.
+ 1 APPPATH\Controllers\Announcements.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:38:24 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 53.
+ 1 APPPATH\Controllers\Announcements.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:40:08 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 53.
+ 1 APPPATH\Controllers\Announcements.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:41:18 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 53.
+ 1 APPPATH\Controllers\Announcements.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:42:10 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 53.
+ 1 APPPATH\Controllers\Announcements.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:49:46 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 58.
+ 1 APPPATH\Controllers\Announcements.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 16:56:10 --> Undefined variable $announc
+in APPPATH\Controllers\Announcements.php on line 58.
+ 1 APPPATH\Controllers\Announcements.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $announc', 'C:\\xampp\\htdocs\\favela\\app\\Controllers\\Announcements.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 17:01:35 --> mysqli_sql_exception: Unknown column 'announc_date' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\AnnouncementsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Announcements.php(70): App\Models\AnnouncementsModel->createAnnouncement(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 17:01:35 --> Unknown column 'announc_date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `announcements` (`fv_id`, `subject`, `announcements`, `announc_date`, `created_on`, `created_by`) VALUES (:fv_id:, :subject:, :announcements:, :announc_date:, :created_on:, :created_by:)', [...], false)
+ 2 APPPATH\Models\AnnouncementsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Announcements.php(70): App\Models\AnnouncementsModel->createAnnouncement([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-10-13 17:01:54 --> mysqli_sql_exception: Unknown column 'announc_date' in 'field list' in C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\favela\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\favela\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\favela\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\favela\app\Models\AnnouncementsModel.php(28): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\favela\app\Controllers\Announcements.php(70): App\Models\AnnouncementsModel->createAnnouncement(Array)
+#6 C:\xampp\htdocs\favela\system\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+#7 C:\xampp\htdocs\favela\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+#8 C:\xampp\htdocs\favela\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\favela\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-10-13 17:01:54 --> Unknown column 'announc_date' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `announcements` (`fv_id`, `subject`, `announcements`, `announc_date`, `created_on`, `created_by`) VALUES (:fv_id:, :subject:, :announcements:, :announc_date:, :created_on:, :created_by:)', [...], false)
+ 2 APPPATH\Models\AnnouncementsModel.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Announcements.php(70): App\Models\AnnouncementsModel->createAnnouncement([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->createnew()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-13 17:18:41 --> Undefined variable $subject
+in APPPATH\Views\announcement.php on line 44.
+ 1 APPPATH\Views\announcement.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subject', 'C:\\xampp\\htdocs\\favela\\app\\Views\\announcement.php', 44)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\favela\\app\\Views\\announcement.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('announcement', [], true)
+ 5 APPPATH\Controllers\Announcements.php(29): view('announcement')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Announcements->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Announcements))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

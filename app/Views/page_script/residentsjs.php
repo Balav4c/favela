@@ -3,19 +3,6 @@ var residentslist;
 var aadharno;
 
 function verifyAadhaar() {
-    var aadhaarInput = $('#aadhaar_no').val().trim();
-
-    // === FRONT-END VALIDATION ===
-    if (aadhaarInput === '') {
-        initAlert("Please enter your Aadhaar number before verifying.", 0);
-        return false; // stop further execution
-    }
-
-    // Optional: Validate Aadhaar length (should be 12 digits)
-    if (!/^\d{12}$/.test(aadhaarInput)) {
-        initAlert("Invalid Aadhaar number format. Please enter 12 digits.", 0);
-        return false;
-    }
     var url = baseUrl + "residents/verifyaadhaar";
     var aadhno = btoa($('#aadhaar_no').val());
     $.post(url, {
@@ -216,7 +203,7 @@ function verifyAadhaar() {
                                                                 ) {
                                                                     if (
                                                                         resp
-                                                                    ) {
+                                                                        ) {
                                                                         $('.c-userdetails')
                                                                             .hide();
                                                                         $('.res-contact')
@@ -272,50 +259,6 @@ function statcheck(el) {
     }, 'json');
 }
 
-// function userDetails(us_id) {
-//     if (us_id) {
-//         var url = baseUrl + "residents/userDetails";
-//         $.post(url, {
-//             us_id
-//         }, function(data) {
-//             if (data) {
-//                 $('.aadhaar-card-info').hide();
-//                 $('.inst-info').hide();
-//                 $('.c-userdetails').show();
-//                 $('.close-details').show();
-//                 $('.res-contact').show();
-//                 $('.cname').html(data.name);
-//                 $('.aadharno').html(data.aadhar_no);
-//                 $('.cgender').html(data.gender);
-//                 $('.cdob').html(data.dob);
-//                 $('.caddress').html(data.p_address);
-//                 $('.c-profilepic').find('img').attr('src', data.profile_photo);
-//                 //$('.c-profilepic').find('img').attr('src',"data:image/jpeg;base64,"+verifyresp.result.photo_link);
-//                 $('#email').val(data.email_id);
-//                 $('#contactno').val(data.phone);
-//                 $('#caddress').val(data.c_address);
-//                 $('#user_id').val(data.uid);
-//                 $('#aadhaar_hd').val(data.aadhar_no);
-
-//                 $('#close-resident').click(function() {
-//                     $('.aadhaar-card-info').show();
-//                     $('.inst-info').show();
-//                     $('.c-userdetails').hide();
-//                     $('.close-details').hide();
-//                     $('.res-contact').hide();
-//                     $('#email').val('');
-//                     $('#contactno').val('');
-//                     $('#caddress').val('');
-//                     $('#user_id').val('');
-//                     $('#aadhaar_hd').val('');
-//                 });
-//             } else {
-//                 initAlert("User not found in the system", 0);
-//             }
-//         }, 'json');
-//     }
-// }
-
 function userDetails(us_id) {
     if (us_id) {
         var url = baseUrl + "residents/userDetails";
@@ -323,113 +266,42 @@ function userDetails(us_id) {
             us_id
         }, function(data) {
             if (data) {
-                // Hide all common sections first
-                $('.c-userdetails').hide();
-                $('.close-details').show();
+                $('.aadhaar-card-info').hide();
                 $('.inst-info').hide();
+                $('.c-userdetails').show();
+                $('.close-details').show();
                 $('.res-contact').show();
+                $('.cname').html(data.name);
+                $('.aadharno').html(data.aadhar_no);
+                $('.cgender').html(data.gender);
+                $('.cdob').html(data.dob);
+                $('.caddress').html(data.p_address);
+                $('.c-profilepic').find('img').attr('src', data.profile_photo);
+                //$('.c-profilepic').find('img').attr('src',"data:image/jpeg;base64,"+verifyresp.result.photo_link);
+                $('#email').val(data.email_id);
+                $('#contactno').val(data.phone);
+                $('#caddress').val(data.c_address);
+                $('#user_id').val(data.uid);
+                $('#aadhaar_hd').val(data.aadhar_no);
 
-                // Prefill contact info
-                $('#email').val(data.email_id || '');
-                $('#contactno').val(data.phone || '');
-                $('#caddress').val(data.c_address || '');
-                $('#user_id').val(data.uid || '');
-
-                // Check if Aadhaar is available 
-                if (data.aadhar_no && data.aadhar_no !== '') {
-                    //  Show With Aadhaar section
-                    $('input[name="residence_method"][value="with_aadhaar"]').prop('checked', true);
-                    $('.aadhaar-card-info').hide();
-                    $('.c-userdetails').show();
-                    $('.manual-details').hide();
-
-
-                    // Prefill Aadhaar info
-                    $('#aadhaar_no').val(data.aadhar_no);
-                    $('#aadhaar_hd').val(data.aadhar_no);
-                    $('.cname').html(data.name);
-                    $('.aadharno').html(data.aadhar_no);
-                    $('.cgender').html(data.gender);
-                    $('.cdob').html(data.dob);
-                    $('.caddress').html(data.p_address);
-                    $('.c-profilepic img').attr('src', data.profile_photo || 'assets/img/default-user.png');
-                } else {
-                    // Show Without Aadhaar section
-                    $('input[name="residence_method"][value="without_aadhaar"]').prop('checked', true);
-                    $('.aadhaar-card-info').hide();
-                    $('.manual-details').show();
-
-                    // Prefill manual fields
-                    $('#manual_name').val(data.name || '');
-                    $('#manual_gender').val(data.gender || '');
-                    $('#manual_dob').val(data.dob || '');
-                    $('#manual_address').val(data.p_address || '');
-                    $('.c-profilepic img').attr('src', data.profile_photo || 'assets/img/default-user.png');
-                    // --- Handle ID Proof prefill correctly ---
-                    if (data.id_proof) {
-                        // Set dropdown without triggering change immediately
-                        $('#idProof').val(data.id_proof);
-
-                        // Manually update label and placeholder (same logic as your change event)
-                        const $label = $('#idProofLabel');
-                        const $inputGroup = $('.id-proof-input');
-                        const $input = $('#idProofNumber');
-
-                        let labelText = '';
-                        let placeholderText = '';
-
-                        switch (data.id_proof) {
-                            case 'pan_card':
-                                labelText = 'Enter PAN Card Number';
-                                placeholderText = 'e.g. ABCDE1234F';
-                                break;
-                            case 'vote_id':
-                                labelText = 'Enter Voter ID Number';
-                                placeholderText = 'e.g. TN/12/123/456789';
-                                break;
-                            case 'driving_license':
-                                labelText = 'Enter Driving License Number';
-                                placeholderText = 'e.g. TN09 20220012345';
-                                break;
-                            default:
-                                labelText = '';
-                                placeholderText = '';
-                        }
-
-                        // Show and fill the field correctly
-                        $label.text(labelText);
-                        $input.attr('placeholder', placeholderText);
-                        $input.val(data.id_proof_number || '');
-                        $inputGroup.show();
-                    } else {
-                        // No ID proof, hide the field
-                        $('.id-proof-input').hide();
-                        $('#idProofNumber').val('');
-                    }
-
-                }
-
-                // --- Show close button and define its action ---
-                $('#close-resident').off('click').on('click', function() {
+                $('#close-resident').click(function() {
                     $('.aadhaar-card-info').show();
                     $('.inst-info').show();
                     $('.c-userdetails').hide();
                     $('.close-details').hide();
                     $('.res-contact').hide();
-
-                    // Reset all fields
-                    $('#email, #contactno, #caddress, #user_id, #aadhaar_hd, #aadhaar_no, #manual_name, #manual_gender, #manual_dob, #manual_address, #idProofNumber')
-                        .val('');
-                    $('#idProof').val('');
+                    $('#email').val('');
+                    $('#contactno').val('');
+                    $('#caddress').val('');
+                    $('#user_id').val('');
+                    $('#aadhaar_hd').val('');
                 });
-
             } else {
                 initAlert("User not found in the system", 0);
             }
         }, 'json');
     }
 }
-
 
 function addNewDoor() {
     var doorno = $('#doorno').val();
@@ -533,25 +405,9 @@ $(document).ready(function() {
             e.preventDefault();
         }
     });
-    // $('#saveUser').click(function() {
-    //     var saveUrl = baseUrl + "residents/updateuser";
-    //     $('#aadharno').val(aadharno);
-    //     $.post(saveUrl, $('#createresidents').serialize(), function(data) {
-    //         if (data == 1) {
-    //             initAlert("Resident details saved successfully!", 1);
-    //             $('.c-userdetails').hide();
-    //             $('.res-contact').hide();
-    //             $('.inst-info').show();
-    //             $('.aadhaar-card-info').show();
-    //             residentslist.ajax.reload();
-    //         } else {
-    //             initAlert(
-    //                 "Cant save the details at the moment. Something went wrong. Please contact support.!",
-    //                 1);
-    //         }
-    //     }, 'json');
-    // });
-    $('#saveUser').click(function() {
+    $('#saveUser').click(function(e) {
+        e.preventDefault();
+
         var saveUrl = baseUrl + "residents/updateuser";
         var residenceMethod = $('input[name="residence_method"]:checked').val();
         var user_id = $('#user_id').val().trim();
@@ -565,41 +421,31 @@ $(document).ready(function() {
             var idproof = $('#idProof').val();
             var id_proof_number = $('#idProofNumber').val().trim();
 
-            // Check required fields
-            if (
-                manual_name === '' ||
-                manual_gender === '' ||
-                manual_dob === '' ||
-                manual_address === '' ||
-                idproof === '' ||
-                id_proof_number === ''
-            ) {
+            if (!manual_name || !manual_gender || !manual_dob || !manual_address || !idproof || !
+                id_proof_number) {
                 initAlert("Please fill in all required fields.", 0);
                 return false;
             }
 
-            // --- ID Proof Specific Validation ---
+            // --- ID Proof Validation ---
             let pattern, errorMsg;
-
             switch (idproof) {
                 case 'pan_card':
-                    pattern = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/; // PAN: ABCDE1234F
+                    pattern = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
                     errorMsg = "Invalid PAN Card Number. Format: ABCDE1234F";
                     break;
                 case 'vote_id':
-                    pattern = /^[A-Z]{2}\/[0-9]{2}\/[0-9]{3}\/[0-9]{6}$/; // Example: TN/12/123/456789
+                    pattern = /^[A-Z]{2}\/[0-9]{2}\/[0-9]{3}\/[0-9]{6}$/;
                     errorMsg = "Invalid Voter ID Number. Format: TN/12/123/456789";
                     break;
                 case 'driving_license':
-                    pattern = /^[A-Z]{2}[0-9]{2}\s?[0-9]{11}$/; // Example: TN09 20220012345
+                    pattern = /^[A-Z]{2}[0-9]{2}\s?[0-9]{11}$/;
                     errorMsg = "Invalid Driving License Number. Format: TN09 20220012345";
                     break;
-                default:
-                    pattern = null;
             }
 
             if (pattern && !pattern.test(id_proof_number)) {
-                initAlert(errorMsg, 0); // Show validation error
+                initAlert(errorMsg, 0);
                 return false;
             }
         }
@@ -607,127 +453,73 @@ $(document).ready(function() {
         // --- Validation for "With Aadhaar" ---
         if (residenceMethod === 'with_aadhaar') {
             var aadhaar_no = $('#aadhaar_hd').val().trim();
-            if (aadhaar_no === '') {
+            if (!aadhaar_no) {
                 initAlert("Please verify Aadhaar before saving.", 0);
                 return false;
             }
-            // Optional: Aadhaar number format check (12 digits)
             if (!/^\d{12}$/.test(aadhaar_no)) {
                 initAlert("Invalid Aadhaar number. It must be 12 digits.", 0);
                 return false;
             }
         }
 
-        // --- Proceed to Save ---
-        $.post(saveUrl, $('#createresidents').serialize(), function(data) {
-            if (data == 1) {
-                initAlert("Resident details saved successfully!", 1);
+		debugger;
+        // --- Prepare FormData (includes file uploads and captured image) ---
+        var formData = new FormData($('#createresidents')[0]);
+		var form = document.getElementById('createresidents');
+    	var formData1 = new FormData(form);
 
-                // If new user → reset form
-                if (user_id === '' || user_id === null) {
-                    $('#createresidents')[0].reset();
-                    $('input[name="residence_method"][value="' + residenceMethod + '"]').prop(
-                        'checked', true);
-                    $('.c-userdetails').hide();
-                    $('.res-contact').show();
-                    $('.manual-details').show();
-                    $('.inst-info').hide();
-                    $('.aadhaar-card-info').hide();
+
+        // --- AJAX call ---
+        $.ajax({
+            url: saveUrl,
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            dataType: 'json',
+            success: function(data) {
+                if (data == 1) {
+                    initAlert("Resident details saved successfully!", 1);
+
+                    // Reset form if it was a new user
+                    if (!user_id) {
+                        $('#createresidents')[0].reset();
+                        $('#user_id').val(''); // ensure hidden field cleared
+                        $('input[name="residence_method"][value="' + residenceMethod + '"]')
+                            .prop('checked', true);
+                        $('.manual-details').hide();
+                        $('.aadhaar-card-info').hide();
+                        $('.res-contact').show();
+                        $('.inst-info').hide();
+                        $('.c-userdetails').hide();
+                    }
+
+                    // Reload DataTable if exists
+                    if (typeof residentslist !== 'undefined') {
+                        residentslist.ajax.reload(null, false);
+                    }
+                } else if (data.error) {
+                    initAlert(data.error, 0);
+                } else {
+                    initAlert("Can't save details at the moment. Please contact support!",
+                        3);
                 }
-
-                // Reload DataTable
-                residentslist.ajax.reload(null, false);
-
-            } else {
-                initAlert(
-                    "Can't save the details at the moment. Something went wrong. Please contact support!",
-                    3
-                );
+            },
+            error: function(xhr, status, error) {
+                console.error("Error saving user:", xhr.responseText || error);
+                initAlert("Server error: " + (xhr.responseText || error), 3);
             }
-        }, 'json');
+        });
     });
 
-    // $('#saveUser').click(function() {
-    //     var saveUrl = baseUrl + "residents/updateuser";
-    //     var residenceMethod = $('input[name="residence_method"]:checked').val();
-    //     var user_id = $('#user_id').val().trim();
 
-    //     // Validate fields (same as your existing code)
-    //     if (residenceMethod === 'without_aadhaar') {
-    //         var manual_name = $('#manual_name').val().trim();
-    //         var manual_gender = $('#manual_gender').val();
-    //         var manual_dob = $('#manual_dob').val();
-    //         var manual_address = $('#manual_address').val().trim();
-    //         var idproof = $('#idProof').val();
-    //         var id_proof_number = $('#idProofNumber').val().trim();
-
-    //         if (
-    //             manual_name === '' ||
-    //             manual_gender === '' ||
-    //             manual_dob === '' ||
-    //             manual_address === '' ||
-    //             idproof === '' ||
-    //             id_proof_number === ''
-    //         ) {
-    //             initAlert("Please fill in all required fields.", 0);
-    //             return false;
-    //         }
-    //     }
-
-    //     if (residenceMethod === 'with_aadhaar') {
-    //         var aadhaar_no = $('#aadhaar_hd').val().trim();
-    //         if (aadhaar_no === '') {
-    //             initAlert("Please verify Aadhaar before saving.", 0);
-    //             return false;
-    //         }
-    //         if (!/^\d{12}$/.test(aadhaar_no)) {
-    //             initAlert("Invalid Aadhaar number. It must be 12 digits.", 0);
-    //             return false;
-    //         }
-    //     }
-
-    //     // --- Create FormData object ---
-    //     var formData = new FormData($('#createresidents')[0]);
-
-    //     // Check if user uploaded or captured a photo
-    //     var uploadedFile = $('#upload_photo')[0].files[0];
-    //     var capturedImage = $('#captured_image').val();
-
-    //     if (uploadedFile) {
-    //         formData.append('profile_photo_file', uploadedFile);
-    //     } else if (capturedImage !== '') {
-    //         formData.append('captured_image', capturedImage);
-    //     }
-
-    //     $.ajax({
-    //         url: saveUrl,
-    //         type: 'POST',
-    //         data: formData,
-    //         contentType: false,
-    //         processData: false,
-    //         dataType: 'json',
-    //         success: function(data) {
-    //             if (data == 1) {
-    //                 initAlert("Resident details saved successfully!", 1);
-    //                 $('#createresidents')[0].reset();
-    //                 residentslist.ajax.reload(null, false);
-    //             } else {
-    //                 initAlert(
-    //                     "Can't save the details at the moment. Please contact support!",
-    //                     3);
-    //             }
-    //         },
-    //         error: function() {
-    //             initAlert("Error occurred while saving user details.", 3);
-    //         }
-    //     });
-    // });
-
-
-
-
-
-
+    // --- Close form with ESC key ---
+    $('body').keydown(function(e) {
+        if (e.keyCode == 27) {
+            $('.right-slider').slideUp();
+        }
+    });
 
     $("body").keydown(function(e) {
         var AcckeyCode = e.keyCode || e.which;
@@ -739,7 +531,7 @@ $(document).ready(function() {
 });
 
 
-
+//Bala***/
 
 $(document).ready(function() {
     function toggleSections() {
@@ -834,73 +626,5 @@ $('input[name="residence_method"]').change(function() {
         $('#aadhaar_no, #aadhaar_hd').val('');
         $('#email, #contactno, #caddress').val('');
     }
-});
-
-
-// --- For upload preview ---
-
-document.getElementById('upload_photo').addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const preview = document.getElementById('uploadPreview');
-            preview.src = e.target.result;
-            preview.style.display = 'block';
-        };
-        reader.readAsDataURL(file);
-    }
-});
-
-// --- Camera + Delete setup ---
-const openCameraBtn = document.getElementById('openCamera');
-const cameraPreview = document.getElementById('cameraPreview');
-const capturePhotoBtn = document.getElementById('capturePhoto');
-const capturedCanvas = document.getElementById('capturedCanvas');
-const capturedImageInput = document.getElementById('captured_image');
-const deletePhotoBtn = document.getElementById('deletePhoto');
-let stream;
-
-openCameraBtn.addEventListener('click', async () => {
-    try {
-        stream = await navigator.mediaDevices.getUserMedia({
-            video: true
-        });
-        cameraPreview.srcObject = stream;
-        cameraPreview.style.display = 'block';
-        capturePhotoBtn.style.display = 'inline-block';
-        capturedCanvas.style.display = 'none';
-        deletePhotoBtn.style.display = 'none';
-    } catch (err) {
-        alert('Camera access denied or unavailable.');
-        console.error(err);
-    }
-});
-
-capturePhotoBtn.addEventListener('click', () => {
-    const context = capturedCanvas.getContext('2d');
-    capturedCanvas.width = cameraPreview.videoWidth;
-    capturedCanvas.height = cameraPreview.videoHeight;
-    context.drawImage(cameraPreview, 0, 0, cameraPreview.videoWidth, cameraPreview.videoHeight);
-    capturedCanvas.style.display = 'block';
-    deletePhotoBtn.style.display = 'inline-block';
-
-    // Stop the camera stream
-    stream.getTracks().forEach(track => track.stop());
-    cameraPreview.style.display = 'none';
-    capturePhotoBtn.style.display = 'none';
-
-    // Save base64 image
-    capturedImageInput.value = capturedCanvas.toDataURL('image/png');
-});
-
-// --- Delete photo logic ---
-deletePhotoBtn.addEventListener('click', () => {
-    capturedCanvas.style.display = 'none';
-    deletePhotoBtn.style.display = 'none';
-    capturedImageInput.value = '';
-
-    // Optionally allow retaking photo
-    openCameraBtn.style.display = 'inline-block';
 });
 </script>

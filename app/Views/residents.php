@@ -32,7 +32,7 @@
 <div class="welcome-adminpro-area">
     <div class="container-fluid">
         <div class="row">
-            <form name="createresidents" id="createresidents" method="post">
+            <form name="createresidents" id="createresidents" method="post" enctype="multipart/form-data">
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="welcome-wrapper shadow-reset res-mg-t mg-b-30">
@@ -60,44 +60,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-6">
-                                <div class="form-group text-center">
-                                    <label><strong>Upload or Take Photo</strong></label><br>
-
-                                    <!-- Upload Option -->
-                                    <input type="file" accept="image/*" id="upload_photo" name="upload_photo"
-                                        class="form-control mb-3" style="max-width:250px; margin:auto;" />
-                                    <img id="uploadPreview" src="" alt="Uploaded Photo"
-                                        style="display:none; margin-top:10px; max-width:200px; border-radius:8px;" />
-
-                                    <hr>
-
-                                    <!-- Live Camera Option -->
-                                    
-                                    <button type="button" class="btn btn-primary" id="openCamera">📸 Take
-                                        Photo</button><br>
-
-                                    <video id="cameraPreview" autoplay
-                                        style="display:none; margin-top:10px; max-width:250px; border-radius:10px;"></video><br>
-
-                                    <button type="button" id="capturePhoto" class="btn btn-success mt-2"
-                                        style="display:none;">Capture</button>
-                                    <canvas id="capturedCanvas"
-                                        style="display:none; margin-top:10px; max-width:250px; border-radius:8px;"></canvas>
-
-                                    <!-- Delete button -->
-                                    <button type="button" id="deletePhoto" class="btn btn-danger mt-2"
-                                        style="display:none;">🗑 Delete Photo</button>
-
-                                    <!-- Hidden field for captured image -->
-                                    <input type="hidden" name="captured_image" id="captured_image">
-
-                                </div>
-                            </div>
-
-
-
                         </div>
 
 
@@ -172,6 +134,39 @@
                                         <label>Address</label>
                                         <textarea class="form-control" name="manual_address" id="manual_address"
                                             rows="3" placeholder="Enter full address"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group text-center">
+                                        <label><strong>Upload or Take Photo</strong></label><br>
+
+                                        <!-- Upload Option -->
+                                        <input type="file" accept="image/*" id="manual_photo" name="manual_photo"
+                                            class="form-control mb-3" style="max-width:250px; margin:auto;" />
+                                        <img id="uploadPreview" src="" alt="Uploaded Photo"
+                                            style="display:none; margin-top:10px; max-width:200px; border-radius:8px;" />
+                                            <p class="m-0 p-0"> Or </p>
+                                        <!-- Live Camera Option -->
+
+                                        <button type="button" class="btn btn-primary" id="openCamera">📸 Take
+                                            Photo</button><br>
+
+                                        <video id="cameraPreview" autoplay
+                                            style="display:none; margin-top:10px; max-width:250px; border-radius:10px;"></video><br>
+
+                                        <button type="button" id="capturePhoto" class="btn btn-success mt-2"
+                                            style="display:none;">Capture</button>
+                                        <canvas id="capturedCanvas"
+                                            style="display:none; margin-top:10px; max-width:250px; border-radius:8px;"></canvas>
+
+                                        <!-- Delete button -->
+                                        <button type="button" id="deletePhoto" class="btn btn-danger mt-2"
+                                            style="display:none;">🗑 Delete Photo</button>
+
+                                        <!-- Hidden field for captured image -->
+                                        <input type="hidden" name="captured_image" id="captured_image">
+
                                     </div>
                                 </div>
                             </div>

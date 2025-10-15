@@ -21,20 +21,14 @@ class Residence extends BaseController {
 		$headers = $this->request->headers();
 		$token = trim(explode("Bearer" , $headers['Authorization'])[1]);
 		$json_data = $this->request->getBody();
-		
 		$data = json_decode($json_data, true);
-		
-		
 		$user_id = isset($data['uid']) ? $data['uid'] : $this->request->getPost("uid");
-		
 		$tokencheck = $this->TokenModel->verifyToken($token, $user_id);
-		
 		if($tokencheck) {
 			
 			if($user_id) {
 				
 				$getOrgs = $this->ResidenceModel->getOrgsList($user_id);
-				
 				if($getOrgs) {
 					$OrgsArr = array();
 					foreach($getOrgs as $orgs) {

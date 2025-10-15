@@ -52,6 +52,10 @@ $routes->get('paymentrequest/(:any)', 'PaymentRequest::index/$1');
 //Complaints & Informations
 $routes->get('complaintsinfo', 'ComplaintsInfo::index');
 $routes->get('complaintsinfo/(:any)', 'ComplaintsInfo::index/$1');
+
+//Announcement
+$routes->get('announcements', 'Announcements::index');
+$routes->get('announcements/(:any)', 'Announcements::index/$1');
 //Gatepass
 $routes->get('visitorgatepass/access/(:any)', 'VisitorGatepass::access/$1');
 $routes->get('visitorgatepass', 'VisitorGatepass::index');
@@ -177,6 +181,16 @@ $routes->post('category/delete', 'Category::deleteCategory');
 $routes->post('subcategory/delete', 'Category::deleteSubcategory');
 $routes->post('category/getDiminishRate', 'Category::getDiminishRate');
 
+//Announcements
+
+$routes->post('announcements/listannouncement', 'Announcements::listannouncement');
+$routes->post('announcements/createnew', 'Announcements::createnew');
+$routes->post('announcements/changeStatus', 'Announcements::changeStatus');
+$routes->post('announcements/deleteAnnouncement/(:any)', 'Announcements::deleteAnnouncement/$1');
+$routes->post('announcements/toggleStatus', 'Announcements::toggleStatus');
+
+
+
 /**********Bala Routes End Here *************/
 
 
@@ -206,4 +220,3 @@ $routes->post('usermobile/payments/updatePayment', 'UserMobile\Payments::updateP
 $routes->post('usermobile/notifications/getnotifications', 'UserMobile\Notifications::getnotifications');
 $routes->post('usermobile/notifications/processNotify', 'UserMobile\Notifications::processNotify');
 
- 
