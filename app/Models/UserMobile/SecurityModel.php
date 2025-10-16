@@ -8,7 +8,7 @@ class SecurityModel extends Model
     protected $table = 'security';
     protected $primaryKey = 'sc_id';
     protected $allowedFields = [
-        'fv_id', 'security_name', 'security_phone', 'mpin', 'id_proof', 'id_proof_no', 
+         'security_name', 'security_phone', 'mpin', 'id_proof', 'id_proof_no', 
         'status', 'feedback', 'security_company', 'security_company_address', 'token'
     ];
 
