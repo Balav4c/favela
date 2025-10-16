@@ -220,3 +220,21 @@ $routes->post('usermobile/payments/updatePayment', 'UserMobile\Payments::updateP
 $routes->post('usermobile/notifications/getnotifications', 'UserMobile\Notifications::getnotifications');
 $routes->post('usermobile/notifications/processNotify', 'UserMobile\Notifications::processNotify');
 
+
+//complaints
+$routes->post('usermobile/complaints/getcomplaints', 'UserMobile\Complaints::getComplaints');
+$routes->post('usermobile/complaints/savecomplaints','UserMobile\Complaints::saveComplaints');
+ 
+ 
+//gatepass
+$routes->post('usermobile/gatepass/getgatepass','UserMobile\VisitorGatepass::getGatepass');
+$routes->post('usermobile/gatepass/savegatepass','UserMobile\VisitorGatepass::createnew');
+ 
+ 
+
+// Announcements
+$routes->post('usermobile/announcements/getAnnouncements', 'UserMobile\Announcement::getAnnouncements');
+ 
+// Mark In Mark Out
+$routes->post('usermobile/security/attendance', 'UserMobile\SecurityAttendance::recordAttendance');
+
