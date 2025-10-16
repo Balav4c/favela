@@ -237,4 +237,7 @@ $routes->post('usermobile/announcements/getAnnouncements', 'UserMobile\Announcem
  
 // Mark In Mark Out
 $routes->post('usermobile/security/attendance', 'UserMobile\SecurityAttendance::recordAttendance');
+$routes->post('usermobile/security/creatempin', 'UserMobile\Security::createMpin');
+$routes->post('usermobile/security/login', 'UserMobile\Security::verifympinapi');
+
 
