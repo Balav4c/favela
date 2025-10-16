@@ -53,11 +53,16 @@
     </div>-->
 </body>
 <!-- jQuery -->
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- jquery ============================================ -->
-<!-- Bootstrap JS (if using Bootstrap datepicker) -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
-<script src="<?php echo base_url('public/js/vendor/jquery-1.11.3.min.js'); ?>"></script>
-<!-- bootstrap JS ============================================ -->
+
+<!--  Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!--  Bootstrap Datepicker -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js">
+</script>
+
+<!--  project scripts (after all libraries) -->
 <script src="<?php echo base_url('public/js/bootstrap.min.js'); ?>"></script>
