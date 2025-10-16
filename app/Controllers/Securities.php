@@ -77,6 +77,7 @@ class Securities extends BaseController {
 			$editmode = $this->input->getPost('editmode');
 			$fv_id = $this->session->get('fav_id');
 			$data = [
+				"fv_id" => $fv_id,
 				"security_name"=>$this->input->getPost("security_name"),
 				"security_phone"=>$this->input->getPost("security_phone"),
 				"id_proof"=>$this->input->getPost("id_card"),

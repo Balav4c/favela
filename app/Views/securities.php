@@ -77,6 +77,8 @@
 											<div class="form-group text-right">
 												<input type="hidden" name="security_id" id="security_id" value="<?php echo $security_id; ?>"/>
 												<input type="hidden" name="editmode" id="editmode" value="<?php echo $editmode; ?>"/>
+												<input type="hidden" name="fv_id" id="fv_id" value="<?= session('fv_id') ?>">
+
 												<?php 
 												if(isset($editmode) && $editmode==1) {
 												?>
