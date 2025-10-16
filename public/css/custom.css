@@ -1019,3 +1019,21 @@ td.category-action {
 .aadhar-label{	
 	margin-bottom: 0px;
 }	
+
+/** announcement **/
+.calender{
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+
+
+.announcement-text {
+    display: -webkit-box;
+    
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

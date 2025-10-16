@@ -45,6 +45,7 @@ class Residents extends BaseController {
 	}
 	
 	public function verifyaadhaar() {
+		
 		$aadhno = base64_decode($this->input->getPost('aadhno'));
 		if($aadhno && ($aadhno < 999999999999 && $aadhno > 100000000000)) {
 			$checkUserExistance = $this->residentsModel->userExistance($aadhno);
@@ -177,47 +178,47 @@ class Residents extends BaseController {
 						"newuser"=>1));
 	}
 	
-	// public function updateuser() {
-	// 	$data['aadhar_no'] = $this->input->getPost('aadhaar_hd');
-	// 	$user_id = $this->input->getPost('user_id');
-	// 	$data['email_id'] = $this->input->getPost('email');
-	// 	$data['phone'] = $this->input->getPost('contactno');
-	// 	$data['c_address'] = $this->input->getPost('caddress');
-	// 	$modifyUser = $this->residentsModel->modifyUser($user_id,$data);
-	// 	$checkFlatUser = $this->residentsModel->checkTowerUser($user_id, $this->session->get('fav_id'));
-	// 	if($checkFlatUser->fvuserno == 0) {
-	// 		$udata['us_id'] = $user_id;
-	// 		$udata['fv_id'] = $this->session->get('fav_id');
-	// 		$udata['fv_registered_on'] = date('Y-m-d H:i:s');
-	// 		$residenceAssign = $this->residentsModel->acceptNewUser($udata);
-	// 	}
-	// 	else {
-	// 		$us_id = $user_id;
-	// 		$fv_id = $this->session->get('fav_id');
-	// 		$udata['fv_status'] = 1;
-	// 		$residenceAssign = $this->residentsModel->updateNewUser($us_id, $fv_id, $udata);
-	// 	}
+// public function updateuser() {
+// 		$data['aadhar_no'] = $this->input->getPost('aadhaar_hd');
+// 		$user_id = $this->input->getPost('user_id');
+// 		$data['email_id'] = $this->input->getPost('email');
+// 		$data['phone'] = $this->input->getPost('contactno');
+// 		$data['c_address'] = $this->input->getPost('caddress');
+// 		$modifyUser = $this->residentsModel->modifyUser($user_id,$data);
+// 		$checkFlatUser = $this->residentsModel->checkTowerUser($user_id, $this->session->get('fav_id'));
+// 		if($checkFlatUser->fvuserno == 0) {
+// 			$udata['us_id'] = $user_id;
+// 			$udata['fv_id'] = $this->session->get('fav_id');
+// 			$udata['fv_registered_on'] = date('Y-m-d H:i:s');
+// 			$residenceAssign = $this->residentsModel->acceptNewUser($udata);
+// 		}
+// 		else {
+// 			$us_id = $user_id;
+// 			$fv_id = $this->session->get('fav_id');
+// 			$udata['fv_status'] = 1;
+// 			$residenceAssign = $this->residentsModel->updateNewUser($us_id, $fv_id, $udata);
+// 		}
 		
-	// 	/*Ledger Creation*/
+// 		/*Ledger Creation*/
 		
-	// 	$userinfo = $this->residentsModel->getUser($user_id);
-	// 	$ledData['fv_id'] = $this->session->get('fav_id');
-	// 	$ledData['user_id'] = $user_id;
-	// 	$ledData['created_on'] = date("Y-m-d H:i:s");
-	// 	$ledData['account_type'] = 4; //Income type from accounts_types table.
-	// 	$ledData['ledger_name'] = $userinfo->name;
-	// 	$ledData['opening_balance'] = 0;
+// 		$userinfo = $this->residentsModel->getUser($user_id);
+// 		$ledData['fv_id'] = $this->session->get('fav_id');
+// 		$ledData['user_id'] = $user_id;
+// 		$ledData['created_on'] = date("Y-m-d H:i:s");
+// 		$ledData['account_type'] = 4; //Income type from accounts_types table.
+// 		$ledData['ledger_name'] = $userinfo->name;
+// 		$ledData['opening_balance'] = 0;
 		
-	// 	$checkLedger = $this->accountsModel->checkLedger($ledData['fv_id'], $ledData['user_id']);
-	// 	if($checkLedger->ledrow == 0) {
-	// 		$CreateLedger = $this->accountsModel->CreateLedger($ledData);
-	// 	}
-	// 	echo json_encode(1);
-	// }
+// 		$checkLedger = $this->accountsModel->checkLedger($ledData['fv_id'], $ledData['user_id']);
+// 		if($checkLedger->ledrow == 0) {
+// 			$CreateLedger = $this->accountsModel->CreateLedger($ledData);
+// 		}
+// 		echo json_encode(1);
+// 	}
 
 public function updateuser()
 {
-        print_r($data);die;
+       
     $residence_method = $this->request->getPost('residence_method');
     $user_id = $this->request->getPost('user_id'); // may be empty
 	
@@ -266,13 +267,13 @@ public function updateuser()
 
     // Insert or Update
     if (empty($user_id)) {
-        // $user_id = $this->residentsModel->createUser($data); // returns new ID
+         $user_id = $this->residentsModel->createUser($data); // returns new ID
         if (!$user_id) {
             return $this->response->setJSON(['error' => 'Failed to create user']);
         }
     } else {
-        print_r($user_id);die;
-        // $updated = $this->residentsModel->modifyUser($user_id, $data);
+       
+        $updated = $this->residentsModel->modifyUser($user_id, $data);
         if (!$updated) {
             return $this->response->setJSON(['error' => 'Failed to update user']);
         }
