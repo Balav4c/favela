@@ -43,7 +43,7 @@
                             <div class="form-group">
                                 <label for="subject">Subject</label>
                                 <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Enter announcement subject" value="<?= $subject ?>" />
+                                    placeholder="Enter announcement subject" value="<?= $subject ?>" maxlength="30" />
                             </div>
                             <div class="form-group">
                                 <label for="announcements">Announcement *</label>
@@ -54,21 +54,32 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="announce_date">Announcement Date</label>
-                                        <input type="text" class="form-control datepicker" name="announce_date"
-                                            id="announce_date"
-                                            value="<?= isset($announce_date) && $announce_date != '' ? date('d/m/Y', strtotime($announce_date)) : date('d/m/Y') ?>" />
+                                        <label for="announce_date">Publish Date</label>
+
+                                        <input type="text" class="form-control" value="<?= date('d-m-Y') ?>" disabled>
+
+                                        <!-- Actual value submitted to DB -->
+                                        <input type="hidden" name="announce_date" value="<?= date('Y-m-d') ?>">
 
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="expiry_date">Expiry Date</label>
-                                        <input type="text" class="form-control datepicker" name="expiry_date"
-                                            id="expiry_date" value="<?= isset($expiry_date) ? $expiry_date : '' ?>" />
+                                        <label for="expiry_date">End Date</label>
+                                        <div class="input-group date" id="expiryDatePicker">
+                                            <input type="text" class="form-control" name="expiry_date" id="expiry_date"
+                                                value="<?= isset($expiry_date) && $expiry_date != '' ? date('d-m-Y', strtotime($expiry_date)) : '' ?>"
+                                                placeholder="DD-MM-YYYY" />
+                                            <span class="input-group-text bg-white calender">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
+
+
+
                             </div>
 
                             <div class="form-group text-right">
@@ -113,7 +124,7 @@
                                         <th>Subject</th>
                                         <th>Announcement</th>
                                         <th>Publish Date</th>
-                                        <th>Expiry Date</th>
+                                        <th>End Date</th>
                                         <th>Announce Status</th>
                                         <th>Status</th>
                                         <th>Action</th>
