@@ -209,7 +209,7 @@ $routes->post('usermobile/changeMpin', 'UserMobile\Login::changeMpin');
 $routes->post('usermobile/checkeMpin', 'UserMobile\Login::checkeMpin');
 
 //Profile
-$routes->post('usermobile/login/getprofile', 'UserMobile\Login::getprofile');
+$routes->post('usermobile/getprofile', 'UserMobile\Login::getprofile');
 //Residence
 $routes->post('usermobile/residence/getResidences', 'UserMobile\Residence::getResidences');
 //Payments
