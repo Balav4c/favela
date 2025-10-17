@@ -242,3 +242,6 @@ $routes->post('usermobile/security/attendance', 'UserMobile\SecurityAttendance::
 $routes->post('security/usermobile/loginapi', 'UserMobile\Security::loginapi');
 $routes->post('security/usermobile/createMpin', 'UserMobile\Security::createMpin');
 $routes->post('security/usermobile/verifympinapi', 'UserMobile\Security::verifympinapi');
+$routes->post('security/usermobile/checkMpin', 'UserMobile\Security::checkMpin');
+$routes->post('security/usermobile/changeMpin', 'UserMobile\Security::changeMpin');
+

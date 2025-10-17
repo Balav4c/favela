@@ -18,50 +18,54 @@ class Security extends BaseController {
      * Step 1: Check if MPIN exists for the user
      * (This is the login check before MPIN creation)
      */
-    public function loginapi() {
-        $json_data = $this->request->getBody();
-        $data = json_decode($json_data, true);
+   public function loginapi() {
+    $json_data = $this->request->getBody();
+    $data = json_decode($json_data, true);
 
-        $phone = $data['phone'] ?? $this->request->getPost("phone");
+    $phone = $data['phone'] ?? $this->request->getPost("phone");
 
-        if (!$phone) {
-            return $this->response->setStatusCode(400)->setJSON([
-                'status' => 400,
-                'success' => false,
-                'message' => 'Phone number is required.'
-            ]);
-        }
-
-        // Check user in database
-        $security = $this->SecurityModel->getSecurityByPhone($phone);
-
-        if (!$security) {
-            return $this->response->setJSON([
-                'status' => 404,
-                'success' => false,
-                'availble_mpin' => false,
-                'message' => 'User not found.'
-            ]);
-        }
-
-        // Check if MPIN exists
-        if (empty($security['mpin'])) {
-            return $this->response->setJSON([
-                'status' => 200,
-                'success' => true,
-                'availble_mpin' => false,
-                'message' => 'Create Mpin'
-            ]);
-        }
-
-        // MPIN already exists
-        return $this->response->setJSON([
-            'status' => 200,
-            'success' => true,
-            'availble_mpin' => true,
-            'message' => 'Mpin available. Proceed to verify.'
+    if (!$phone) {
+        return $this->response->setStatusCode(400)->setJSON([
+            'status' => 400,
+            'success' => false,
+            'message' => 'Phone number is required.'
         ]);
     }
+
+    // Fetch user by phone
+    $security = $this->SecurityModel->getSecurityByPhone($phone);
+
+    if (!$security) {
+        return $this->response->setStatusCode(404)->setJSON([
+            'status' => 404,
+            'success' => false,
+            'message' => 'Phone number is invalid',
+            'mpinstatus' => null
+        ]);
+    }
+
+    // Check MPIN availability
+    if (!empty($security['mpin'])) {
+        // MPIN exists
+        $response = [
+            'status' => 200,
+            'success' => true,
+            'message' => 'Mpin already exists',
+            'mpinstatus' => 0
+        ];
+    } else {
+        // MPIN not created yet
+        $response = [
+            'status' => 200,
+            'success' => true,
+            'message' => 'Please create Mpin',
+            'mpinstatus' => 1
+        ];
+    }
+
+    return $this->response->setStatusCode(200)->setJSON($response);
+}
+
 
     /**
      * Step 2: Create MPIN
@@ -163,5 +167,118 @@ class Security extends BaseController {
 
     return $this->response->setJSON($response);
 }
+
+
+/**
+ * Step 4: Check MPIN (whether exists or not)
+ */
+public function checkMpin() {
+    $json_data = $this->request->getBody();
+    $data = json_decode($json_data, true);
+    $phone = $data['phone'] ?? $this->request->getPost('phone');
+
+    if (!$phone) {
+        return $this->response->setStatusCode(400)->setJSON([
+            'status' => 400,
+            'success' => false,
+            'message' => 'Phone number is required.'
+        ]);
+    }
+
+    $security = $this->SecurityModel->getSecurityByPhone($phone);
+    if (!$security) {
+        return $this->response->setStatusCode(404)->setJSON([
+            'status' => 404,
+            'success' => false,
+            'message' => 'Phone number not found.'
+        ]);
+    }
+
+    $mpinExists = !empty($security['mpin']) ? 1 : 0;
+    return $this->response->setJSON([
+        'status' => 200,
+        'success' => true,
+        'mpin' => $mpinExists
+    ]);
+}
+
+
+/**
+ * Step 5: Change MPIN
+ */
+public function changeMpin() {
+    $headers = $this->request->headers();
+    $authorization = $headers['Authorization'] ?? '';
+    $token = '';
+
+    if (strpos($authorization, 'Bearer') !== false) {
+        $parts = explode('Bearer', $authorization);
+        $token = trim($parts[1]);
+    }
+
+    $json_data = $this->request->getBody();
+    $data = json_decode($json_data, true);
+
+    $user_id = $data['uid'] ?? $this->request->getPost('uid');
+    $currentMpin = $data['currentMpin'] ?? $this->request->getPost('currentMpin');
+    $newMpin = $data['newMpin'] ?? $this->request->getPost('newMpin');
+
+    if (!$user_id || !$currentMpin || !$newMpin) {
+        return $this->response->setStatusCode(400)->setJSON([
+            'status' => 400,
+            'success' => false,
+            'message' => 'User ID, current MPIN, and new MPIN are required.'
+        ]);
+    }
+
+    // Verify token
+    $security = $this->SecurityModel->getSecurityById($user_id);
+    if (!$security || $security['token'] !== $token) {
+        return $this->response->setStatusCode(401)->setJSON([
+            'status' => 401,
+            'success' => false,
+            'message' => 'Unauthorized token authentication.'
+        ]);
+    }
+
+    if ($currentMpin === $newMpin) {
+        return $this->response->setStatusCode(400)->setJSON([
+            'status' => 400,
+            'success' => false,
+            'message' => 'Current MPIN and new MPIN should not be the same.'
+        ]);
+    }
+
+    // Verify current MPIN
+    if (!password_verify($currentMpin, $security['mpin'])) {
+        return $this->response->setStatusCode(400)->setJSON([
+            'status' => 400,
+            'success' => false,
+            'message' => 'Current MPIN does not match.'
+        ]);
+    }
+
+    // Update with new MPIN
+    $hashedMpin = password_hash($newMpin, PASSWORD_DEFAULT);
+    $updated = $this->SecurityModel->updateMpinById($user_id, $hashedMpin);
+
+    if ($updated) {
+        return $this->response->setJSON([
+            'status' => 200,
+            'success' => true,
+            'message' => 'MPIN changed successfully.'
+        ]);
+    }
+
+    return $this->response->setStatusCode(500)->setJSON([
+        'status' => 500,
+        'success' => false,
+        'message' => 'Failed to change MPIN.'
+    ]);
+}
+
+
+
+
 
 }
