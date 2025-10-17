@@ -51,6 +51,7 @@ class VisitorGatepass extends BaseController
     $fv_id       = $input['fv_id'] ?? null;
     $place       = $input['visitor_place'] ?? null;
     $phone       = $input['vistor_phone'] ?? null;
+	$vehicle_no  = isset($input['vehicle_no']) ? trim($input['vehicle_no']) : null;
     $dateofvisit = $input['date_of_visit'] ?? null;
     $created_by  = $input['created_by'] ?? null;
     $uid         = $input['uid'] ?? null;
@@ -66,6 +67,7 @@ class VisitorGatepass extends BaseController
             "visitor_name"      => $visitor,
             "visitor_place"     => $place,
             "vistor_phone"      => $phone,
+			"vehicle_no"        => $vehicle_no,
             "date_of_visit"     => date("Y-m-d", strtotime($dateofvisit)),
             "purpose_of_visit"  => $purpose,
             "person_flat_visit" => $person_flat,
