@@ -199,14 +199,14 @@ $routes->post('announcements/toggleStatus', 'Announcements::toggleStatus');
 /**************Customer Mobile Api's***********/
 
 //verify mpin
-$routes->post('usermobile/login/verifympinapi', 'UserMobile\Login::verifympinapi');
-$routes->post('usermobile/login/loginapi', 'UserMobile\Login::loginapi');
+$routes->post('usermobile/verifympinapi', 'UserMobile\Login::verifympinapi');
+$routes->post('usermobile/loginapi', 'UserMobile\Login::loginapi');
 //verify mpin
-$routes->post('usermobile/login/verifympinapi', 'UserMobile\Login::verifympinapi');
+$routes->post('usermobile/verifympinapi', 'UserMobile\Login::verifympinapi');
 //Create Update check mpin
-$routes->post('usermobile/login/createMpin', 'UserMobile\Login::createMpin');
-$routes->post('usermobile/login/changeMpin', 'UserMobile\Login::changeMpin');
-$routes->post('usermobile/login/checkeMpin', 'UserMobile\Login::checkeMpin');
+$routes->post('usermobile/createMpin', 'UserMobile\Login::createMpin');
+$routes->post('usermobile/changeMpin', 'UserMobile\Login::changeMpin');
+$routes->post('usermobile/checkeMpin', 'UserMobile\Login::checkeMpin');
 
 //Profile
 $routes->post('usermobile/login/getprofile', 'UserMobile\Login::getprofile');
