@@ -229,7 +229,8 @@ $routes->post('usermobile/complaints/savecomplaints','UserMobile\Complaints::sav
 //gatepass
 $routes->post('usermobile/gatepass/getgatepass','UserMobile\VisitorGatepass::getGatepass');
 $routes->post('usermobile/gatepass/savegatepass','UserMobile\VisitorGatepass::createnew');
- 
+$routes->post('usermobile/gatepass/user-history', 'UserMobile\VisitorGatepass::getUserGatepassHistory');
+
  
 
 // Announcements
