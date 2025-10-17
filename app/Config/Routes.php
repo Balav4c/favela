@@ -237,7 +237,7 @@ $routes->post('usermobile/gatepass/user-history', 'UserMobile\VisitorGatepass::g
 $routes->post('usermobile/announcements/getAnnouncements', 'UserMobile\Announcement::getAnnouncements');
  
 // Mark In Mark Out
-$routes->post('usermobile/security/attendance', 'UserMobile\SecurityAttendance::recordAttendance');
+$routes->post('security/usermobile/attendance', 'UserMobile\SecurityAttendance::recordAttendance');
 
 
 $routes->post('security/usermobile/loginapi', 'UserMobile\Security::loginapi');
