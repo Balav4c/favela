@@ -34,4 +34,13 @@ class SecurityModel extends Model
                         ->where('security_phone', $phone)
                         ->update(['mpin' => $mpin]);
     }
+
+    public function getSecurityById($id) {
+    return $this->where('sc_id', $id)->first();
+}
+
+public function updateMpinById($id, $hashedMpin) {
+    return $this->update($id, ['mpin' => $hashedMpin]);
+}
+
 }
