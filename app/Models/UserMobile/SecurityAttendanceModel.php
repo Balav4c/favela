@@ -9,6 +9,6 @@ class SecurityAttendanceModel extends Model
     protected $table = 'security_attendance';
     protected $primaryKey = 'attendance_id';
     protected $allowedFields = [
-        'sc_id', 'attendance_date', 'check_in_time', 'check_out_time', 'status', 'created_at', 'updated_at'
+        'sc_id', 'fv_id','attendance_date', 'check_in_time', 'check_out_time', 'status', 'created_at', 'updated_at'
     ];
 }
