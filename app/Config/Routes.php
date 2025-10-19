@@ -246,3 +246,8 @@ $routes->post('security/usermobile/verifympinapi', 'UserMobile\Security::verifym
 $routes->post('security/usermobile/checkMpin', 'UserMobile\Security::checkMpin');
 $routes->post('security/usermobile/changeMpin', 'UserMobile\Security::changeMpin');
 
+//Complainsts media uploads
+
+$routes->post('usermobile/media/uploads', 'UserMobile\Complaints::mediaUploads');
+
+
