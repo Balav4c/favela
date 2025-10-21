@@ -17,17 +17,18 @@ class GatepassModel extends Model
 
     public function saveGatepass($data)
     {
-        try {
-            $gatepass = $this->db->table('gatepass');
+        $gatepass = $this->db->table('gatepass');
 
-            // Ensure optional fields (like vehicle_no) exist in $data, even if null
-            if (!isset($data['vehicle_no'])) {
-                $data['vehicle_no'] = null;
+        // Ensure optional fields exist in $data
+        $optionalFields = ['vehicle_no', 'visitor_place', 'visitor_image', 'visitor_phone'];
+        foreach ($optionalFields as $field) {
+            if (!isset($data[$field]) || $data[$field] === '') {
+                $data[$field] = null;
             }
+        }
 
+        try {
             $gatepass->insert($data);
-
-            // Check if insert succeeded
             if ($this->db->affectedRows() > 0) {
                 $insertId = $this->db->insertID();
                 return $gatepass->where('gp_id', $insertId)->get()->getRowArray();
@@ -40,7 +41,6 @@ class GatepassModel extends Model
         }
     }
 
-
     public function getGatepassByUserAndFlat($uid, $fv_id)
     {
         return $this->db
@@ -51,7 +51,14 @@ class GatepassModel extends Model
             ->get()
             ->getResultArray();
     }
+    public function getGatepassByToken($token)
+    {
+        return $this->db->table('gatepass')->where('token', $token)->get()->getRowArray();
+    }
 
-
+    public function updateGatepassByToken($token, $data)
+    {
+        return $this->db->table('gatepass')->where('token', $token)->update($data);
+    }
 }
 ?>
