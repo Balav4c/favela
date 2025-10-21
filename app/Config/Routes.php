@@ -230,6 +230,8 @@ $routes->post('usermobile/complaints/savecomplaints','UserMobile\Complaints::sav
 $routes->post('usermobile/gatepass/getgatepass','UserMobile\VisitorGatepass::getGatepass');
 $routes->post('usermobile/gatepass/savegatepass','UserMobile\VisitorGatepass::createnew');
 $routes->post('usermobile/gatepass/user-history', 'UserMobile\VisitorGatepass::getUserGatepassHistory');
+$routes->post('usermobile/gatepass/delete', 'UserMobile\VisitorGatepass::deleteGatepass');
+$routes->post('usermobile/gatepass/scan', 'UserMobile\VisitorGatepass::scanGatepass');
 
  
 
@@ -240,6 +242,7 @@ $routes->post('usermobile/announcements/getAnnouncements', 'UserMobile\Announcem
 $routes->post('security/usermobile/attendance', 'UserMobile\SecurityAttendance::recordAttendance');
 
 
+// security login and mpin management
 $routes->post('security/usermobile/loginapi', 'UserMobile\Security::loginapi');
 $routes->post('security/usermobile/createMpin', 'UserMobile\Security::createMpin');
 $routes->post('security/usermobile/verifympinapi', 'UserMobile\Security::verifympinapi');
@@ -247,7 +250,6 @@ $routes->post('security/usermobile/checkMpin', 'UserMobile\Security::checkMpin')
 $routes->post('security/usermobile/changeMpin', 'UserMobile\Security::changeMpin');
 
 //Complainsts media uploads
-
 $routes->post('usermobile/media/uploads', 'UserMobile\Complaints::mediaUploads');
 
 
