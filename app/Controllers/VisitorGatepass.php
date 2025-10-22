@@ -87,7 +87,7 @@ class VisitorGatepass extends BaseController {
 			$data = [
 				"vname"=>$gatepassdata->visitor_name,
 				"vplace"=>$gatepassdata->visitor_place,
-				"vphone"=>$gatepassdata->vistor_phone,
+				"vphone"=>$gatepassdata->visitor_phone,
 				"vdate"=>date("d-m-Y", strtotime($gatepassdata->date_of_visit)),
 				"vpurpose"=>$gatepassdata->purpose_of_visit,
 				"vperson"=>$gatepassdata->person_flat_visit
