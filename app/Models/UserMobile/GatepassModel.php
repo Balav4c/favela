@@ -12,9 +12,12 @@ class GatepassModel extends Model
     }
     public function getGatepass($fv_id)
     {
-        return $this->db->query("SELECT * FROM gatepass WHERE fv_id = '" . $fv_id . "'")->getResult();
+        return $this->db->table('gatepass')
+            ->where('fv_id', $fv_id)
+            ->where('status !=', 3)
+            ->get()
+            ->getResult();
     }
-
     public function saveGatepass($data)
     {
         $gatepass = $this->db->table('gatepass');
@@ -46,7 +49,8 @@ class GatepassModel extends Model
         return $this->db
             ->table('gatepass')
             ->where('fv_id', $fv_id)
-            ->where('uid', $uid)  // changed from created_by to uid
+            ->where('uid', $uid)
+            ->where('status !=', 3)
             ->orderBy('date_of_visit', 'DESC')
             ->get()
             ->getResultArray();
@@ -60,5 +64,6 @@ class GatepassModel extends Model
     {
         return $this->db->table('gatepass')->where('token', $token)->update($data);
     }
+
 }
 ?>
