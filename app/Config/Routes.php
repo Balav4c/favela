@@ -5,8 +5,8 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
- /********Get Methods************/
- //Login
+/********Get Methods************/
+//Login
 $routes->get('/', 'Login::index');
 $routes->get('/sync/', 'Login::login/');
 $routes->get('/sync/(:any)', 'Login::login/$1');
@@ -164,8 +164,8 @@ $routes->post('securities/listfeedbacks', 'Securities::listfeedbacks');
 
 /********Bala Routes starts here***************/
 
- //Key authendicate
- $routes->post('/authenticate', 'Login::authenticate');
+//Key authendicate
+$routes->post('/authenticate', 'Login::authenticate');
 
 //Replycomplaints
 $routes->post('complaintsinfo/saveReply', 'ComplaintsInfo::saveReply');
@@ -175,8 +175,8 @@ $routes->get('viewdetails/(:num)', 'ComplaintsInfo::viewDetails/$1');
 
 $routes->get('category', 'Category::index');
 $routes->get('category/(:num)', 'Category::index/$1');
-$routes->get('category/loadCategories','Category::loadCategories');
-$routes->post('category/save','Category::saveCategory');
+$routes->get('category/loadCategories', 'Category::loadCategories');
+$routes->post('category/save', 'Category::saveCategory');
 $routes->post('category/delete', 'Category::deleteCategory');
 $routes->post('subcategory/delete', 'Category::deleteSubcategory');
 $routes->post('category/getDiminishRate', 'Category::getDiminishRate');
@@ -224,21 +224,21 @@ $routes->post('usermobile/notifications/processNotify', 'UserMobile\Notification
 
 //complaints
 $routes->post('usermobile/complaints/getcomplaints', 'UserMobile\Complaints::getComplaints');
-$routes->post('usermobile/complaints/savecomplaints','UserMobile\Complaints::saveComplaints');
- 
- 
+$routes->post('usermobile/complaints/savecomplaints', 'UserMobile\Complaints::saveComplaints');
+
+
 //gatepass
-$routes->post('usermobile/gatepass/getgatepass','UserMobile\VisitorGatepass::getGatepass');
-$routes->post('usermobile/gatepass/savegatepass','UserMobile\VisitorGatepass::createnew');
+$routes->post('usermobile/gatepass/getgatepass', 'UserMobile\VisitorGatepass::getGatepass');
+$routes->post('usermobile/gatepass/savegatepass', 'UserMobile\VisitorGatepass::createnew');
 $routes->post('usermobile/gatepass/user-history', 'UserMobile\VisitorGatepass::getUserGatepassHistory');
 $routes->post('usermobile/gatepass/delete', 'UserMobile\VisitorGatepass::deleteGatepass');
 $routes->post('usermobile/gatepass/scan', 'UserMobile\VisitorGatepass::scanGatepass');
 
- 
+
 
 // Announcements
 $routes->post('usermobile/announcements/getAnnouncements', 'UserMobile\Announcement::getAnnouncements');
- 
+
 // Mark In Mark Out
 $routes->post('security/usermobile/attendance', 'UserMobile\SecurityAttendance::recordAttendance');
 
@@ -253,4 +253,9 @@ $routes->post('security/usermobile/changeMpin', 'UserMobile\Security::changeMpin
 //Complainsts media uploads
 $routes->post('usermobile/media/uploads', 'UserMobile\Complaints::mediaUploads');
 
-
+// chat and messaging
+$routes->post('usermobile/chat/send', 'UserMobile\ChatController::createOrSendMessage');
+$routes->get('usermobile/list', 'UserMobile\ChatController::getChats');
+$routes->post('usermobile/messages', 'UserMobile\ChatController::getMessages');
+$routes->post('usermobile/markread', 'UserMobile\ChatController::markRead');
+ $routes->get('usermobile/getUsersByFlat', 'UserMobile\ChatController::getUsersByFlat');

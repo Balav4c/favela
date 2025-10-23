@@ -237,19 +237,6 @@ public function scanGatepass()
     }
     $securityToken = trim(str_replace('Bearer ', '', $authHeader));
 
-    // Read request data
-    $input = $this->request->getJSON(true) ?? $this->request->getPost();
-    $gatepassToken = $input['gatepass_token'] ?? null;
-    $type = $input['type'] ?? null;
-
-    if (!$gatepassToken || !$type) {
-        return $this->response->setStatusCode(400)->setJSON([
-            'status' => 400,
-            'success' => false,
-            'message' => 'Missing gatepass_token or type.'
-        ]);
-    }
-
     // Verify security guard via token
     $security = $this->SecurityModel->getSecurityByToken($securityToken);
     if (!$security) {
@@ -262,6 +249,19 @@ public function scanGatepass()
 
     $sc_id = $security['sc_id'];
 
+    // Read request data
+    $input = $this->request->getJSON(true) ?? $this->request->getPost();
+    $gatepassToken = $input['gatepass_token'] ?? null;
+    $type = $input['type'] ?? null; // optional: check_in / check_out
+
+    if (!$gatepassToken) {
+        return $this->response->setStatusCode(400)->setJSON([
+            'status' => 400,
+            'success' => false,
+            'message' => 'Missing gatepass_token.'
+        ]);
+    }
+
     // Fetch gatepass record
     $gatepass = $this->GatepassModel->getGatepassByToken($gatepassToken);
     if (!$gatepass) {
@@ -272,7 +272,24 @@ public function scanGatepass()
         ]);
     }
 
-    // Prepare update data
+    // STEP 1: Only fetching visitor details
+    if (!$type) {
+        return $this->response->setStatusCode(200)->setJSON([
+            'status' => 200,
+            'success' => true,
+            'message' => 'Visitor details fetched successfully.',
+            'data' => [
+                'visitor_name' => $gatepass['visitor_name'],
+                'purpose_of_visit' => $gatepass['purpose_of_visit'],
+                'flat' => $gatepass['person_flat_visit'],
+                'check_in' => $gatepass['check_in'],
+                'check_out' => $gatepass['check_out'],
+                'status' => $gatepass['status']
+            ]
+        ]);
+    }
+
+    // STEP 2: Process check_in / check_out
     $now = date('Y-m-d H:i:s');
     $updateData = [];
 
@@ -321,7 +338,7 @@ public function scanGatepass()
         ]);
     }
 
-    // Perform update
+    // Update gatepass
     $updated = $this->GatepassModel->updateGatepassByToken($gatepassToken, $updateData);
     if (!$updated) {
         return $this->response->setStatusCode(500)->setJSON([
@@ -333,7 +350,6 @@ public function scanGatepass()
 
     $updatedGatepass = $this->GatepassModel->getGatepassByToken($gatepassToken);
 
-    // Return success
     return $this->response->setStatusCode(200)->setJSON([
         'status' => 200,
         'success' => true,
@@ -341,5 +357,6 @@ public function scanGatepass()
         'data' => $updatedGatepass
     ]);
 }
+
 
 }
