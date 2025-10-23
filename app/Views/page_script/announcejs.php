@@ -16,6 +16,7 @@ function statcheck(el) {
         anoc_id
     }, function(data) {
         initAlert("Status changed successfully.", 1);
+           $('#announcementlist').DataTable().ajax.reload(null, false);
     }, 'json');
 }
 $(document).ready(function() {
@@ -45,11 +46,11 @@ $(document).ready(function() {
                 data: 'expiry_date'
             },
             {
-                data: 'announce_status'
-            },
+                data: 'status_text'
+            }, // ✅ was announce_status
             {
-                data: 'status'
-            },
+                data: 'status_toggle'
+            }, // ✅ was status
             {
                 data: 'action'
             }
@@ -57,97 +58,108 @@ $(document).ready(function() {
     });
 
     // Converts DD-MM-YYYY → YYYY-MM-DD
-    function convertDateFormat(dateStr) {
-        if (!dateStr) return '';
-        const parts = dateStr.split('-'); // split by dash
-        return parts.length === 3 ? `${parts[2]}-${parts[1]}-${parts[0]}` : dateStr;
+
+
+  $('#anoc-btn').click(function() {
+    var announcement = $('#announcements').val().trim();
+    var publishDate = $('#announce_date').val().trim();
+    var endDate = $('#expiry_date').val().trim();
+
+    if (announcement === '') {
+        initAlert("Please enter Announcement.", 0);
+        $('#announcements').focus();
+        return false;
     }
 
-    $('#anoc-btn').click(function() {
-        var url = baseUrl + "announcements/createnew";
+    if (publishDate === '') {
+        initAlert("Please select Publish Date.", 0);
+        $('#announce_date').focus();
+        return false;
+    }
 
-        // Get dates from inputs
-        var announce_date = $('#announce_date').val();
-        var expiry_date = $('#expiry_date').val();
+    if (endDate === '') {
+        initAlert("Please select End Date.", 0);
+        $('#expiry_date').focus();
+        return false;
+    }
 
-        // Convert to MySQL format (YYYY-MM-DD)
-        $('#announce_date').val(convertDateFormat(announce_date));
+    // Check End Date >= Publish Date
+    var pubDate = new Date(publishDate.split('-').reverse().join('-'));
+    var expDate = new Date(endDate.split('-').reverse().join('-'));
+    if (expDate < pubDate) {
+        initAlert("End Date cannot be before Publish Date.", 0);
+        $('#expiry_date').focus();
+        return false;
+    }
 
-        // Only convert expiry_date if not empty
-        if (expiry_date) {
-            $('#expiry_date').val(convertDateFormat(expiry_date));
-        }
-
-        $.post(url, $('#createAnnouncement').serialize(), function(data) {
-            if (data.status == 1) {
-                initAlert(data.respmsg, 1);
+    // Submit form via AJAX
+    var url = baseUrl + "announcements/createnew";
+    $.post(url, $('#createAnnouncement').serialize(), function(data) {
+        if (data.status == 1) {
+            initAlert(data.respmsg, 1);
+            
+            // Only reset the form if creating a new announcement
+            var anoc_id = $('input[name="anoc_id"]').val();
+            if (!anoc_id || anoc_id == 0) {
                 $('#createAnnouncement')[0].reset();
-                announceList.ajax.reload();
-            } else {
-                initAlert(data.respmsg, 0);
+                // Also reset Flatpickr values
+                publishPicker.clear();
+                endPicker.clear();
             }
-        }, 'json');
-    });
 
-
-
-
-    $(document).on('click', '.toggle-status', function() {
-        var id = $(this).data('id');
-        var newStatus = $(this).data('status');
-
-        $.post(baseUrl + "announcements/toggleStatus", {
-            id: id,
-            status: newStatus
-        }, function(res) {
-            var data = JSON.parse(res);
-            if (data.success) {
-                $('#announcementlist').DataTable().ajax.reload(null, false); // refresh table
-            } else {
-                alert('Failed to update status');
-            }
-        });
-    });
-
-
-    // $('.datepicker').datepicker({
-    //     format: 'dd-mm-yyyy',
-    //     autoclose: true,
-    //     todayHighlight: true
-    // });
-
-    $('#expiry_date').datepicker({
-        format: 'dd-mm-yyyy',
-        autoclose: true,
-        todayHighlight: true,
-        startDate: new Date() // sets min selectable date to today
-    });
-
-    // If you want end date strictly after today:
-    $('#expiry_date').datepicker('setStartDate', '+1d'); // tomorrow
-
-    //Readmore
-    $(document).on('click', '.read-more', function() {
-        var container = $(this).closest('.announcement-text');
-        var fullText = container.data('full');
-        container.html(fullText + ' <a href="javascript:void(0);" class="read-less">Read Less</a>');
-    });
-
-    $(document).on('click', '.read-less', function() {
-        var container = $(this).closest('.announcement-text');
-        var fullText = container.data('full');
-        var preview = fullText.substring(0, 100);
-        container.html(preview + '... <a href="javascript:void(0);" class="read-more">Read More</a>');
-    });
-
-
+            // Reload DataTable
+            announceList.ajax.reload();
+        } else {
+            initAlert(data.respmsg, 0);
+        }
+    }, 'json');
+});
 
 
 
 });
 
 
+//Readmore
+$(document).on('click', '.read-more', function() {
+    var container = $(this).closest('.announcement-text');
+    var fullText = container.data('full');
+    container.html(fullText + ' <a href="javascript:void(0);" class="read-less">Read Less</a>');
+});
 
+$(document).on('click', '.read-less', function() {
+    var container = $(this).closest('.announcement-text');
+    var fullText = container.data('full');
+    var preview = fullText.substring(0, 100);
+    container.html(preview + '... <a href="javascript:void(0);" class="read-more">Read More</a>');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Publish date picker
+    window.publishPicker = flatpickr("#announce_date", {
+        dateFormat: "d-m-Y",
+        altInput: true,
+        altFormat: "d-m-Y",
+        allowInput: true,
+        minDate: "today",
+        defaultDate: document.querySelector('#announce_date').value, // prefilled value
+        onChange: function(selectedDates, dateStr, instance) {
+            if(selectedDates.length > 0) {
+                endPicker.set('minDate', selectedDates[0]);
+            }
+        }
+    });
+
+    // End date picker
+    window.endPicker = flatpickr("#expiry_date", {
+        dateFormat: "d-m-Y",
+        altInput: true,
+        altFormat: "d-m-Y",
+        allowInput: true,
+        minDate: "today",
+        defaultDate: document.querySelector('#expiry_date').value // prefilled value
+    });
+});
 
 
 </script>
