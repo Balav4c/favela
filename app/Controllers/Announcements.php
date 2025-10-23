@@ -2,271 +2,198 @@
 namespace App\Controllers;
 use App\Models\AnnouncementsModel;
 
-
-
 class Announcements extends BaseController {
-	protected $announcementModel;
+    protected $announcementModel;
    
-	
-	public function __construct() {
-		
-		$this->session = \Config\Services::session();
-		$this->input = \Config\Services::request();
-		$this->announcementModel = new AnnouncementsModel();
-   }
-    public function index($anoc_id= ''){ 
-		$data = [];
-        	if($anoc_id) {
-			$ThisAnnouc = $this->announcementModel->getThisAnnouncement($anoc_id);
-			$data['subject'] = $ThisAnnouc->subject;
-			$data['announcements'] = $ThisAnnouc->announcements;
-			$data['announce_date'] = $ThisAnnouc->announce_date;
-			$data['expiry_date'] = $ThisAnnouc->expiry_date;
-			$data['anoc_id'] = $ThisAnnouc->anoc_id;
-			$data['anoc'] = true;
-		}
-		else {
-			$data['subject'] = null;
-			$data['announcements'] = null;
-			$data['announce_date'] = null;
-			$data['expiry_date'] = null;
-			$data['anoc_id'] = null;
-		}
-   
-    	if($this->session->get('fav_user_id')!== null && $this->session->get('fav_user_id')!='') {
-			
-			$fv_id = $this->session->get('fav_id');
-			$user_id = $this->session->get('fav_user_id');
-		
-			
-			$data['menu'] = 15;
-			$data['username'] = ucwords($this->session->get('fav_user_name'));
-			$data['orgname'] = ucwords($this->session->get('fav_org'));
-			$template = view('common/header',$data);
-			$template .= view('announcement');
-			$template .= view('common/footer');
-			$template .= view('common/pluginjs');
-			$template .= view('common/datatablejs');
-			$template .= view('page_script/announcejs');
-			$template .= view('common/footer-closure');
-			echo $template;
-		}
-		else {
-			$redirectUrl = base_url().'sync/';
-			return redirect()->to($redirectUrl); 
-		}	
+    public function __construct() {
+        $this->session = \Config\Services::session();
+        $this->input = \Config\Services::request();
+        $this->announcementModel = new AnnouncementsModel();
     }
 
-   public function createnew() {
-    $subject = $this->request->getPost('subject');
-    $announcement = $this->request->getPost('announcements');
+    public function index($anoc_id = '') { 
+        $data = [];
 
-    $announc_date = $this->request->getPost('announce_date');
+        if($anoc_id) {
+            $ThisAnnouc = $this->announcementModel->getThisAnnouncement($anoc_id);
+            $data['subject'] = $ThisAnnouc->subject;
+            $data['announcements'] = $ThisAnnouc->announcements;
 
-	$expiry_date = $this->request->getPost('expiry_date');
-		
-    $anoc_id = $this->request->getPost('anoc_id');
-    $fv_id = $this->session->get('fav_id');
+            // Convert DB dates YYYY-MM-DD → DD-MM-YYYY for Flatpickr
+            $data['announce_date'] = (!empty($ThisAnnouc->announce_date) && $ThisAnnouc->announce_date != '0000-00-00')
+    ? date('d-m-Y', strtotime($ThisAnnouc->announce_date)) : '';
+$data['expiry_date'] = (!empty($ThisAnnouc->expiry_date) && $ThisAnnouc->expiry_date != '0000-00-00')
+    ? date('d-m-Y', strtotime($ThisAnnouc->expiry_date)) : '';
 
-    $checkAnnounc = $this->announcementModel->checkAnnouncement($announcement, $fv_id, $anoc_id);
 
-    if ($checkAnnounc) {
-        echo json_encode(["status" => 0, "respmsg" => "This Announcement already exists in the system."]);
-    } else {
-        if ($announcement) {
-            $data = [
-                'fv_id'        => $fv_id,
-                'subject'      => $subject,
-                'announcements' => $announcement,
-                'announce_date' => $announc_date,
-				'expiry_date' => $expiry_date,
-                'created_on'   => date("Y-m-d H:i:s"),
-                'created_by'   => $this->session->get('fav_user_id'),
-            ];
-
-            if (empty($anoc_id) || $anoc_id == 0) {
-                $this->announcementModel->createAnnouncement($data);
-                echo json_encode(["status" => 1, "respmsg" => "Announcement created successfully."]);
-            } else {
-                $this->announcementModel->modifyAnnouncement($anoc_id, $data);
-                echo json_encode(["status" => 1, "respmsg" => "Announcement updated successfully."]);
-            }
+            $data['anoc_id'] = $ThisAnnouc->anoc_id;
+            $data['anoc'] = true;
         } else {
-            echo json_encode(["status" => 0, "respmsg" => "Please enter announcement."]);
-        }
-    }
-}
-
-   public function listannouncement() {
-    ## Read value
-    $draw = $_POST['draw'];
-    $row = $_POST['start'];
-    $rowperpage = $_POST['length']; // Rows display per page
-    $columnIndex = $_POST['order'][0]['column']; // Column index
-    $columnName = $_POST['columns'][$columnIndex]['data']; // Column name
-    $columnSortOrder = $_POST['order'][0]['dir']; // asc or desc
-    $searchValue = $_POST['search']['value']; // Search value
-
-    $filter = '1=1';
-    $tolimit = $row + $rowperpage;
-
-    if($searchValue) {
-        $filter .= " and announcements like '%".$searchValue."%'";
-    }
-    $filter .= " and fv_id = ".$this->session->get('fav_id');
-
-    $ListAnnouncements = $this->announcementModel->listAllAnnouncement($filter, $row, $tolimit);
-    $data = array();
-    $slno = $row;
-
-    foreach ($ListAnnouncements as $alist) {
-        // Default actions
-        $action = '';
-
-        // Calculate expiry status
-        $today = date('Y-m-d');
-        $expiry_date = $alist->expiry_date;
-
-        // Check if expired
-        if (!empty($expiry_date) && $expiry_date < $today) {
-            // Update DB if not already expired
-            if ($alist->announce_status != 2) {
-                $this->announcementModel->update($alist->anoc_id, ['announce_status' => 2]);
-            }
-            $alist->announce_status = 2; // Force expired
+            $data['subject'] = null;
+            $data['announcements'] = null;
+            $data['announce_date'] = null;
+            $data['expiry_date'] = null;
+            $data['anoc_id'] = null;
         }
 
-        // Build actions based on status
-        if ($alist->announce_status == 2) {
-            // Expired → Only delete allowed
-            $action .= '<a href="javascript:void(0)" onclick="deleteAnnouncement('.$alist->anoc_id.')">
-                            <i class="fa fa-trash-o text-danger"></i>
-                        </a>';
+        if($this->session->get('fav_user_id') !== null) {
+            $data['menu'] = 15;
+            $data['username'] = ucwords($this->session->get('fav_user_name'));
+            $data['orgname'] = ucwords($this->session->get('fav_org'));
+            $template = view('common/header',$data);
+            $template .= view('announcement');
+            $template .= view('common/footer');
+            $template .= view('common/pluginjs');
+            $template .= view('common/datatablejs');
+            $template .= view('page_script/announcejs');
+            $template .= view('common/footer-closure');
+            echo $template;
         } else {
-            // Edit + Delete + Toggle (for Published/Unpublished)
-            $action .= '<a href="'.base_url("announcements/$alist->anoc_id").'">
-                            <i class="fa fa-pencil-square-o"></i>
-                        </a>';
-            $action .= '<a href="javascript:void(0)" onclick="deleteAnnouncement('.$alist->anoc_id.')">
-                            <i class="fa fa-trash-o"></i>
-                        </a>';
+            return redirect()->to(base_url().'sync/'); 
+        }   
+    }
 
-            if ($alist->announce_status == 0) {
-                // Published → allow Unpublish
-                $action .= '<a href="javascript:void(0)" class="toggle-status" data-id="'.$alist->anoc_id.'" data-status="1">
-                                <i class="fa-solid fa-check text-success"></i>
-                            </a>';
-            } elseif ($alist->announce_status == 1) {
-                // Unpublished → allow Publish
-                $action .= '<a href="javascript:void(0)" class="toggle-status" data-id="'.$alist->anoc_id.'" data-status="0">
-                                <i class="fa-solid fa-ban text-danger"></i>
-                            </a>';
-            }
-        }
+    public function createnew() {
+        $subject = $this->request->getPost('subject');
+        $announcement = $this->request->getPost('announcements');
+        $announce_date = $this->request->getPost('announce_date');
+        $expiry_date = $this->request->getPost('expiry_date');
+        $anoc_id = $this->request->getPost('anoc_id');
+        $fv_id = $this->session->get('fav_id');
 
-        $checked = ($alist->status == 1 ? 'checked="checked"' : '');
+        // Validate
+        if(empty($announcement)) return $this->respondJson(0, "Announcement is required.");
+        if(empty($announce_date)) return $this->respondJson(0, "Publish Date is required.");
+        if(empty($expiry_date)) return $this->respondJson(0, "End Date is required.");
 
-        // Display proper status text
-        switch ($alist->announce_status) {
-            case 0:
-                $statusText = '<span class="text-success">Published</span>';
-                break;
-            case 1:
-                $statusText = '<span class="text-warning">Unpublished</span>';
-                break;
-            case 2:
-                $statusText = '<span class="text-danger">Expired</span>';
-                break;
-            default:
-                $statusText = '<span class="text-muted">Unknown</span>';
-        }
+        // Convert DD-MM-YYYY → YYYY-MM-DD
+        $announce_date = date('Y-m-d', strtotime(str_replace('/', '-', $announce_date)));
+        $expiry_date = date('Y-m-d', strtotime(str_replace('/', '-', $expiry_date)));
 
-        // Truncate announcement text with Read More / Read Less
-        $announcementText = htmlspecialchars($alist->announcements); // escape for safety
-        $previewText = mb_substr(strip_tags($announcementText), 0, 100, 'UTF-8'); // first 100 chars
-        $showReadMore = strlen(strip_tags($announcementText)) > 100 ? true : false;
+        // Ensure End Date >= Publish Date
+        if(strtotime($expiry_date) < strtotime($announce_date)) return $this->respondJson(0, "End Date cannot be before Publish Date.");
 
-        $announcementDisplay = '<div class="announcement-text" data-full="'.htmlspecialchars($announcementText).'">'
-            . nl2br($previewText);
+        // Check duplicate
+        $checkAnnounc = $this->announcementModel->checkAnnouncement($announcement, $fv_id, $anoc_id);
+        if($checkAnnounc) return $this->respondJson(0, "This Announcement already exists in the system.");
 
-        if ($showReadMore) {
-            $announcementDisplay .= '... <a href="javascript:void(0);" class="read-more">Read More</a>';
-        }
-
-        $announcementDisplay .= '</div>';
-		// Format announce_date and expiry_date for display
-
-$announceDateDisplay = (!empty($alist->announce_date) && $alist->announce_date != '0000-00-00') 
-    ? date('d-m-Y', strtotime($alist->announce_date)) 
-    : '';
-
-$expiryDateDisplay = (!empty($alist->expiry_date) && $alist->expiry_date != '0000-00-00') 
-    ? date('d-m-Y', strtotime($alist->expiry_date)) 
-    : '';
-
-
-        $data[] = [
-            "slno" => $slno + 1,
-            "subject" => $alist->subject,
-            "announcements" => $announcementDisplay,
-            "announce_date" => $announceDateDisplay,
-            "expiry_date" => $expiryDateDisplay,
-            "announce_status" => $statusText,
-            "status" => '<input type="checkbox" value="1" class="statcheck" onclick="statcheck(this);" data-id="'.$alist->anoc_id.'" '.$checked.'/>',
-            "action" => $action
+        // Prepare data
+        $data = [
+            'fv_id' => $fv_id,
+            'subject' => $subject,
+            'announcements' => $announcement,
+            'announce_date' => $announce_date,
+            'expiry_date' => $expiry_date,
+            'status' => 1,
+            'created_on' => date("Y-m-d H:i:s"),
+            'created_by' => $this->session->get('fav_user_id'),
         ];
 
-        $slno++;
+        if(empty($anoc_id) || $anoc_id == 0) {
+            $this->announcementModel->createAnnouncement($data);
+            return $this->respondJson(1, "Announcement created successfully.");
+        } else {
+            $this->announcementModel->modifyAnnouncement($anoc_id, $data);
+            return $this->respondJson(1, "Announcement updated successfully.");
+        }
     }
 
-    // Response
-    $ListAnnouncements = $this->announcementModel->AllAnnouncementsCount();
-    $totalRecords = $ListAnnouncements->announos;
-    $ListFilterAnnounce = $this->announcementModel->AllAnnouncementsFilterCount($filter);
-    $totalRecordwithFilter = $ListFilterAnnounce->filterannounnos;
+    public function listannouncement() {
+        $draw = $_POST['draw'];
+        $row = $_POST['start'];
+        $rowperpage = $_POST['length'];
+        $searchValue = $_POST['search']['value'];
 
-    $response = array(
-        "draw" => intval($draw),
-        "iTotalRecords" => $totalRecords,
-        "iTotalDisplayRecords" => $totalRecordwithFilter,
-        "aaData" => $data
-    );
+        $filter = "fv_id = ".$this->session->get('fav_id');
+        if($searchValue) $filter .= " AND announcements LIKE '%".$searchValue."%'";
 
-    echo json_encode($response);
-}
- 
-    	public function changeStatus() {
-		$status = $this->input->getPost('status');
-		$anoc_id = $this->input->getPost('anoc_id');
-		$AnnouncStatus = $this->announcementModel->changeAnnouncementStatus($status, $anoc_id);
-		echo json_encode(1);
-	}
-	public function deleteAnnouncement($aid) {
-		if($aid) {
-			$announceStatus = $this->announcementModel->changeAnnouncementStatus(3, $aid);
-			echo json_encode(1);
-		}
-		else {
-			echo json_encode(2);
-		}
-	}
+        $ListAnnouncements = $this->announcementModel->listAllAnnouncement($filter, $row, $row + $rowperpage);
+        $data = [];
+        $slno = $row;
 
-	  public function toggleStatus()
-{
-    $id = $this->request->getPost('id');
-    $status = $this->request->getPost('status');
+        foreach($ListAnnouncements as $alist) {
+            $today = date('Y-m-d');
 
-    $data = ['announce_status' => $status];
+            if(!empty($alist->expiry_date) && $alist->expiry_date < $today && $alist->status != 3) {
+                $this->announcementModel->update($alist->anoc_id, ['status'=>3]);
+                $alist->status = 3;
+            }
 
-    $update = $this->announcementModel->modifyAnnouncement($id, $data);
+            // Action buttons
+            $action = ($alist->status != 3) ?
+                '<a href="'.base_url("announcements/".$alist->anoc_id).'"><i class="fa fa-pencil-square-o"></i></a>
+                 <a href="javascript:void(0)" onclick="deleteAnnouncement('.$alist->anoc_id.')"><i class="fa fa-trash-o text-danger"></i></a>'
+                : '<a href="javascript:void(0)" onclick="deleteAnnouncement('.$alist->anoc_id.')"><i class="fa fa-trash-o text-danger"></i></a>';
 
-    if ($update) {
-        echo json_encode(['success' => true]);
-    } else {
-        echo json_encode(['success' => false]);
+            // Status text
+            switch($alist->status){
+                case 1: $statusText = '<span class="text-success">Published</span>'; break;
+                case 2: $statusText = '<span class="text-warning">Unpublished</span>'; break;
+                case 3: $statusText = '<span class="text-danger">Expired</span>'; break;
+                default: $statusText = '<span class="text-muted">Unknown</span>';
+            }
+
+            // Dates
+            $announceDateDisplay = ($alist->announce_date != '0000-00-00') ? date('d-m-Y', strtotime($alist->announce_date)) : '';
+            $expiryDateDisplay = ($alist->expiry_date != '0000-00-00') ? date('d-m-Y', strtotime($alist->expiry_date)) : '';
+
+            // Truncated announcement
+            $announcementText = htmlspecialchars($alist->announcements);
+            $previewText = mb_substr(strip_tags($announcementText), 0, 100, 'UTF-8');
+            $showReadMore = strlen(strip_tags($announcementText)) > 100;
+            $announcementDisplay = '<div class="announcement-text" data-full="'.htmlspecialchars($announcementText).'">'
+                . nl2br($previewText)
+                . ($showReadMore ? '... <a href="javascript:void(0);" class="read-more">Read More</a>' : '')
+                . '</div>';
+
+            $checked = ($alist->status == 1 ? 'checked="checked"' : '');
+
+            $data[] = [
+                "slno" => $slno+1,
+                "subject" => $alist->subject,
+                "announcements" => $announcementDisplay,
+                "announce_date" => $announceDateDisplay,
+                "expiry_date" => $expiryDateDisplay,
+                "status_text" => $statusText,
+                "status_toggle" => ($alist->status != 3) ? 
+                    '<input type="checkbox" value="1" class="statcheck" onclick="statcheck(this);" data-id="'.$alist->anoc_id.'" '.$checked.'/>' 
+                    : '<span class="text-muted">—</span>',
+                "action" => $action
+            ];
+            $slno++;
+        }
+
+        $totalRecords = $this->announcementModel->AllAnnouncementsCount()->announos;
+        $totalRecordwithFilter = $this->announcementModel->AllAnnouncementsFilterCount($filter)->filterannounnos;
+
+        echo json_encode([
+            "draw" => intval($draw),
+            "iTotalRecords" => $totalRecords,
+            "iTotalDisplayRecords" => $totalRecordwithFilter,
+            "aaData" => $data
+        ]);
     }
-}
 
+    public function changeStatus() {
+        $status = $this->request->getPost('status');
+        $anoc_id = $this->request->getPost('anoc_id');
+        $this->announcementModel->changeAnnouncementStatus($status, $anoc_id);
+        echo json_encode(["status"=>1, "respmsg"=>"Status changed successfully."]);
+    }
 
+    public function deleteAnnouncement($aid) {
+        if($aid) {
+            $this->announcementModel->changeAnnouncementStatus(3, $aid);
+            echo json_encode(["status"=>1, "respmsg"=>"Announcement deleted successfully."]);
+        } else {
+            echo json_encode(["status"=>0, "respmsg"=>"Invalid request."]);
+        }
+    }
+
+    // Helper for JSON response
+    private function respondJson($status, $respmsg) {
+        echo json_encode(['status'=>$status, 'respmsg'=>$respmsg]);
+        exit;
+    }
 }
 ?>

@@ -53,34 +53,28 @@
 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="announce_date">Publish Date</label>
-
-                                        <input type="text" class="form-control" value="<?= date('d-m-Y') ?>" disabled>
-
-                                        <!-- Actual value submitted to DB -->
-                                        <input type="hidden" name="announce_date" value="<?= date('Y-m-d') ?>">
-
+                                    <div class="form-group position-relative">
+                                        <label for="announce_date">Publish Date *</label>
+                                        <input type="text" class="form-control pl-4" id="announce_date"
+                                            name="announce_date" value="<?= esc($announce_date) ?>"
+                                            placeholder="Select publish date" />
+                                        <i class="fa fa-calendar" style="right: 23px;top: 57%;transform: translateY(-50%); pointer-events: none;position: absolute;"></i>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="expiry_date">End Date</label>
-                                        <div class="input-group date" id="expiryDatePicker">
-                                            <input type="text" class="form-control" name="expiry_date" id="expiry_date"
-                                                value="<?= isset($expiry_date) && $expiry_date != '' ? date('d-m-Y', strtotime($expiry_date)) : '' ?>"
-                                                placeholder="DD-MM-YYYY" />
-                                            <span class="input-group-text bg-white calender">
-                                                <i class="fa fa-calendar"></i>
-                                            </span>
-                                        </div>
+                                    <div class="form-group position-relative">
+                                        <label for="expiry_date">End Date *</label>
+                                        <input type="text" class="form-control pl-4" id="expiry_date" name="expiry_date"
+                                            value="<?= esc($expiry_date) ?>" placeholder="Select expiry date" />
+                                        <i class="fa fa-calendar"
+                                            style="right: 23px;top: 57%;transform: translateY(-50%); pointer-events: none;position: absolute;"></i>
                                     </div>
                                 </div>
-
-
-
                             </div>
+
+
+
 
                             <div class="form-group text-right">
                                 <input type="hidden" name="anoc_id"

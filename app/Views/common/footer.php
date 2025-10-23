@@ -63,6 +63,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js">
 </script>
+<!-- Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
    <!-- jquery ============================================ -->
     <script src="<?php echo base_url('public/js/vendor/jquery-1.11.3.min.js'); ?>"></script>
 <!--  project scripts (after all libraries) -->
