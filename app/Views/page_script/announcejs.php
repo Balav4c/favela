@@ -18,7 +18,7 @@ function statcheck(el) {
         initAlert("Status changed successfully.", 1);
            $('#announcementlist').DataTable().ajax.reload(null, false);
     }, 'json');
-}
+}   
 $(document).ready(function() {
     announceList = $('#announcementlist').DataTable({
         'paging': true,

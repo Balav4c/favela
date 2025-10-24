@@ -75,7 +75,7 @@ $data['expiry_date'] = (!empty($ThisAnnouc->expiry_date) && $ThisAnnouc->expiry_
 
         // Check duplicate
         $checkAnnounc = $this->announcementModel->checkAnnouncement($announcement, $fv_id, $anoc_id);
-        if($checkAnnounc) return $this->respondJson(0, "This Announcement already exists in the system.");
+        // if($checkAnnounc) return $this->respondJson(0, "This Announcement already exists in the system.");
 
         // Prepare data
         $data = [
@@ -184,9 +184,9 @@ $data['expiry_date'] = (!empty($ThisAnnouc->expiry_date) && $ThisAnnouc->expiry_
     public function deleteAnnouncement($aid) {
         if($aid) {
             $this->announcementModel->changeAnnouncementStatus(3, $aid);
-            echo json_encode(["status"=>1, "respmsg"=>"Announcement deleted successfully."]);
+            echo json_encode(1);
         } else {
-            echo json_encode(["status"=>0, "respmsg"=>"Invalid request."]);
+            echo json_encode(2);
         }
     }
 
