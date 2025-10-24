@@ -9,9 +9,16 @@ class ComplaintsModel extends Model {
 		$this->db = \Config\Database::connect();
 	}
       
-    public function getAllcomplaints($us_id, $fv_id) {
-        return $this->db->query("SELECT cm_id, fv_id, us_id AS uid, to_us_id, msg_type, subject, content, status, action_status, created_on, created_by  FROM complaintsinfo WHERE fv_id = '".$fv_id."' AND us_id = '".$us_id."'")->getResult();
-    }
+   public function getAllcomplaints($us_id, $fv_id) {
+    return $this->db->query("
+        SELECT cm_id, fv_id, us_id AS uid, to_us_id, msg_type, subject, content, status, action_status, created_on, created_by, uploads  
+        FROM complaintsinfo 
+        WHERE fv_id = '".$fv_id."' 
+          AND us_id = '".$us_id."'
+        ORDER BY cm_id DESC
+    ")->getResult();
+}
+
     // public function saveComplaints($data) {
 	// 	$this->db->table('complaintsinfo')->insert($data);
 	// }

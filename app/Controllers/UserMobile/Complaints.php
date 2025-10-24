@@ -18,6 +18,7 @@ class Complaints extends BaseController {
 		$this->ComplaintsModel = new ComplaintsModel();	
 	}
     public function getComplaints() {
+        
         $headers = $this->request->headers();
         $token = trim(explode("Bearer", $headers['Authorization'])[1]);
     
@@ -55,6 +56,8 @@ class Complaints extends BaseController {
             return $this->response->setStatusCode(401)->setJSON($response);
         }
     }
+
+ 
 
 
     // public function saveComplaints() {
@@ -118,6 +121,7 @@ class Complaints extends BaseController {
     // }
 public function saveComplaints() 
 {
+    
     // Get token from headers
     $headers = $this->request->getHeaders();
     $token = isset($headers['Authorization']) ? trim(str_replace('Bearer', '', $headers['Authorization']->getValue())) : null;
