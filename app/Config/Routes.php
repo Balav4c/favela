@@ -232,7 +232,7 @@ $routes->post('usermobile/gatepass/getgatepass', 'UserMobile\VisitorGatepass::ge
 $routes->post('usermobile/gatepass/savegatepass', 'UserMobile\VisitorGatepass::createnew');
 $routes->post('usermobile/gatepass/user-history', 'UserMobile\VisitorGatepass::getUserGatepassHistory');
 $routes->post('usermobile/gatepass/delete', 'UserMobile\VisitorGatepass::deleteGatepass');
-$routes->post('usermobile/gatepass/scan', 'UserMobile\VisitorGatepass::scanGatepass');
+$routes->post('security/usermobile/gatepass/scan', 'UserMobile\VisitorGatepass::scanGatepass');
 
 
 
@@ -254,8 +254,11 @@ $routes->post('security/usermobile/changeMpin', 'UserMobile\Security::changeMpin
 $routes->post('usermobile/media/uploads', 'UserMobile\Complaints::mediaUploads');
 
 // chat and messaging
+
 $routes->post('usermobile/chat/send', 'UserMobile\ChatController::createOrSendMessage');
-$routes->get('usermobile/list', 'UserMobile\ChatController::getChats');
-$routes->post('usermobile/messages', 'UserMobile\ChatController::getMessages');
+$routes->post('usermobile/list', 'UserMobile\ChatController::getChatsByUser');
+$routes->post('usermobile/messages', 'UserMobile\ChatController::getMessagesByChat');
 $routes->post('usermobile/markread', 'UserMobile\ChatController::markRead');
- $routes->get('usermobile/getUsersByFlat', 'UserMobile\ChatController::getUsersByFlat');
+$routes->post('usermobile/chat/getContactsByFvId', 'UserMobile\ChatController::getContactsByFvId');
+$routes->post('usermobile/chat/getChatsByUser', 'UserMobile\ChatController::getChatsByUser');
+
