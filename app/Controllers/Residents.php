@@ -178,54 +178,15 @@ class Residents extends BaseController {
 						"newuser"=>1));
 	}
 	
-// public function updateuser() {
-// 		$data['aadhar_no'] = $this->input->getPost('aadhaar_hd');
-// 		$user_id = $this->input->getPost('user_id');
-// 		$data['email_id'] = $this->input->getPost('email');
-// 		$data['phone'] = $this->input->getPost('contactno');
-// 		$data['c_address'] = $this->input->getPost('caddress');
-// 		$modifyUser = $this->residentsModel->modifyUser($user_id,$data);
-// 		$checkFlatUser = $this->residentsModel->checkTowerUser($user_id, $this->session->get('fav_id'));
-// 		if($checkFlatUser->fvuserno == 0) {
-// 			$udata['us_id'] = $user_id;
-// 			$udata['fv_id'] = $this->session->get('fav_id');
-// 			$udata['fv_registered_on'] = date('Y-m-d H:i:s');
-// 			$residenceAssign = $this->residentsModel->acceptNewUser($udata);
-// 		}
-// 		else {
-// 			$us_id = $user_id;
-// 			$fv_id = $this->session->get('fav_id');
-// 			$udata['fv_status'] = 1;
-// 			$residenceAssign = $this->residentsModel->updateNewUser($us_id, $fv_id, $udata);
-// 		}
-		
-// 		/*Ledger Creation*/
-		
-// 		$userinfo = $this->residentsModel->getUser($user_id);
-// 		$ledData['fv_id'] = $this->session->get('fav_id');
-// 		$ledData['user_id'] = $user_id;
-// 		$ledData['created_on'] = date("Y-m-d H:i:s");
-// 		$ledData['account_type'] = 4; //Income type from accounts_types table.
-// 		$ledData['ledger_name'] = $userinfo->name;
-// 		$ledData['opening_balance'] = 0;
-		
-// 		$checkLedger = $this->accountsModel->checkLedger($ledData['fv_id'], $ledData['user_id']);
-// 		if($checkLedger->ledrow == 0) {
-// 			$CreateLedger = $this->accountsModel->CreateLedger($ledData);
-// 		}
-// 		echo json_encode(1);
-// 	}
+
 
 public function updateuser()
 {
-       
     $residence_method = $this->request->getPost('residence_method');
-    $user_id = $this->request->getPost('user_id'); // may be empty
-	
+    $user_id = $this->request->getPost('user_id');
     $fv_id = $this->session->get('fav_id');
     $current_time = date('Y-m-d H:i:s');
 
-    // Common fields
     $data = [
         'email_id' => $this->request->getPost('email'),
         'phone' => $this->request->getPost('contactno'),
@@ -233,19 +194,33 @@ public function updateuser()
     ];
 
     if ($residence_method === 'with_aadhaar') {
-        $aadhaar_no = $this->request->getPost('aadhaar_hd'); // Make sure this matches JS
+        $aadhaar_no = $this->request->getPost('aadhaar_hd');
         if (empty($aadhaar_no) || !preg_match('/^\d{12}$/', $aadhaar_no)) {
-            return $this->response->setJSON(['error' => 'Invalid Aadhaar']);
+            return $this->response->setJSON(['error' => 'Invalid Aadhaar number.']);
         }
+
         $data['aadhar_no'] = $aadhaar_no;
-    } else {
+
+        // ✅ Handle Aadhaar profile photo (if uploaded)
+        $file = $this->request->getFile('manual_photo');
+        if ($file && $file->isValid() && !$file->hasMoved()) {
+            $uploadPath = FCPATH . 'uploads/profile_photos/';
+            if (!is_dir($uploadPath)) mkdir($uploadPath, 0777, true);
+
+            $newName = 'aadhaar_' . time() . '.' . $file->getExtension();
+            $file->move($uploadPath, $newName);
+            $data['profile_photo'] = $newName;
+        }
+
+    } elseif ($residence_method === 'without_aadhaar') {
         $data['name'] = $this->request->getPost('manual_name');
         $data['gender'] = $this->request->getPost('manual_gender');
         $data['dob'] = $this->request->getPost('manual_dob');
         $data['p_address'] = $this->request->getPost('manual_address');
         $data['id_proof'] = $this->request->getPost('idproof');
         $data['id_proof_number'] = $this->request->getPost('id_proof_number');
-        // Handle photo upload or capture
+
+        // ✅ Handle photo or captured image
         $uploadPath = FCPATH . 'uploads/profile_photos/';
         if (!is_dir($uploadPath)) mkdir($uploadPath, 0777, true);
 
@@ -253,50 +228,47 @@ public function updateuser()
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $newName = 'manual_' . time() . '.' . $file->getExtension();
             $file->move($uploadPath, $newName);
-            $data['photo'] = $newName;
+            $data['manual_photo'] = $newName; // ✅ fixed field name
         } else {
             $captured_image = $this->request->getPost('captured_image');
             if (!empty($captured_image)) {
                 $imgData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $captured_image));
                 $newName = 'manual_' . time() . '.png';
-                file_put_contents($uploadPath . $newName, $imgData);
-                $data['photo'] = $newName;
+                if (file_put_contents($uploadPath . $newName, $imgData)) {
+                    $data['manual_photo'] = $newName; // ✅ fixed field name
+                }
             }
         }
     }
 
-    // Insert or Update
+    // ✅ Insert or Update user
     if (empty($user_id)) {
-         $user_id = $this->residentsModel->createUser($data); // returns new ID
+        $user_id = $this->residentsModel->createUser($data);
         if (!$user_id) {
             return $this->response->setJSON(['error' => 'Failed to create user']);
         }
     } else {
-       
         $updated = $this->residentsModel->modifyUser($user_id, $data);
         if (!$updated) {
             return $this->response->setJSON(['error' => 'Failed to update user']);
         }
     }
 
-    // Tower assignment
+    // ✅ Tower assignment
     $checkFlatUser = $this->residentsModel->checkTowerUser($user_id, $fv_id);
     if (!$checkFlatUser || $checkFlatUser->fvuserno == 0) {
-        $udata = ['us_id' => $user_id, 'fv_id' => $fv_id, 'fv_registered_on' => $current_time];
-        $this->residentsModel->acceptNewUser($udata);
+        $this->residentsModel->acceptNewUser([
+            'us_id' => $user_id,
+            'fv_id' => $fv_id,
+            'fv_registered_on' => $current_time
+        ]);
     } else {
-        $udata = ['fv_status' => 1];
-        $this->residentsModel->updateNewUser($user_id, $fv_id, $udata);
+        $this->residentsModel->updateNewUser($user_id, $fv_id, ['fv_status' => 1]);
     }
 
     return $this->response->setJSON(['success' => 1]);
 }
 
-
-
-
-
-	
 	public function changeuser() {
 		$userId = $this->input->getPost('userId');
 		$fv_id = $this->session->get('fav_id');
@@ -319,14 +291,56 @@ public function updateuser()
 		echo json_encode(1);
 	}
 	
-	public function userDetails() {
-		$us_id = $this->input->getPost('us_id');
-		if($us_id) {
-			$getUser = $this->residentsModel->getUserDetails($us_id);
-			echo json_encode($getUser);
-		}
-	}
+	// public function userDetails() {
+	// 	$us_id = $this->input->getPost('us_id');
+	// 	if($us_id) {
+	// 		$getUser = $this->residentsModel->getUserDetails($us_id);
+	// 		echo json_encode($getUser);
+	// 	}
+	// }
 	
+// 	public function userDetails() {
+//     $us_id = $this->request->getPost('us_id'); // CI4 style
+//     if($us_id) {
+//         $getUser = $this->residentsModel->getUserDetails($us_id);
+
+//         // If model does not return residence_method, compute it
+//         if (!isset($getUser->residence_method)) {
+//             $getUser->residence_method = !empty($getUser->aadhar_no) ? 'with_aadhaar' : 'without_aadhaar';
+//         }
+
+//         return $this->response->setJSON($getUser);
+//     }
+//     return $this->response->setJSON(['error' => 'User not found']);
+// }
+public function userDetails() {
+    $us_id = $this->request->getPost('us_id'); // CI4 style
+    if($us_id) {
+        $getUser = $this->residentsModel->getUserDetails($us_id);
+
+        if (!$getUser) {
+            return $this->response->setJSON(['error' => 'User not found']);
+        }
+
+        // Determine residence_method
+        if (!isset($getUser->residence_method)) {
+            $getUser->residence_method = !empty($getUser->aadhar_no) ? 'with_aadhaar' : 'without_aadhaar';
+        }
+
+        // Convert BLOB profile_photo to base64 if exists
+        if (!empty($getUser->profile_photo)) {
+            $getUser->profile_photo_base64 = 'data:image/jpeg;base64,' . base64_encode($getUser->profile_photo);
+        } else {
+            $getUser->profile_photo_base64 = null;
+        }
+
+        return $this->response->setJSON($getUser);
+    }
+
+    return $this->response->setJSON(['error' => 'User not found']);
+}
+
+
 	public function addnewdoor() {
 		$data['door_no'] = $this->input->getPost('doorno');
 		$data['us_id'] = $this->input->getPost('list_us_id');
@@ -363,56 +377,56 @@ public function updateuser()
 		echo json_encode(1);
 	}
 	
-	public function listresidents() {
-		
-		## Read value
-		$draw = $_POST['draw'];
-		$row = $_POST['start'];
-		$rowperpage = $_POST['length']; // Rows display per page
-		$columnIndex = $_POST['order'][0]['column']; // Column index
-		$columnName = $_POST['columns'][$columnIndex]['data']; // Column name
-		$columnSortOrder = $_POST['order'][0]['dir']; // asc or desc
-		$searchValue = $_POST['search']['value']; // Search value
-		//foreach ($empRecords as $row) {
-		$filter = '1=1';
-		$tolimit = $row + $rowperpage;
-		$fv_id = $this->session->get('fav_id');
-		if($searchValue) {
-			$filter .= " and (au.name like '%".$searchValue."%' OR au.aadhar_no like '%".$searchValue."%' OR au.email_id like '%".$searchValue."%' OR au.phone like '%".$searchValue."%')";
-		}
-		$filter .= " and fv_id = ".$this->session->get('fav_id');
-		$ListResidents = $this->residentsModel->listAllResidents($filter, $row, $tolimit);
-		$data = array();
-		$slno = $row;
-		
-		foreach($ListResidents as $reslist) {
-			$action = '<a href="javascript:void(0);" onclick="userDetails('.$reslist->us_id.')"><i class="fa fa-info-circle"></i></a>';
-			$action .= '<a href="javascript:void(0)" onclick="userDoors('.$reslist->us_id.',\''.$reslist->name.'\')"><i class="fa fa-th"></i></a>';
-			$action .= '<a href="javascript:void(0)" onclick="deleteFlatUser('.$reslist->us_id.')"><i class="fa fa-trash-o"></i></a>';
-			$checked = ($reslist->fv_status==1 ? 'checked="checked"' : '' );
-			$data[] = array(
-				"slno"=>$slno + 1,
-				"res_name"=>$reslist->name,
-				"res_aadhaar"=>$reslist->aadhar_no,
-				"res_phone"=>$reslist->phone,
-				"res_email"=>$reslist->email_id,
-				"status"=>'<input type="checkbox" value="1" class="statcheck" onclick="statcheck(this);" data-id="'.$reslist->us_id.'" '.$checked.'/>',
-				"action"=>$action
+		public function listresidents() {
+			
+			## Read value
+			$draw = $_POST['draw'];
+			$row = $_POST['start'];
+			$rowperpage = $_POST['length']; // Rows display per page
+			$columnIndex = $_POST['order'][0]['column']; // Column index
+			$columnName = $_POST['columns'][$columnIndex]['data']; // Column name
+			$columnSortOrder = $_POST['order'][0]['dir']; // asc or desc
+			$searchValue = $_POST['search']['value']; // Search value
+			//foreach ($empRecords as $row) {
+			$filter = '1=1';
+			$tolimit = $row + $rowperpage;
+			$fv_id = $this->session->get('fav_id');
+			if($searchValue) {
+				$filter .= " and (au.name like '%".$searchValue."%' OR au.aadhar_no like '%".$searchValue."%' OR au.email_id like '%".$searchValue."%' OR au.phone like '%".$searchValue."%')";
+			}
+			$filter .= " and fv_id = ".$this->session->get('fav_id');
+			$ListResidents = $this->residentsModel->listAllResidents($filter, $row, $tolimit);
+			$data = array();
+			$slno = $row;
+			
+			foreach($ListResidents as $reslist) {
+				$action = '<a href="javascript:void(0);" onclick="userDetails('.$reslist->us_id.')"><i class="fa fa-info-circle"></i></a>';
+				$action .= '<a href="javascript:void(0)" onclick="userDoors('.$reslist->us_id.',\''.$reslist->name.'\')"><i class="fa fa-th"></i></a>';
+				$action .= '<a href="javascript:void(0)" onclick="deleteFlatUser('.$reslist->us_id.')"><i class="fa fa-trash-o"></i></a>';
+				$checked = ($reslist->fv_status==1 ? 'checked="checked"' : '' );
+				$data[] = array(
+					"slno"=>$slno + 1,
+					"res_name"=>$reslist->name,
+					"res_aadhaar"=>$reslist->aadhar_no,
+					"res_phone"=>$reslist->phone,
+					"res_email"=>$reslist->email_id,
+					"status"=>'<input type="checkbox" value="1" class="statcheck" onclick="statcheck(this);" data-id="'.$reslist->us_id.'" '.$checked.'/>',
+					"action"=>$action
+				);
+				$slno++;
+			}
+			// Response
+			$ListRes = $this->residentsModel->AllResidentsCount($fv_id);
+			$totalRecords = $ListRes->resnos;
+			$ListFilterRes = $this->residentsModel->AllResidFilterCount($filter);
+			$totalRecordwithFilter = $ListFilterRes->filterressnos;
+			$response = array(
+				"draw" => intval($draw),
+				"iTotalRecords" => $totalRecords,
+				"iTotalDisplayRecords" => $totalRecordwithFilter,
+				"aaData" => $data
 			);
-			$slno++;
+			echo json_encode($response);
 		}
-		// Response
-		$ListRes = $this->residentsModel->AllResidentsCount($fv_id);
-		$totalRecords = $ListRes->resnos;
-		$ListFilterRes = $this->residentsModel->AllResidFilterCount($filter);
-		$totalRecordwithFilter = $ListFilterRes->filterressnos;
-		$response = array(
-			"draw" => intval($draw),
-			"iTotalRecords" => $totalRecords,
-			"iTotalDisplayRecords" => $totalRecordwithFilter,
-			"aaData" => $data
-		);
-		echo json_encode($response);
 	}
-}
 ?>
