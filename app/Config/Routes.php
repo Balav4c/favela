@@ -264,3 +264,6 @@ $routes->post('usermobile/markread', 'UserMobile\ChatController::markRead');
 $routes->post('usermobile/chat/getContactsByFvId', 'UserMobile\ChatController::getContactsByFvId');
 $routes->post('usermobile/chat/getChatsByUser', 'UserMobile\ChatController::getChatsByUser');
 
+$routes->post('usermobile/emergency/send', 'Usermobile\EmergencyAlert::sendAlert');
+$routes->get('usermobile/emergency/active', 'Usermobile\EmergencyAlert::getActiveAlerts');
+$routes->post('usermobile/emergency/resolve', 'Usermobile\EmergencyAlert::resolveAlert');

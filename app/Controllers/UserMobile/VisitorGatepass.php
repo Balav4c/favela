@@ -280,6 +280,11 @@ public function scanGatepass()
             'message' => 'Visitor details fetched successfully.',
             'data' => [
                 'visitor_name' => $gatepass['visitor_name'],
+                'visitor_place' => $gatepass['visitor_place'],
+                'visitor_phone' => $gatepass['visitor_phone'],
+                'vehicle_no' => $gatepass['vehicle_no'],
+                'date_of_visit' => $gatepass['date_of_visit'],
+                'visitor_image' => $gatepass['visitor_image'],
                 'purpose_of_visit' => $gatepass['purpose_of_visit'],
                 'flat' => $gatepass['person_flat_visit'],
                 'check_in' => $gatepass['check_in'],
