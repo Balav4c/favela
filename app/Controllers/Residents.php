@@ -193,6 +193,7 @@ public function updateuser()
         'c_address' => $this->request->getPost('caddress'),
     ];
 
+    // ✅ Aadhaar-based registration
     if ($residence_method === 'with_aadhaar') {
         $aadhaar_no = $this->request->getPost('aadhaar_hd');
         if (empty($aadhaar_no) || !preg_match('/^\d{12}$/', $aadhaar_no)) {
@@ -201,7 +202,7 @@ public function updateuser()
 
         $data['aadhar_no'] = $aadhaar_no;
 
-        // ✅ Handle Aadhaar profile photo (if uploaded)
+        // ✅ Handle uploaded Aadhaar profile photo
         $file = $this->request->getFile('manual_photo');
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $uploadPath = FCPATH . 'uploads/profile_photos/';
@@ -211,8 +212,10 @@ public function updateuser()
             $file->move($uploadPath, $newName);
             $data['profile_photo'] = $newName;
         }
+    }
 
-    } elseif ($residence_method === 'without_aadhaar') {
+    // ✅ Manual registration (without Aadhaar)
+    elseif ($residence_method === 'without_aadhaar') {
         $data['name'] = $this->request->getPost('manual_name');
         $data['gender'] = $this->request->getPost('manual_gender');
         $data['dob'] = $this->request->getPost('manual_dob');
@@ -220,28 +223,34 @@ public function updateuser()
         $data['id_proof'] = $this->request->getPost('idproof');
         $data['id_proof_number'] = $this->request->getPost('id_proof_number');
 
-        // ✅ Handle photo or captured image
         $uploadPath = FCPATH . 'uploads/profile_photos/';
         if (!is_dir($uploadPath)) mkdir($uploadPath, 0777, true);
 
+        // ✅ Check uploaded file first
         $file = $this->request->getFile('manual_photo');
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $newName = 'manual_' . time() . '.' . $file->getExtension();
             $file->move($uploadPath, $newName);
-            $data['manual_photo'] = $newName; // ✅ fixed field name
-        } else {
+            $data['manual_photo'] = $newName;
+        } 
+        // ✅ If no file, handle captured (base64) image
+        else {
             $captured_image = $this->request->getPost('captured_image');
             if (!empty($captured_image)) {
-                $imgData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $captured_image));
-                $newName = 'manual_' . time() . '.png';
-                if (file_put_contents($uploadPath . $newName, $imgData)) {
-                    $data['manual_photo'] = $newName; // ✅ fixed field name
+                $captured_image = preg_replace('#^data:image/\w+;base64,#i', '', $captured_image);
+                $imgData = base64_decode($captured_image);
+
+                if ($imgData !== false) {
+                    $newName = 'manual_' . time() . '.png';
+                    if (file_put_contents($uploadPath . $newName, $imgData)) {
+                        $data['manual_photo'] = $newName;
+                    }
                 }
             }
         }
     }
 
-    // ✅ Insert or Update user
+    // ✅ Create or update user record
     if (empty($user_id)) {
         $user_id = $this->residentsModel->createUser($data);
         if (!$user_id) {
@@ -254,7 +263,7 @@ public function updateuser()
         }
     }
 
-    // ✅ Tower assignment
+    // ✅ Tower assignment logic
     $checkFlatUser = $this->residentsModel->checkTowerUser($user_id, $fv_id);
     if (!$checkFlatUser || $checkFlatUser->fvuserno == 0) {
         $this->residentsModel->acceptNewUser([
@@ -268,6 +277,7 @@ public function updateuser()
 
     return $this->response->setJSON(['success' => 1]);
 }
+
 
 	public function changeuser() {
 		$userId = $this->input->getPost('userId');
