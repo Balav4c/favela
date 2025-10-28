@@ -138,37 +138,56 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <div class="form-group text-center">
-                                        <label><strong>Upload or Take Photo</strong></label><br>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label><strong>Upload or Take Photo</strong></label>
 
-                                        <!-- Upload Option -->
-                                        <input type="file" accept="image/*" id="manual_photo" name="manual_photo"
-                                            class="form-control mb-3" style="max-width:250px; margin:auto;" />
-                                        <img id="uploadPreview" src="" alt="Uploaded Photo"
-                                            style="display:none; margin-top:10px; max-width:200px; border-radius:8px;" />
-                                            <p class="m-0 p-0"> Or </p>
-                                        <!-- Live Camera Option -->
+                                            <div class="row justify-content-center mt-2">
+                                                <!-- 🖼️ Drag & Drop Upload Zone -->
+                                                <div class="col-md-6 col-sm-12 mb-3">
+                                                    <div id="dropZone"
+                                                        style="border: 2px dashed #007bff; border-radius: 10px; padding: 25px; max-width: 250px; margin: auto; cursor: pointer;">
+                                                        <p id="dropText" class="m-0">Drag & Drop Photo Here<br>or Click
+                                                            to Browse</p>
+                                                        <input type="file" accept="image/*" id="manual_photo"
+                                                            name="manual_photo" style="display:none;" />
+                                                    </div>
 
-                                        <button type="button" class="btn btn-primary" id="openCamera">📸 Take
-                                            Photo</button><br>
+                                                    <!-- Uploaded Image Preview -->
+                                                    <img id="uploadPreview" src="" alt="Uploaded Photo"
+                                                        style="display:none; margin-top:10px; max-width:200px; border-radius:8px;" />
+                                                </div>
 
-                                        <video id="cameraPreview" autoplay
-                                            style="display:none; margin-top:10px; max-width:250px; border-radius:10px;"></video><br>
+                                                <!-- 📸 Camera Capture Section -->
+                                                <div class="col-md-6 col-sm-12 mb-3">
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <button type="button" class="btn btn-primary mb-2"
+                                                            id="openCamera">📸 Take Photo</button>
 
-                                        <button type="button" id="capturePhoto" class="btn btn-success mt-2"
-                                            style="display:none;">Capture</button>
-                                        <canvas id="capturedCanvas"
-                                            style="display:none; margin-top:10px; max-width:250px; border-radius:8px;"></canvas>
+                                                        <video id="cameraPreview" autoplay
+                                                            style="display:none; margin-top:10px; max-width:250px; border-radius:10px;"></video>
 
-                                        <!-- Delete button -->
-                                        <button type="button" id="deletePhoto" class="btn btn-danger mt-2"
-                                            style="display:none;">🗑 Delete Photo</button>
+                                                        <button type="button" id="capturePhoto"
+                                                            class="btn btn-success mt-2"
+                                                            style="display:none;">Capture</button>
 
-                                        <!-- Hidden field for captured image -->
-                                        <input type="hidden" name="captured_image" id="captured_image">
+                                                        <canvas id="capturedCanvas"
+                                                            style="display:none; margin-top:10px; max-width:250px; border-radius:8px;"></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <!-- 🗑 Delete button -->
+                                            <button type="button" id="deletePhoto" class="btn btn-danger mt-2"
+                                                style="display:none;">🗑 Delete Photo</button>
+
+                                            <!-- Hidden field for captured image -->
+                                            <input type="hidden" name="captured_image" id="captured_image">
+                                        </div>
                                     </div>
+
                                 </div>
+
                             </div>
                         </div>
 

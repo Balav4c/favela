@@ -17,5 +17,14 @@ class TokenVerifyModel extends Model {
                     ->getRowArray();
 }
 
+
+ public function verifySecurityToken($token, $sc_id)
+    {
+     return $this->db->table('security')
+                        ->where('token', $token)
+                        ->where('sc_id', $sc_id)
+                        ->get()
+                        ->getRowArray();
+    }
 }
 ?>

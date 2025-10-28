@@ -771,4 +771,79 @@ $('#deletePhoto').click(function() {
     $('#captured_image').val('');
     $('#uploadPreview').hide();
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropZone = document.getElementById('dropZone');
+  const fileInput = document.getElementById('manual_photo');
+  const uploadPreview = document.getElementById('uploadPreview');
+  const deletePhoto = document.getElementById('deletePhoto');
+  const dropText = document.getElementById('dropText');
+
+  // 🔹 Click on the drop zone to open file dialog
+  dropZone.addEventListener('click', () => fileInput.click());
+
+  // 🔹 File selected manually
+  fileInput.addEventListener('change', handleFile);
+
+  // 🔹 Drag over effect
+  dropZone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropZone.style.borderColor = '#28a745';
+    dropZone.style.background = '#f8fff8';
+    dropText.textContent = "Drop image to upload";
+  });
+
+  // 🔹 Drag leave effect
+  dropZone.addEventListener('dragleave', () => {
+    dropZone.style.borderColor = '#007bff';
+    dropZone.style.background = '';
+    dropText.innerHTML = "Drag & Drop Photo Here<br>or Click to Browse";
+  });
+
+  // 🔹 Handle dropped file
+  dropZone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropZone.style.borderColor = '#007bff';
+    dropZone.style.background = '';
+    dropText.innerHTML = "Drag & Drop Photo Here<br>or Click to Browse";
+
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) {
+      displayImage(file);
+    } else {
+      alert("Please upload a valid image file!");
+    }
+  });
+
+  // 🔹 Display image preview
+  function handleFile(e) {
+    const file = e.target.files[0];
+    if (file) displayImage(file);
+  }
+
+  function displayImage(file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      uploadPreview.src = e.target.result;
+      uploadPreview.style.display = 'block';
+      deletePhoto.style.display = 'inline-block';
+      dropZone.style.display = 'none'; // hide drop zone after upload
+    };
+    reader.readAsDataURL(file);
+  }
+
+  // 🔹 Delete uploaded image
+  deletePhoto.addEventListener('click', () => {
+    uploadPreview.src = '';
+    uploadPreview.style.display = 'none';
+    fileInput.value = '';
+    deletePhoto.style.display = 'none';
+    dropZone.style.display = 'block'; // show drop zone again
+  });
+});
+
+
 </script>
