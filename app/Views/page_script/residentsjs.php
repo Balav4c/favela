@@ -771,6 +771,128 @@ $('#deletePhoto').click(function() {
     $('#captured_image').val('');
     $('#uploadPreview').hide();
 });
+$('#saveUser').click(function (e) {
+    e.preventDefault();
+
+    var saveUrl = baseUrl + "residents/updateuser";
+    var residenceMethod = $('input[name="residence_method"]:checked').val();
+    var user_id = $('#user_id').val().trim();
+
+    // --- Validation for "Without Aadhaar" ---
+    if (residenceMethod === 'without_aadhaar') {
+        var manual_name = $('#manual_name').val().trim();
+        var manual_gender = $('#manual_gender').val();
+        var manual_dob = $('#manual_dob').val();
+        var manual_address = $('#manual_address').val().trim();
+        var idproof = $('#idProof').val();
+        var id_proof_number = $('#idProofNumber').val().trim();
+
+        if (!manual_name || !manual_gender || !manual_dob || !manual_address || !idproof || !id_proof_number) {
+            initAlert("Please fill in all required fields.", 0);
+            return false;
+        }
+
+        // --- ID Proof Validation ---
+        let pattern, errorMsg;
+        switch (idproof) {
+            case 'pan_card':
+                pattern = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+                errorMsg = "Invalid PAN Card Number. Format: ABCDE1234F";
+                break;
+            case 'vote_id':
+                pattern = /^[A-Z]{2}\/[0-9]{2}\/[0-9]{3}\/[0-9]{6}$/;
+                errorMsg = "Invalid Voter ID Number. Format: TN/12/123/456789";
+                break;
+            case 'driving_license':
+                pattern = /^[A-Z]{2}[0-9]{2}\s?[0-9]{11}$/;
+                errorMsg = "Invalid Driving License Number. Format: TN09 20220012345";
+                break;
+        }
+
+        if (pattern && !pattern.test(id_proof_number)) {
+            initAlert(errorMsg, 0);
+            return false;
+        }
+    }
+
+    // --- Validation for "With Aadhaar" ---
+    if (residenceMethod === 'with_aadhaar') {
+        var aadhaar_no = $('#aadhaar_hd').val().trim();
+        if (!aadhaar_no) {
+            initAlert("Please verify Aadhaar before saving.", 0);
+            return false;
+        }
+        if (!/^\d{12}$/.test(aadhaar_no)) {
+            initAlert("Invalid Aadhaar number. It must be 12 digits.", 0);
+            return false;
+        }
+    }
+
+    // --- Prepare FormData (includes files + hidden fields) ---
+    var formData = new FormData($('#createresidents')[0]);
+
+    // ✅ Do NOT manually append user_id again — it's already in the form
+    // formData.append('user_id', user_id);
+
+    formData.append('residence_method', residenceMethod);
+
+    if ($('#captured_image').val()) {
+        formData.append('captured_image', $('#captured_image').val());
+    }
+
+    // --- AJAX Call ---
+    $.ajax({
+        url: saveUrl,
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        dataType: 'json',
+
+        success: function (data) {
+            console.log("Response:", data);
+
+            if (data.success == 1) {
+                initAlert("Resident details saved successfully!", 1);
+
+                // ✅ Reload DataTable
+                if (typeof residentslist !== 'undefined' && residentslist.ajax) {
+                    residentslist.ajax.reload(null, false);
+                }
+
+                // ✅ Reset form only when new user was created
+                if (!user_id) {
+                    $('#createresidents')[0].reset();
+                    $('#user_id').val('');
+                }
+
+                // ✅ Clear image/camera states
+                $('#captured_image').val('');
+                $('#capturedCanvas').hide();
+                $('#capturedCanvas').get(0).getContext('2d').clearRect(0, 0, $('#capturedCanvas').width(), $('#capturedCanvas').height());
+                $('#uploadPreview').hide().attr('src', '');
+                $('#dropZone').show();
+                $('#deletePhoto').hide();
+                $('#cameraPreview, #capturePhoto').hide();
+
+                if (typeof stream !== 'undefined' && stream) {
+                    stream.getTracks().forEach(track => track.stop());
+                }
+
+            } else if (data.error) {
+                initAlert(data.error, 0);
+            } else {
+                initAlert("Can't save details at the moment. Please contact support!", 3);
+            }
+        },
+
+        error: function (xhr, status, error) {
+            console.error("Error saving user:", xhr.responseText || error);
+            initAlert("Server error: " + (xhr.responseText || error), 3);
+        }
+    });
+});
+
 
 
 
