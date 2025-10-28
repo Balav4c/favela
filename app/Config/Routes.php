@@ -250,7 +250,7 @@ $routes->post('security/usermobile/verifympinapi', 'UserMobile\Security::verifym
 $routes->post('security/usermobile/checkMpin', 'UserMobile\Security::checkMpin');
 $routes->post('security/usermobile/changeMpin', 'UserMobile\Security::changeMpin');
 
-$routes->post('usermobile/residence/getsecurityResidences', 'UserMobile\Security::getSecurityResidences');
+$routes->post('security/usermobile/residence/getsecurityResidences', 'UserMobile\Security::getSecurityResidences');
 
 //Complainsts media uploads
 $routes->post('usermobile/media/uploads', 'UserMobile\Complaints::mediaUploads');
