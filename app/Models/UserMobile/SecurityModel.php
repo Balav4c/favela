@@ -60,5 +60,16 @@ class SecurityModel extends Model
     {
         return $this->update($id, ['mpin' => $hashedMpin]);
     }
+    
+public function getOrgsList($sc_id) {
+    return $this->db->table('flats_security')
+                    ->select('fv_id')
+                    ->where('sc_id', $sc_id)
+                    ->where('status', 1)
+                    ->get()
+                    ->getResult();
+}
+
+
 
 }
