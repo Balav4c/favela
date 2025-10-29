@@ -243,6 +243,7 @@ $routes->post('usermobile/announcements/getAnnouncements', 'UserMobile\Announcem
 
 // Mark In Mark Out
 $routes->post('security/usermobile/attendance', 'UserMobile\SecurityAttendance::recordAttendance');
+$routes->post('security/usermobile/attendance/list', 'UserMobile\SecurityAttendance::getAttendanceBySecurity');
 
 
 // security login and mpin management
