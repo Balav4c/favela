@@ -222,6 +222,8 @@ $routes->post('usermobile/notifications/getnotifications', 'UserMobile\Notificat
 $routes->post('usermobile/notifications/processNotify', 'UserMobile\Notifications::processNotify');
 
 
+
+
 //complaints
 $routes->post('usermobile/complaints/getcomplaints', 'UserMobile\Complaints::getComplaints');
 $routes->post('usermobile/complaints/savecomplaints', 'UserMobile\Complaints::saveComplaints');
@@ -251,6 +253,8 @@ $routes->post('security/usermobile/checkMpin', 'UserMobile\Security::checkMpin')
 $routes->post('security/usermobile/changeMpin', 'UserMobile\Security::changeMpin');
 
 $routes->post('security/usermobile/residence/getsecurityResidences', 'UserMobile\Security::getSecurityResidences');
+$routes->post('security/usermobile/security/getsecuritynotifications', 'UserMobile\Notifications::getsecuritynotifications');
+
 
 //Complainsts media uploads
 $routes->post('usermobile/media/uploads', 'UserMobile\Complaints::mediaUploads');
