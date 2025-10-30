@@ -240,6 +240,8 @@ $routes->post('security/usermobile/gatepass/scan', 'UserMobile\VisitorGatepass::
 
 // Announcements
 $routes->post('usermobile/announcements/getAnnouncements', 'UserMobile\Announcement::getAnnouncements');
+$routes->post('security/usermobile/getAnnouncements', 'UserMobile\Announcement::getSecurityAnnouncements');
+
 
 // Mark In Mark Out
 $routes->post('security/usermobile/attendance', 'UserMobile\SecurityAttendance::recordAttendance');

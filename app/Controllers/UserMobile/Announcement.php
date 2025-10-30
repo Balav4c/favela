@@ -61,5 +61,44 @@ class Announcement extends BaseController {
 
     return $this->response->setStatusCode(200)->setJSON($response);
 }
+ public function getSecurityAnnouncements() {
+        $headers = $this->request->headers();
+        $token = trim(explode("Bearer", $headers['Authorization'])[1]);
+        $json_data = $this->request->getBody();
+        $data = json_decode($json_data, true);
 
+        $security_id = isset($data['sc_id']) ? $data['sc_id'] : $this->request->getPost("sc_id");
+        $fv_id       = isset($data['fv_id']) ? $data['fv_id'] : $this->request->getPost("fv_id");
+
+        $tokencheck = $this->TokenModel->verifySecurityToken($token, $security_id);
+
+        if ($tokencheck) {
+            $getAnnouncements = $this->AnnounceModel->loadSecurityAnnouncements($fv_id);
+
+            if (!empty($getAnnouncements)) {
+                $response = [
+                    'status'  => 200,
+                    'success' => true,
+                    'data'    => $getAnnouncements
+                ];
+            } else {
+                $response = [
+                    'status'  => 200,
+                    'success' => true,
+                    'data'    => [],
+                    'message' => 'No active announcements found for this flat.'
+                ];
+            }
+        } else {
+            $response = [
+                'status'  => 500,
+                'success' => false,
+                'message' => 'Unauthorized token authentication.'
+            ];
+        }
+
+        return $this->response->setStatusCode(200)->setJSON($response);
+    }
 }
+
+
