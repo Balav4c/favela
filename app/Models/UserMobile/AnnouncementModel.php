@@ -48,4 +48,20 @@ class AnnouncementModel extends Model
     return $builder->get()->getResult();
 }
 
+ public function loadSecurityAnnouncements($fv_id = null)
+    {
+        $builder = $this->db->table('announcements a');
+        $builder->select('a.*');
+
+        if ($fv_id) {
+            $builder->where('a.fv_id', $fv_id);
+        }
+
+        $builder->where("(a.expiry_date IS NULL OR a.expiry_date >= CURDATE())");
+        $builder->where('a.status', 1);
+        $builder->orderBy('a.announce_date', 'DESC');
+
+        return $builder->get()->getResult();
+    }
+
 }
